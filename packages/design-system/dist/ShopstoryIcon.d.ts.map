@@ -1,0 +1,1 @@
+{"version":3,"file":"ShopstoryIcon.d.ts","sourceRoot":"","sources":["../src/ShopstoryIcon.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B,iBAAS,aAAa,CAAC,EACrB,KAAU,EACV,MAAW,EACX,SAAS,GACV,EAAE;IACD,KAAK,CAAC,EAAE,MAAM,CAAC;IACf,MAAM,CAAC,EAAE,MAAM,CAAC;IAChB,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB,qBAiBA;AAED,OAAO,EAAE,aAAa,EAAE,CAAC"}

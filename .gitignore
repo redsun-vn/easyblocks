@@ -10,8 +10,8 @@ node_modules/
 **/node_modules/
 
 # temporarily removed, build of tina modifications from context of shopstory to be done
-**/build/
-**/dist/
+# **/build/
+# **/dist/
 **/dist-types/
 **/stats
 

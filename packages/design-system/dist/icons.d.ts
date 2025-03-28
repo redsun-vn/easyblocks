@@ -1,0 +1,40 @@
+import React from "react";
+type IconProps = {
+    size?: number;
+    isStroke?: boolean;
+};
+export type Icon = React.ComponentType<IconProps>;
+export declare const Icons: {
+    Dropdown: Icon;
+    MaxHeight: Icon;
+    Add: Icon;
+    AlignLeft: Icon;
+    AlignRight: Icon;
+    AlignCenter: Icon;
+    Close: Icon;
+    Desktop: Icon;
+    Mobile: Icon;
+    Drag: Icon;
+    ArrowDown: Icon;
+    ArrowRight: Icon;
+    Master: Icon;
+    ChevronDown: Icon;
+    ChevronRight: Icon;
+    ChevronLeft: Icon;
+    Back: Icon;
+    Redo: Icon;
+    Undo: Icon;
+    Remove: Icon;
+    Share: Icon;
+    Reset: Icon;
+    Grid3x3: Icon;
+    Link: Icon;
+    MarginBottom: Icon;
+    MarginHorizontal: Icon;
+    MarginTop: Icon;
+    CornerRadius: Icon;
+    ThreeDotsHorizontal: Icon;
+    OpenInNew: Icon;
+};
+export {};
+//# sourceMappingURL=icons.d.ts.map

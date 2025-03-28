@@ -27,7 +27,7 @@
     "styled-components": "^6.0.7"
   },
   "devDependencies": {
-    "@easyblocks/build-tools": "^1.0.10",
+    "@easyblocks/build-tools": "workspace:*",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
@@ -39,8 +39,8 @@
   "scripts": {
     "dev": "concurrently -n bundle,emit-declarations 'npm run bundle:watch' 'npm run emit-declarations:watch'",
     "build": "npm run bundle && npm run emit-declarations",
-    "bundle": "NODE_ENV=production rollup -c rollup.config.js",
-    "bundle:watch": "NODE_ENV=development rollup -c rollup.config.js --watch",
+    "bundle": "cross-env NODE_ENV=production rollup -c rollup.config.js",
+    "bundle:watch": "cross-env NODE_ENV=development rollup -c rollup.config.js --watch",
     "emit-declarations": "tsc",
     "emit-declarations:watch": "tsc --watch --preserveWatchOutput"
   },
