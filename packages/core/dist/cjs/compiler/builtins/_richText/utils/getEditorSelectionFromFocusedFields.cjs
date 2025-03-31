@@ -4,8 +4,8 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var parseRichTextPartConfigPath = require('./parseRichTextPartConfigPath.cjs');
-var last = require('../../../../utils/src/array/last.cjs');
-var dotNotationGet = require('../../../../utils/src/object/dotNotationGet.cjs');
+var last = require('../../../../packages/utils/src/array/last.cjs');
+var dotNotationGet = require('../../../../packages/utils/src/object/dotNotationGet.cjs');
 
 function getEditorSelectionFromFocusedFields(focusedFields, form) {
   try {

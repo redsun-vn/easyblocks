@@ -4,7 +4,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var $text_styles = require('./_text.styles.cjs');
-var range = require('../../../utils/src/array/range.cjs');
+var range = require('../../../packages/utils/src/array/range.cjs');
 
 const textEditableComponent = {
   id: "@easyblocks/text",

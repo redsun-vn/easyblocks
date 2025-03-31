@@ -6,8 +6,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var duplicateConfig = require('../../../duplicateConfig.cjs');
 var parseRichTextPartConfigPath = require('./parseRichTextPartConfigPath.cjs');
 var stripRichTextTextPartSelection = require('./stripRichTextTextPartSelection.cjs');
-var dotNotationGet = require('../../../../utils/src/object/dotNotationGet.cjs');
-var dotNotationSet = require('../../../../utils/src/object/dotNotationSet.cjs');
+var dotNotationGet = require('../../../../packages/utils/src/object/dotNotationGet.cjs');
+var dotNotationSet = require('../../../../packages/utils/src/object/dotNotationSet.cjs');
 
 function getRichTextComponentConfigFragment(sourceRichTextComponentConfig, editorContext) {
   const {

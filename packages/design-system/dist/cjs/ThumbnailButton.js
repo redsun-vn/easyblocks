@@ -33,15 +33,15 @@ var React__namespace = /*#__PURE__*/_interopNamespace(React);
 
 const Preview = styled__default["default"].div.withConfig({
   displayName: "ThumbnailButton__Preview",
-  componentId: "sc-598gqu-0"
+  componentId: "sc-1bsunzd-0"
 })(["display:flex;align-items:center;justify-content:center;margin-left:-1px;width:32px;height:32px;border:1px solid #e5e5e5;border-radius:2px;position:relative;min-width:0;"]);
 const PreviewImage = styled__default["default"].img.withConfig({
   displayName: "ThumbnailButton__PreviewImage",
-  componentId: "sc-598gqu-1"
+  componentId: "sc-1bsunzd-1"
 })(["display:block;max-width:100%;max-height:100%;object-fit:contain;"]);
 const SolidColorPreview = styled__default["default"].div.withConfig({
   displayName: "ThumbnailButton__SolidColorPreview",
-  componentId: "sc-598gqu-2"
+  componentId: "sc-1bsunzd-2"
 })(["width:100%;height:100%;background-color:", ";"], _ref => {
   let {
     color
@@ -50,11 +50,11 @@ const SolidColorPreview = styled__default["default"].div.withConfig({
 });
 const ContentRoot = styled__default["default"].div.withConfig({
   displayName: "ThumbnailButton__ContentRoot",
-  componentId: "sc-598gqu-3"
+  componentId: "sc-1bsunzd-3"
 })(["display:flex;align-items:center;gap:8px;width:100%;"]);
 const Labels = styled__default["default"].div.withConfig({
   displayName: "ThumbnailButton__Labels",
-  componentId: "sc-598gqu-4"
+  componentId: "sc-1bsunzd-4"
 })(["flex:1 0;overflow:hidden;min-width:0;display:grid;"]);
 function ThumbnailButton(_ref2) {
   let {

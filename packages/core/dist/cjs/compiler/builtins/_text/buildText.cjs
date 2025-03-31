@@ -4,7 +4,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var locales = require('../../../locales.cjs');
-var uniqueId = require('../../../utils/src/uniqueId.cjs');
+var uniqueId = require('../../../packages/utils/src/uniqueId.cjs');
 
 function buildText(x, editorContext) {
   const defaultLocale = locales.getDefaultLocale(editorContext.locales);

@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import { assertDefined } from '../utils/src/assert.js';
+import { assertDefined } from '../packages/utils/src/assert.js';
 
 function getCommonFieldProps(schemaProp) {
   const label = schemaProp.label || schemaProp.prop;

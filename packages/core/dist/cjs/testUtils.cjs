@@ -5,7 +5,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var EasyblocksBackend = require('./EasyblocksBackend.cjs');
 var createCompilationContext = require('./compiler/createCompilationContext.cjs');
-var dotNotationSet = require('./utils/src/object/dotNotationSet.cjs');
+var dotNotationSet = require('./packages/utils/src/object/dotNotationSet.cjs');
 
 function createFormMock() {
   let initialValues = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};

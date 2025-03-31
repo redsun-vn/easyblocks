@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import React from 'react';
+import React from '../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
 
 const rootStyles = {
   position: "relative",

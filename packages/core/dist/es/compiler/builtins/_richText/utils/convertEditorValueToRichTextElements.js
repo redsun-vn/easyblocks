@@ -1,7 +1,7 @@
 /* with love from shopstory */
 import { Element } from 'slate';
 import { buildRichTextBlockElementComponentConfig, buildRichTextLineElementComponentConfig, buildRichTextPartComponentConfig } from '../builders.js';
-import { cleanString } from '../../../../utils/src/cleanString.js';
+import { cleanString } from '../../../../packages/utils/src/cleanString.js';
 
 function convertEditorValueToRichTextElements(editorValue) {
   return editorValue.map(blockElement => {

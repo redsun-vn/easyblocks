@@ -3,7 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var serialize = require('./utils/src/serialize.cjs');
+var serialize = require('./packages/utils/src/serialize.cjs');
 
 function selectionFramePositionChanged(target, container) {
   return {

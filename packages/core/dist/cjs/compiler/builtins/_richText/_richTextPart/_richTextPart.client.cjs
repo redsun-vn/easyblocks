@@ -3,11 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var index = require('../../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
 
 function RichTextPartClient(props) {
   const {
@@ -17,9 +13,9 @@ function RichTextPartClient(props) {
   } = props;
   const textValue = value || "\uFEFF";
   if (TextWrapper) {
-    return /*#__PURE__*/React__default["default"].createElement(Text.type, Text.props, /*#__PURE__*/React__default["default"].createElement(TextWrapper.type, TextWrapper.props, textValue));
+    return /*#__PURE__*/index.createElement(Text.type, Text.props, /*#__PURE__*/index.createElement(TextWrapper.type, TextWrapper.props, textValue));
   }
-  return /*#__PURE__*/React__default["default"].createElement(Text.type, Text.props, textValue);
+  return /*#__PURE__*/index.createElement(Text.type, Text.props, textValue);
 }
 
 exports.RichTextPartClient = RichTextPartClient;

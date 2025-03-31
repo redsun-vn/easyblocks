@@ -3,12 +3,9 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
+var index = require('../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
 var box = require('../../compiler/box.cjs');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var index$1 = require('../../_virtual/index.cjs');
 
 const boxStyles = {
   boxSizing: "border-box",
@@ -18,7 +15,7 @@ const boxStyles = {
   border: 0,
   listStyle: "none"
 };
-const Box = /*#__PURE__*/React__default["default"].forwardRef((props, ref) => {
+const Box = /*#__PURE__*/index.forwardRef((props, ref) => {
   /**
    * passedProps - the props given in component code like <MyBox data-id="abc" /> (data-id is in passedProps)
    * restProps - the props given by Shopstory (like from actionWrapper)
@@ -53,7 +50,7 @@ const Box = /*#__PURE__*/React__default["default"].forwardRef((props, ref) => {
   const {
     boxClassName,
     componentClassName
-  } = React.useMemo(() => {
+  } = index$1.react.exports.useMemo(() => {
     /**
      * Why parse+stringify?
      *
@@ -68,7 +65,7 @@ const Box = /*#__PURE__*/React__default["default"].forwardRef((props, ref) => {
       componentClassName: generateClassName()
     };
   }, [styles.__hash]);
-  return /*#__PURE__*/React__default["default"].createElement(as || __as || "div", {
+  return /*#__PURE__*/index.createElement(as || __as || "div", {
     ref,
     ...restPassedProps,
     className: [boxClassName, componentClassName, className].filter(Boolean).join(" "),

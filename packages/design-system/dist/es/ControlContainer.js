@@ -21,7 +21,7 @@ function sizing(p) {
 }
 const Root = styled.div.withConfig({
   displayName: "ControlContainer__Root",
-  componentId: "sc-1ofnvar-0"
+  componentId: "sc-1i70r11-0"
 })(["position:relative;height:", ";width:", ";color:black;", " &:focus-within{box-shadow:0 0 0 2px ", ";.ss-arrow{color:black;}}transition:box-shadow 0.1s;border-radius:2px;display:inline-block;", ";"], p => sizing(p).height, p => sizing(p).width, p => {
   const outlineStyles = `
       box-shadow: 0 0 0 1px ${p.hasError ? "red" : Colors.black10};
@@ -56,7 +56,7 @@ const Root = styled.div.withConfig({
 }, p => p.hasError ? Colors.red : Colors.focus, Fonts.body);
 const IconContainer = styled.div.withConfig({
   displayName: "ControlContainer__IconContainer",
-  componentId: "sc-1ofnvar-1"
+  componentId: "sc-1i70r11-1"
 })(["color:", ";position:absolute;left:", ";top:", ";pointer-events:none;"], p => p.iconBlack ? "black" : Colors.black40, p => sizing(p).paddingHorizontal, p => sizing(p).paddingVertical);
 const ControlContainer = _ref => {
   let {

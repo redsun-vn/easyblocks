@@ -10,7 +10,7 @@ import { isTrulyResponsiveValue } from '../responsiveness/isTrulyResponsiveValue
 import { responsiveValueAt } from '../responsiveness/responsiveValueAt.js';
 import { responsiveValueMap } from '../responsiveness/responsiveValueMap.js';
 import { responsiveValueFill } from '../responsiveness/responsiveValueFill.js';
-import { uniqueId } from '../utils/src/uniqueId.js';
+import { uniqueId } from '../packages/utils/src/uniqueId.js';
 
 const textProvider = (schemaProp, compilationContext) => {
   const checkIfValid = x => {

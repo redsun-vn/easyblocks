@@ -12,11 +12,11 @@ var styled__default = /*#__PURE__*/_interopDefaultLegacy(styled);
 
 const Root = styled__default["default"].div.withConfig({
   displayName: "NavigationController__Root",
-  componentId: "sc-hy6oj3-0"
+  componentId: "sc-19n3ku4-0"
 })(["position:relative;overflow:hidden;display:grid;"]);
 const PanelRoot = styled__default["default"].div.withConfig({
   displayName: "NavigationController__PanelRoot",
-  componentId: "sc-hy6oj3-1"
+  componentId: "sc-19n3ku4-1"
 })(["grid-row:1 / span 1;grid-column:1 / span 1;position:relative;display:grid;overflow-y:auto;transform:translateX(", "px);"], p => p.index * 30);
 const NavigationController = _ref => {
   let {

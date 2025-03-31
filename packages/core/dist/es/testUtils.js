@@ -1,7 +1,7 @@
 /* with love from shopstory */
 import { EasyblocksBackend } from './EasyblocksBackend.js';
 import { createCompilationContext } from './compiler/createCompilationContext.js';
-import { dotNotationSet } from './utils/src/object/dotNotationSet.js';
+import { dotNotationSet } from './packages/utils/src/object/dotNotationSet.js';
 
 function createFormMock() {
   let initialValues = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};

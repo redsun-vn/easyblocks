@@ -12,7 +12,7 @@ var styled__default = /*#__PURE__*/_interopDefaultLegacy(styled);
 const DEFAULT_SIZE = 6;
 const CustomComponentSymbol = styled__default["default"].div.withConfig({
   displayName: "CustomComponentSymbol",
-  componentId: "sc-14xjohf-0"
+  componentId: "sc-1b4wdw-0"
 })(["width:", "px;height:", "px;background:", ";transform:rotate(45deg);"], p => p.size ?? DEFAULT_SIZE, p => p.size ?? DEFAULT_SIZE, colors.Colors.purple);
 
 exports.CustomComponentSymbol = CustomComponentSymbol;

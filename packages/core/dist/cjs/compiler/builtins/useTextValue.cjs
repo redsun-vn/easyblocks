@@ -4,14 +4,13 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var debounce = require('lodash/debounce');
-var React = require('react');
+var index = require('../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
 var locales = require('../../locales.cjs');
-var cleanString = require('../../utils/src/cleanString.cjs');
+var cleanString = require('../../packages/utils/src/cleanString.cjs');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var debounce__default = /*#__PURE__*/_interopDefaultLegacy(debounce);
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 function useTextValue(value, onChange, locale, locales$1, defaultPlaceholder, normalize) {
   const isExternal = typeof value === "object" && value !== null;
@@ -26,8 +25,8 @@ function useTextValue(value, onChange, locale, locales$1, defaultPlaceholder, no
     }
     return value ?? "";
   })();
-  const previousValue = React__default["default"].useRef(valueFromProps);
-  const [localInputValue, setLocalInputValue] = React__default["default"].useState(valueFromProps);
+  const previousValue = index.useRef(valueFromProps);
+  const [localInputValue, setLocalInputValue] = index.useState(valueFromProps);
   function saveNewValue(newValue) {
     if (isExternal) {
       const newExternalValue = {
@@ -42,7 +41,7 @@ function useTextValue(value, onChange, locale, locales$1, defaultPlaceholder, no
       onChange(newValue);
     }
   }
-  const onChangeDebounced = React__default["default"].useCallback(debounce__default["default"](newValue => {
+  const onChangeDebounced = index.useCallback(debounce__default["default"](newValue => {
     // If normalization is on, we shouldn't save on change
     if (normalize) {
       return;
@@ -82,7 +81,7 @@ function useTextValue(value, onChange, locale, locales$1, defaultPlaceholder, no
 
   // Sync local value with value from the config if the field value has been
   // changed from outside
-  React__default["default"].useEffect(() => {
+  index.useEffect(() => {
     setLocalInputValue(valueFromProps);
   }, [valueFromProps]);
   const style = {

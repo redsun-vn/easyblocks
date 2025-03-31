@@ -7,7 +7,7 @@ var locales = require('../locales.cjs');
 var $richTextPart = require('./builtins/_richText/_richTextPart/_richTextPart.cjs');
 var compileComponentValues = require('./compileComponentValues.cjs');
 var findComponentDefinition = require('./findComponentDefinition.cjs');
-var entries = require('../utils/src/object/entries.cjs');
+var entries = require('../packages/utils/src/object/entries.cjs');
 
 /**
  * Returns the most common value for given `prop` parameter among all @easyblocks/rich-text-part components from `richTextComponentConfig`.

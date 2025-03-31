@@ -18,19 +18,19 @@ var resop = require('./resop.cjs');
 var index = require('./schema/index.cjs');
 var tinaFieldProviders = require('./tinaFieldProviders.cjs');
 var locales = require('../locales.cjs');
-var deepCompare = require('../utils/src/deepCompare.cjs');
-var deepClone = require('../utils/src/deepClone.cjs');
+var deepCompare = require('../packages/utils/src/deepCompare.cjs');
+var deepClone = require('../packages/utils/src/deepClone.cjs');
 var responsiveValueAt = require('../responsiveness/responsiveValueAt.cjs');
-var dotNotationSet = require('../utils/src/object/dotNotationSet.cjs');
-var bubbleDown = require('../utils/src/array/bubbleDown.cjs');
-var raiseError = require('../utils/src/raiseError.cjs');
-var assert = require('../utils/src/assert.cjs');
-var uniqueId = require('../utils/src/uniqueId.cjs');
+var dotNotationSet = require('../packages/utils/src/object/dotNotationSet.cjs');
+var bubbleDown = require('../packages/utils/src/array/bubbleDown.cjs');
+var raiseError = require('../packages/utils/src/raiseError.cjs');
+var assert = require('../packages/utils/src/assert.cjs');
+var uniqueId = require('../packages/utils/src/uniqueId.cjs');
 var responsiveValueFill = require('../responsiveness/responsiveValueFill.cjs');
 var responsiveValueNormalize = require('../responsiveness/responsiveValueNormalize.cjs');
-var dotNotationGet = require('../utils/src/object/dotNotationGet.cjs');
-var entries = require('../utils/src/object/entries.cjs');
-var toArray = require('../utils/src/array/toArray.cjs');
+var dotNotationGet = require('../packages/utils/src/object/dotNotationGet.cjs');
+var entries = require('../packages/utils/src/object/entries.cjs');
+var toArray = require('../packages/utils/src/array/toArray.cjs');
 
 function compileComponent(editableElement, compilationContext, contextProps,
 // contextProps are already compiled! They're result of compilation function.

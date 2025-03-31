@@ -1,6 +1,7 @@
 /* with love from shopstory */
-import React, { useMemo } from 'react';
+import React from '../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
 import { getBoxStyles } from '../../compiler/box.js';
+import { r as react } from '../../_virtual/index.js';
 
 const boxStyles = {
   boxSizing: "border-box",
@@ -45,7 +46,7 @@ const Box = /*#__PURE__*/React.forwardRef((props, ref) => {
   const {
     boxClassName,
     componentClassName
-  } = useMemo(() => {
+  } = react.exports.useMemo(() => {
     /**
      * Why parse+stringify?
      *

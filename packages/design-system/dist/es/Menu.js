@@ -56,7 +56,7 @@ var _StyledItem = styled(Item)`
       `;
 var _StyledSeparator = styled(Separator).withConfig({
   displayName: "Menu___StyledSeparator",
-  componentId: "sc-y402kg-0"
+  componentId: "sc-15igjrv-0"
 })(["height:1px;background-color:", ";"], p => p.$_css4);
 
 export { Menu, MenuContent, MenuItem, MenuSeparator, MenuTrigger };

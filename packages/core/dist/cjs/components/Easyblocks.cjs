@@ -4,7 +4,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
+var index$1 = require('../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
 var $richText_client = require('../compiler/builtins/_richText/_richText.client.cjs');
 var $richTextBlockElement_client = require('../compiler/builtins/_richText/_richTextBlockElement/_richTextBlockElement.client.cjs');
 var $richTextLineElement_client = require('../compiler/builtins/_richText/_richTextLineElement/_richTextLineElement.client.cjs');
@@ -14,10 +14,7 @@ var ComponentBuilder = require('./ComponentBuilder/ComponentBuilder.cjs');
 var EasyblocksExternalDataProvider = require('./EasyblocksExternalDataProvider.cjs');
 var EasyblocksMetadataProvider = require('./EasyblocksMetadataProvider.cjs');
 var MissingComponent = require('./MissingComponent.cjs');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var index = require('../_virtual/index.cjs');
 
 const builtinComponents = {
   "@easyblocks/missing-component": MissingComponent.MissingComponent,
@@ -35,7 +32,7 @@ function Easyblocks(_ref) {
     componentOverrides,
     components
   } = _ref;
-  React.useEffect(() => {
+  index.react.exports.useEffect(() => {
     document.documentElement.style.setProperty("--shopstory-viewport-width", `calc(100vw - ${window.innerWidth - document.documentElement.clientWidth}px)`);
   });
   const renderableContent = renderableDocument.renderableContent;
@@ -49,11 +46,11 @@ function Easyblocks(_ref) {
       renderableContent.components[componentProp] = [componentOverride];
     });
   }
-  return /*#__PURE__*/React__default["default"].createElement(EasyblocksMetadataProvider.EasyblocksMetadataProvider, {
+  return /*#__PURE__*/index$1.createElement(EasyblocksMetadataProvider.EasyblocksMetadataProvider, {
     meta: renderableDocument.meta
-  }, /*#__PURE__*/React__default["default"].createElement(EasyblocksExternalDataProvider.EasyblocksExternalDataProvider, {
+  }, /*#__PURE__*/index$1.createElement(EasyblocksExternalDataProvider.EasyblocksExternalDataProvider, {
     externalData: externalData ?? {}
-  }, /*#__PURE__*/React__default["default"].createElement(ComponentBuilder.ComponentBuilder, {
+  }, /*#__PURE__*/index$1.createElement(ComponentBuilder.ComponentBuilder, {
     compiled: renderableContent,
     path: "",
     components: {

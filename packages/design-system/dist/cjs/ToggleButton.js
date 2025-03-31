@@ -20,7 +20,7 @@ var styled__default = /*#__PURE__*/_interopDefaultLegacy(styled);
 
 const StyledButton = styled__default["default"].button.withConfig({
   displayName: "ToggleButton__StyledButton",
-  componentId: "sc-eljs5s-0"
+  componentId: "sc-1mpua28-0"
 })(["all:unset;box-sizing:border-box;width:100%;height:100%;outline:none;border:none;", " ", " border-radius:2px;background-color:", ";"], ControlContainer.getControlPadding(), p => p.hideLabel ? "padding-right: 0;" : "", p => p.selected ? colors.Colors.black10 : "transparent");
 const ToggleButton = props => {
   const {
@@ -39,7 +39,7 @@ const ToggleButton = props => {
 };
 const SelectInlineRoot = styled__default["default"].div.withConfig({
   displayName: "ToggleButton__SelectInlineRoot",
-  componentId: "sc-eljs5s-1"
+  componentId: "sc-1mpua28-1"
 })(["display:flex;flex-direction:row;gap:4px;flex-wrap:nowrap;"]);
 const SelectInline = props => {
   const buttons = React__default["default"].Children.toArray(props.children);

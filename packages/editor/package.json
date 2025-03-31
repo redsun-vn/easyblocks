@@ -1,5 +1,6 @@
 {
-  "name": "@easyblocks/editor",
+  "name": "@redsun.vn/easyblocks-editor",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/cjs/index.cjs",
   "module": "dist/es/index.js",
@@ -62,7 +63,6 @@
     "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
-  "version": "1.0.10",
   "files": [
     "dist/",
     "package.json",

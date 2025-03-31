@@ -1,6 +1,6 @@
 'use client';
 /* with love from shopstory */
-import React, { useEffect } from 'react';
+import React from '../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
 import { RichTextClient } from '../compiler/builtins/_richText/_richText.client.js';
 import { RichTextBlockElementClient } from '../compiler/builtins/_richText/_richTextBlockElement/_richTextBlockElement.client.js';
 import { RichTextLineElementClient } from '../compiler/builtins/_richText/_richTextLineElement/_richTextLineElement.client.js';
@@ -10,6 +10,7 @@ import { ComponentBuilder } from './ComponentBuilder/ComponentBuilder.js';
 import { EasyblocksExternalDataProvider } from './EasyblocksExternalDataProvider.js';
 import { EasyblocksMetadataProvider } from './EasyblocksMetadataProvider.js';
 import { MissingComponent } from './MissingComponent.js';
+import { r as react } from '../_virtual/index.js';
 
 const builtinComponents = {
   "@easyblocks/missing-component": MissingComponent,
@@ -27,7 +28,7 @@ function Easyblocks(_ref) {
     componentOverrides,
     components
   } = _ref;
-  useEffect(() => {
+  react.exports.useEffect(() => {
     document.documentElement.style.setProperty("--shopstory-viewport-width", `calc(100vw - ${window.innerWidth - document.documentElement.clientWidth}px)`);
   });
   const renderableContent = renderableDocument.renderableContent;

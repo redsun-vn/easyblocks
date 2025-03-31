@@ -14,19 +14,19 @@ import { scalarizeConfig, resop2 } from './resop.js';
 import { isExternalSchemaProp, isSchemaPropComponentOrComponentCollection, isSchemaPropComponent, isSchemaPropComponentCollectionLocalised, isSchemaPropActionTextModifier, isSchemaPropTextModifier, isSchemaPropCollection } from './schema/index.js';
 import { getTinaField } from './tinaFieldProviders.js';
 import { getFallbackLocaleForLocale } from '../locales.js';
-import { deepCompare } from '../utils/src/deepCompare.js';
-import { deepClone } from '../utils/src/deepClone.js';
+import { deepCompare } from '../packages/utils/src/deepCompare.js';
+import { deepClone } from '../packages/utils/src/deepClone.js';
 import { responsiveValueAt } from '../responsiveness/responsiveValueAt.js';
-import { dotNotationSet } from '../utils/src/object/dotNotationSet.js';
-import { bubbleDown } from '../utils/src/array/bubbleDown.js';
-import { raiseError } from '../utils/src/raiseError.js';
-import { assertDefined } from '../utils/src/assert.js';
-import { uniqueId } from '../utils/src/uniqueId.js';
+import { dotNotationSet } from '../packages/utils/src/object/dotNotationSet.js';
+import { bubbleDown } from '../packages/utils/src/array/bubbleDown.js';
+import { raiseError } from '../packages/utils/src/raiseError.js';
+import { assertDefined } from '../packages/utils/src/assert.js';
+import { uniqueId } from '../packages/utils/src/uniqueId.js';
 import { responsiveValueFill } from '../responsiveness/responsiveValueFill.js';
 import { responsiveValueNormalize } from '../responsiveness/responsiveValueNormalize.js';
-import { dotNotationGet } from '../utils/src/object/dotNotationGet.js';
-import { entries } from '../utils/src/object/entries.js';
-import { toArray } from '../utils/src/array/toArray.js';
+import { dotNotationGet } from '../packages/utils/src/object/dotNotationGet.js';
+import { entries } from '../packages/utils/src/object/entries.js';
+import { toArray } from '../packages/utils/src/array/toArray.js';
 
 function compileComponent(editableElement, compilationContext, contextProps,
 // contextProps are already compiled! They're result of compilation function.

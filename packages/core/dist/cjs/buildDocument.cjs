@@ -4,7 +4,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var buildEntry = require('./buildEntry.cjs');
-var serialize = require('./utils/src/serialize.cjs');
+var serialize = require('./packages/utils/src/serialize.cjs');
 
 async function buildDocument(_ref) {
   let {

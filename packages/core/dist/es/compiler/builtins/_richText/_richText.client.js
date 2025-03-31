@@ -1,6 +1,6 @@
 /* with love from shopstory */
 import _extends from '@babel/runtime/helpers/extends';
-import React from 'react';
+import React from '../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
 
 function RichTextClient(props) {
   const {

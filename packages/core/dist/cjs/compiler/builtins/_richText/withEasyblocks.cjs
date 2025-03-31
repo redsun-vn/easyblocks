@@ -4,9 +4,9 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var slate = require('slate');
-var keys = require('../../../utils/src/object/keys.cjs');
-var uniqueId = require('../../../utils/src/uniqueId.cjs');
-var deepCompare = require('../../../utils/src/deepCompare.cjs');
+var keys = require('../../../packages/utils/src/object/keys.cjs');
+var uniqueId = require('../../../packages/utils/src/uniqueId.cjs');
+var deepCompare = require('../../../packages/utils/src/deepCompare.cjs');
 
 /**
  * Tracks which ids were used during current normalization run

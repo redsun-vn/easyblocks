@@ -1,6 +1,6 @@
 /* with love from shopstory */
-import React from 'react';
-import { cleanString } from '../../../utils/src/cleanString.js';
+import React from '../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
+import { cleanString } from '../../../packages/utils/src/cleanString.js';
 
 function TextClient(props) {
   const {

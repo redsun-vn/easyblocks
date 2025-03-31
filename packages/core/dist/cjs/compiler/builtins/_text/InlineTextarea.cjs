@@ -4,16 +4,17 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var _extends = require('@babel/runtime/helpers/extends');
-var React = require('react');
-var reactDom = require('react-dom');
+var index$1 = require('../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
+require('../../../node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.cjs');
 var TextareaAutosize = require('react-textarea-autosize');
 var useTextValue = require('../useTextValue.cjs');
-var dotNotationGet = require('../../../utils/src/object/dotNotationGet.cjs');
+var index = require('../../../_virtual/index.cjs');
+var dotNotationGet = require('../../../packages/utils/src/object/dotNotationGet.cjs');
+var index$2 = require('../../../_virtual/index2.cjs');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var _extends__default = /*#__PURE__*/_interopDefaultLegacy(_extends);
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 var TextareaAutosize__default = /*#__PURE__*/_interopDefaultLegacy(TextareaAutosize);
 
 function InlineTextarea(_ref) {
@@ -22,8 +23,8 @@ function InlineTextarea(_ref) {
     placeholder,
     stitches
   } = _ref;
-  const [isEnabled, setIsEnabled] = React.useState(false);
-  const textAreaRef = React.useRef(null);
+  const [isEnabled, setIsEnabled] = index.react.exports.useState(false);
+  const textAreaRef = index.react.exports.useRef(null);
   const {
     form,
     contextParams: {
@@ -64,17 +65,17 @@ function InlineTextarea(_ref) {
     },
     pointerEvents: isEnabled ? "auto" : "none"
   })();
-  return /*#__PURE__*/React__default["default"].createElement("div", {
+  return /*#__PURE__*/index$1.createElement("div", {
     onMouseDown: event => {
       if (event.detail === 2) {
         event.preventDefault();
-        reactDom.flushSync(() => {
+        index$2.reactDom.exports.flushSync(() => {
           setIsEnabled(true);
         });
         textAreaRef.current?.select();
       }
     }
-  }, /*#__PURE__*/React__default["default"].createElement(TextareaAutosize__default["default"], _extends__default["default"]({
+  }, /*#__PURE__*/index$1.createElement(TextareaAutosize__default["default"], _extends__default["default"]({
     className: css,
     rows: 1
   }, inputProps, {

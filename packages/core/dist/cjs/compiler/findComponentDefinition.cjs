@@ -3,7 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var toArray = require('../utils/src/array/toArray.cjs');
+var toArray = require('../packages/utils/src/array/toArray.cjs');
 
 function allDefs(context) {
   return context?.definitions.components || [];

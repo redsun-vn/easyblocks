@@ -5,8 +5,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var configTraverse = require('./configTraverse.cjs');
 var traverseComponents = require('./traverseComponents.cjs');
-var deepClone = require('../utils/src/deepClone.cjs');
-var uniqueId = require('../utils/src/uniqueId.cjs');
+var deepClone = require('../packages/utils/src/deepClone.cjs');
+var uniqueId = require('../packages/utils/src/uniqueId.cjs');
 
 function duplicateConfig(inputConfig, compilationContext) {
   // deep copy first

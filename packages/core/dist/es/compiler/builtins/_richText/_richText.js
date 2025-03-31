@@ -3,9 +3,9 @@ import { getFallbackLocaleForLocale } from '../../../locales.js';
 import { configFindAllPaths } from '../../configFindAllPaths.js';
 import { richTextStyles } from './_richText.styles.js';
 import { richTextBlockElementEditableComponent } from './_richTextBlockElement/_richTextBlockElement.js';
-import { range } from '../../../utils/src/array/range.js';
-import { nonNullable } from '../../../utils/src/array/nonNullable.js';
-import { dotNotationGet } from '../../../utils/src/object/dotNotationGet.js';
+import { range } from '../../../packages/utils/src/array/range.js';
+import { nonNullable } from '../../../packages/utils/src/array/nonNullable.js';
+import { dotNotationGet } from '../../../packages/utils/src/object/dotNotationGet.js';
 
 const editing = _ref => {
   let {

@@ -3,7 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var index = require('./reduce-css-calc/src/index.cjs');
+var index = require('./packages/reduce-css-calc/src/index.cjs');
 
 function parseSpacing(spacing) {
   if (spacing.endsWith("px")) {

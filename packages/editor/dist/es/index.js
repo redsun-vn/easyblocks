@@ -252,15 +252,15 @@ function EditorIframe(_ref) {
 }
 const IframeContainer = styled.div.withConfig({
   displayName: "EditorIframe__IframeContainer",
-  componentId: "sc-qekg4h-0"
+  componentId: "sc-lodz39-0"
 })(["position:relative;flex:1 1 auto;background:", ";"], Colors.black100);
 const IframeInnerContainer = styled.div.withConfig({
   displayName: "EditorIframe__IframeInnerContainer",
-  componentId: "sc-qekg4h-1"
+  componentId: "sc-lodz39-1"
 })(["position:absolute;top:0;left:0;width:100%;height:100%;display:grid;justify-content:center;align-items:center;"]);
 const Iframe = styled.iframe.withConfig({
   displayName: "EditorIframe__Iframe",
-  componentId: "sc-qekg4h-2"
+  componentId: "sc-lodz39-2"
 })(["background:white;border:none;transform-origin:center;"]);
 
 function pathToCompiledPath(path, editorContext) {
@@ -351,7 +351,7 @@ function internalBuildTinaFields(path, editorContext, fieldsFilter) {
 
 const IdWrapper = styled.div.withConfig({
   displayName: "SidebarFooter__IdWrapper",
-  componentId: "sc-os6jxu-0"
+  componentId: "sc-1kn8gap-0"
 })(["display:block;padding:16px;", " color:", ";"], Fonts.body, Colors.black40);
 function SidebarFooter(props) {
   const editorContext = useEditorContext();
@@ -422,7 +422,7 @@ const Toggle = _ref => {
 };
 const ToggleFieldWrapper = styled.div.withConfig({
   displayName: "Toggle__ToggleFieldWrapper",
-  componentId: "sc-8f4me5-0"
+  componentId: "sc-9enff5-0"
 })(["display:flex;justify-content:flex-end;"]);
 
 const MIXED_VALUE = "__MIXED__";
@@ -557,11 +557,11 @@ const Tooltip = /*#__PURE__*/forwardRef((_ref, ref) => {
 });
 const TooltipBody = styled.div.withConfig({
   displayName: "Tooltip__TooltipBody",
-  componentId: "sc-1r26vca-0"
+  componentId: "sc-1gkryiq-0"
 })(["position:relative;top:6px;display:flex;flex-direction:row;justify-content:center;align-items:center;padding:6px 4px;background:#333333;border-radius:2px;", " color:#fff;"], Fonts.body);
 const TooltipArrow = styled.div.withConfig({
   displayName: "Tooltip__TooltipArrow",
-  componentId: "sc-1r26vca-1"
+  componentId: "sc-1gkryiq-1"
 })(["width:12px;height:6px;margin:0 auto;background:#333333;clip-path:polygon(50% 0%,0% 100%,100% 100%);"]);
 
 function useTooltip() {
@@ -786,7 +786,7 @@ function isMixedValueSupportedByComponent(component) {
 }
 const TextButton = styled(Typography).withConfig({
   displayName: "wrapFieldWithMeta__TextButton",
-  componentId: "sc-aw5xvy-0"
+  componentId: "sc-10gicmp-0"
 })(["padding:0;margin:0;background:transparent;border:0;font-weight:500;&:hover{color:black;cursor:pointer;text-decoration:underline;}"]);
 function wrapFieldsWithMeta(Field, extraProps) {
   return props => {
@@ -795,7 +795,7 @@ function wrapFieldsWithMeta(Field, extraProps) {
 }
 const FieldWrapper = styled.div.withConfig({
   displayName: "wrapFieldWithMeta__FieldWrapper",
-  componentId: "sc-aw5xvy-1"
+  componentId: "sc-10gicmp-1"
 })(["display:flex;flex-direction:", ";gap:", ";justify-content:space-between;align-items:flex-start;", " position:relative;padding:4px 16px;"], _ref3 => {
   let {
     layout
@@ -814,7 +814,7 @@ const FieldWrapper = styled.div.withConfig({
 });
 const FieldLabelWrapper = styled.div.withConfig({
   displayName: "wrapFieldWithMeta__FieldLabelWrapper",
-  componentId: "sc-aw5xvy-2"
+  componentId: "sc-10gicmp-2"
 })(["all:unset;position:relative;display:flex;flex-direction:row;align-items:center;", " min-height:28px;overflow:hidden;"], _ref6 => {
   let {
     isFullWidth
@@ -825,7 +825,7 @@ const FieldLabelWrapper = styled.div.withConfig({
 });
 const FieldLabel = styled.label.withConfig({
   displayName: "wrapFieldWithMeta__FieldLabel",
-  componentId: "sc-aw5xvy-3"
+  componentId: "sc-10gicmp-3"
 })(["all:unset;", ";color:", ";text-overflow:ellipsis;overflow:hidden;cursor:default;"], Fonts.body, _ref7 => {
   let {
     isError
@@ -834,15 +834,15 @@ const FieldLabel = styled.label.withConfig({
 });
 const FieldLabelIconWrapper = styled.span.withConfig({
   displayName: "wrapFieldWithMeta__FieldLabelIconWrapper",
-  componentId: "sc-aw5xvy-4"
+  componentId: "sc-10gicmp-4"
 })(["display:flex;font-size:14px;line-height:1;margin-left:auto;padding-left:8px;svg{width:14px;height:14px;flex-shrink:0;}"]);
 const FieldError = styled.span.withConfig({
   displayName: "wrapFieldWithMeta__FieldError",
-  componentId: "sc-aw5xvy-5"
+  componentId: "sc-10gicmp-5"
 })(["display:block;color:red;font-size:var(--tina-font-size-1);margin-top:8px;font-weight:var(--tina-font-weight-regular);"]);
 const FieldInputWrapper = styled.div.withConfig({
   displayName: "wrapFieldWithMeta__FieldInputWrapper",
-  componentId: "sc-aw5xvy-6"
+  componentId: "sc-10gicmp-6"
 })(["display:flex;justify-content:flex-end;align-items:center;", ";min-height:28px;"], _ref8 => {
   let {
     layout
@@ -851,15 +851,15 @@ const FieldInputWrapper = styled.div.withConfig({
 });
 var _StyledDiv$5 = styled("div").withConfig({
   displayName: "wrapFieldWithMeta___StyledDiv",
-  componentId: "sc-aw5xvy-7"
+  componentId: "sc-10gicmp-7"
 })(["width:100%;display:flex;align-items:", ";flex-direction:column;"], p => p.$_css);
 var _StyledSpan$1 = styled("span").withConfig({
   displayName: "wrapFieldWithMeta___StyledSpan",
-  componentId: "sc-aw5xvy-8"
+  componentId: "sc-10gicmp-8"
 })(["line-height:100%;overflow:hidden;text-overflow:ellipsis;"]);
 var _StyledLoader = styled(Loader).withConfig({
   displayName: "wrapFieldWithMeta___StyledLoader",
-  componentId: "sc-aw5xvy-9"
+  componentId: "sc-10gicmp-9"
 })(["margin-left:6px;"]);
 
 const parse$1 = value => value && +value;
@@ -1138,7 +1138,7 @@ function isValidFontTokenValue(value) {
 }
 const Root = styled.div.withConfig({
   displayName: "TokenFieldPlugin__Root",
-  componentId: "sc-1a5o708-0"
+  componentId: "sc-9ooa1v-0"
 })(["display:flex;flex-direction:column;align-items:flex-end;"]);
 const TokenFieldPlugin = {
   name: "token",
@@ -1166,7 +1166,7 @@ const SelectColorTokenItem = /*#__PURE__*/forwardRef((props, ref) => {
 });
 var _StyledSpan = styled("span").withConfig({
   displayName: "TokenFieldPlugin___StyledSpan",
-  componentId: "sc-1a5o708-1"
+  componentId: "sc-9ooa1v-1"
 })(["display:flex;align-items:center;gap:6px;"]);
 
 const RICH_TEXT_PART_CONFIG_PATH_REGEXP = /\.elements\.[a-z(\-_A-Z)?]+\.\d+(\.elements\.\d+){2,3}(\.\{\d+,\d+\})?$/;
@@ -1404,7 +1404,7 @@ function getSidebarPreview(componentDefinition, entryAfterAuto, externalData, ed
 }
 const Error$2 = styled.div.withConfig({
   displayName: "BlockFieldPlugin__Error",
-  componentId: "sc-1ufg5bd-0"
+  componentId: "sc-1xayyaw-0"
 })(["", " padding:7px 6px 7px;color:hsl(0deg 0% 50% / 0.8);white-space:normal;background:hsl(0deg 100% 50% / 0.2);margin-right:10px;border-radius:2px;"], Fonts.body);
 const PanelContext = /*#__PURE__*/React__default.createContext(undefined);
 function Panel(_ref4) {
@@ -1446,32 +1446,32 @@ const BlockFieldPlugin = {
 };
 const PanelBody = styled.div.withConfig({
   displayName: "BlockFieldPlugin__PanelBody",
-  componentId: "sc-1ufg5bd-1"
+  componentId: "sc-1xayyaw-1"
 })(["background:white;position:relative;height:100%;overflow-y:auto;"]);
 const GroupPanelKeyframes = keyframes(["0%{transform:translate3d( 100%,0,0 );}100%{transform:translate3d( 0,0,0 );}"]);
 const GroupPanel = styled.div.withConfig({
   displayName: "BlockFieldPlugin__GroupPanel",
-  componentId: "sc-1ufg5bd-2"
+  componentId: "sc-1xayyaw-2"
 })(["position:absolute;width:100%;top:0;bottom:0;left:0;overflow:hidden;pointer-events:", ";> *{", ";", ";}"], p => p.isExpanded ? "all" : "none", p => p.isExpanded && css(["animation-name:", ";animation-duration:150ms;animation-delay:0ms;animation-iteration-count:1;animation-timing-function:ease-out;animation-fill-mode:backwards;"], GroupPanelKeyframes), p => !p.isExpanded && css(["transition:transform 150ms ease-out;transform:translate3d(100%,0,0);"]));
 var _StyledDiv$4 = styled("div").withConfig({
   displayName: "BlockFieldPlugin___StyledDiv",
-  componentId: "sc-1ufg5bd-3"
+  componentId: "sc-1xayyaw-3"
 })(["display:flex;align-items:center;padding:4px 16px;min-height:28px;"]);
 var _StyledDiv2$4 = styled("div").withConfig({
   displayName: "BlockFieldPlugin___StyledDiv2",
-  componentId: "sc-1ufg5bd-4"
+  componentId: "sc-1xayyaw-4"
 })(["display:flex;justify-content:space-between;align-items:center;padding:4px 16px;"]);
 var _StyledButtonGhost$1 = styled(ButtonGhost).withConfig({
   displayName: "BlockFieldPlugin___StyledButtonGhost",
-  componentId: "sc-1ufg5bd-5"
+  componentId: "sc-1xayyaw-5"
 })(["width:100%;padding-left:0;"]);
 var _StyledDiv3$2 = styled("div").withConfig({
   displayName: "BlockFieldPlugin___StyledDiv3",
-  componentId: "sc-1ufg5bd-6"
+  componentId: "sc-1xayyaw-6"
 })(["display:flex;align-items:center;gap:8px;width:100%;"]);
 var _StyledDiv4 = styled("div").withConfig({
   displayName: "BlockFieldPlugin___StyledDiv4",
-  componentId: "sc-1ufg5bd-7"
+  componentId: "sc-1xayyaw-7"
 })(["display:grid;place-items:center;width:32px;height:32px;margin-left:-1px;border:1px dashed ", ";border-radius:2px;"], p => p.$_css);
 
 function IdentityField(_ref) {
@@ -1570,7 +1570,7 @@ var _StyledButtonGhost = styled(ButtonGhost)`
             `;
 var _StyledButtonGhost2 = styled(ButtonGhost).withConfig({
   displayName: "IdentityFieldPlugin___StyledButtonGhost2",
-  componentId: "sc-1fzam6u-0"
+  componentId: "sc-1b6fkin-0"
 })(["margin-left:auto;opacity:", ";pointer-events:", ";"], p => p.$_css, p => p.$_css2);
 
 function MissingWidget(props) {
@@ -1693,7 +1693,7 @@ var _StyledDiv$2 = styled("div")`
         `;
 var _StyledDiv2$2 = styled("div").withConfig({
   displayName: "ExternalField___StyledDiv2",
-  componentId: "sc-b2co8s-0"
+  componentId: "sc-13mu2x6-0"
 })(["display:flex;flex-direction:column;align-items:flex-start;gap:8px;"]);
 
 function getSavedValue(value, previousValue, editorContext) {
@@ -1878,15 +1878,15 @@ const ResponsiveFieldPlugin = {
 };
 const AutoLabel = styled.div.withConfig({
   displayName: "ResponsiveFieldPlugin__AutoLabel",
-  componentId: "sc-1wijm6q-0"
+  componentId: "sc-1wk22qg-0"
 })(["", ";color:", ";text-align:", ";&:hover{color:black;cursor:pointer;text-decoration:underline;}"], Fonts.body, Colors.black40, props => props.align);
 const ResetButton = styled.button.withConfig({
   displayName: "ResponsiveFieldPlugin__ResetButton",
-  componentId: "sc-1wijm6q-1"
+  componentId: "sc-1wk22qg-1"
 })(["display:flex;align-items:center;gap:4px;background-color:transparent;border:0;padding:0;color:", ";cursor:pointer;"], Colors.purple);
 const ResetButtonLabel = styled.span.withConfig({
   displayName: "ResponsiveFieldPlugin__ResetButtonLabel",
-  componentId: "sc-1wijm6q-2"
+  componentId: "sc-1wk22qg-2"
 })(["", ";line-height:16px;"], Fonts.body);
 function getAutoLabelButtonLabel(value) {
   if (value === MIXED_VALUE) {
@@ -2123,7 +2123,7 @@ function PositionPickerInput(_ref) {
 }
 const PositionIndicator = styled.div.withConfig({
   displayName: "PositionPickerInput__PositionIndicator",
-  componentId: "sc-7p92a9-0"
+  componentId: "sc-wu39c-0"
 })(["width:", ";height:4px;background-color:#202123;"], p => p.$size === "full" ? "100%" : "75%");
 
 // {/* <div
@@ -2147,19 +2147,19 @@ const PositionIndicator = styled.div.withConfig({
 // </div> */}
 var _StyledRadixRadioGroupRoot = styled(RadixRadioGroup.Root).withConfig({
   displayName: "PositionPickerInput___StyledRadixRadioGroupRoot",
-  componentId: "sc-7p92a9-1"
+  componentId: "sc-wu39c-1"
 })(["display:grid;grid-template-rows:repeat(3,1fr);grid-template-columns:repeat(3,1fr);gap:0;border-radius:2px;border:1px solid ", ";"], p => p.$_css);
 var _StyledRadixRadioGroupItem = styled(RadixRadioGroup.Item).withConfig({
   displayName: "PositionPickerInput___StyledRadixRadioGroupItem",
-  componentId: "sc-7p92a9-2"
+  componentId: "sc-wu39c-2"
 })(["all:unset;position:relative;display:flex;justify-content:", ";align-items:", ";box-sizing:border-box;width:20px;height:20px;padding:8px;&:hover > div{opacity:", "};}"], p => p.$_css2, p => p.$_css3, p => p.$_css4);
 var _StyledDiv$1 = styled("div").withConfig({
   displayName: "PositionPickerInput___StyledDiv",
-  componentId: "sc-7p92a9-3"
+  componentId: "sc-wu39c-3"
 })(["width:2px;height:2px;background-color:#d9d9d9;"]);
 var _StyledDiv2$1 = styled("div").withConfig({
   displayName: "PositionPickerInput___StyledDiv2",
-  componentId: "sc-7p92a9-4"
+  componentId: "sc-wu39c-4"
 })(["position:absolute;top:2px;left:2px;display:flex;flex-direction:column;justify-content:center;align-items:", ";gap:2px;width:16px;height:16px;opacity:", ";"], p => p.$_css5, p => p.$_css6);
 
 function PositionField(props) {
@@ -2558,23 +2558,23 @@ function generateFieldKey(field, breakpointIndex) {
 }
 const FieldsGroupLabel = styled.div.withConfig({
   displayName: "fields-builder__FieldsGroupLabel",
-  componentId: "sc-b7to50-0"
+  componentId: "sc-yjq3oz-0"
 })(["display:flex;align-items:center;padding:20px 16px 10px 16px;", ";color:#000;"], Fonts.label);
 const FieldsGroup = styled.div.withConfig({
   displayName: "fields-builder__FieldsGroup",
-  componentId: "sc-b7to50-1"
+  componentId: "sc-yjq3oz-1"
 })(["position:relative;display:block;width:100%;padding:0;white-space:nowrap;overflow-x:hidden;overflow-y:auto !important;"]);
 var _StyledDiv = styled("div").withConfig({
   displayName: "fields-builder___StyledDiv",
-  componentId: "sc-b7to50-2"
+  componentId: "sc-yjq3oz-2"
 })(["height:1px;margin-top:-1px;background-color:", ";"], p => p.$_css);
 var _StyledDiv2 = styled("div").withConfig({
   displayName: "fields-builder___StyledDiv2",
-  componentId: "sc-b7to50-3"
+  componentId: "sc-yjq3oz-3"
 })(["margin-bottom:", ";"], p => p.$_css2);
 var _StyledDiv3 = styled("div").withConfig({
   displayName: "fields-builder___StyledDiv3",
-  componentId: "sc-b7to50-4"
+  componentId: "sc-yjq3oz-4"
 })(["margin-bottom:", ";"], p => p.$_css3);
 
 const theme = css([":root{--tina-color-primary-light:#2296fe;--tina-color-primary:#2296fe;--tina-color-primary-dark:#0574e4;--tina-color-error-light:#eb6337;--tina-color-error:#ec4815;--tina-color-error-dark:#dc4419;--tina-color-warning-light:#f5e06e;--tina-color-warning:#e9d050;--tina-color-warning-dark:#d3ba38;--tina-color-success-light:#57c355;--tina-color-success:#3cad3a;--tina-color-success-dark:#249a21;--tina-color-grey-0:#ffffff;--tina-color-grey-1:#f6f6f9;--tina-color-grey-2:#edecf3;--tina-color-grey-3:#e1ddec;--tina-color-grey-4:#b2adbe;--tina-color-grey-5:#918c9e;--tina-color-grey-6:#716c7f;--tina-color-grey-7:#565165;--tina-color-grey-8:#433e52;--tina-color-grey-9:#363145;--tina-color-grey-10:#282828;--tina-radius-small:5px;--tina-radius-big:24px;--tina-padding-small:12px;--tina-padding-big:20px;--tina-font-size-0:12px;--tina-font-size-1:13px;--tina-font-size-2:15px;--tina-font-size-3:16px;--tina-font-size-4:18px;--tina-font-size-5:20px;--tina-font-size-6:22px;--tina-font-size-7:26px;--tina-font-size-8:32px;--tina-font-family:\"Inter\",sans-serif;--tina-font-weight-regular:400;--tina-font-weight-bold:600;--tina-shadow-big:0px 2px 3px rgba(0,0,0,0.05),0 4px 12px rgba(0,0,0,0.1);--tina-shadow-small:0px 2px 3px rgba(0,0,0,0.12);--tina-timing-short:85ms;--tina-timing-medium:150ms;--tina-timing-long:250ms;--tina-z-index-0:500;--tina-z-index-1:1000;--tina-z-index-2:1500;--tina-z-index-3:2000;--tina-z-index-4:2500;--tina-z-index-5:3000;--tina-sidebar-width:340px;--tina-sidebar-header-height:60px;--tina-toolbar-height:62px;}"]);
@@ -2582,18 +2582,18 @@ const GlobalStyles = createGlobalStyle(["", ";"], theme);
 const tina_reset_styles = css(["*{font-family:\"Inter\",sans-serif;&::-webkit-scrollbar{width:8px;}::-webkit-scrollbar-track{background:transparent;border-left:1px solid var(--tina-color-grey-2);}&::-webkit-scrollbar-thumb{background-color:var(--tina-color-grey-3);border-radius:0;border:none;}}*,*:before,*:after{box-sizing:border-box;}hr{border-color:var(--tina-color-grey-2);color:var(--tina-color-grey-2);margin-bottom:var(--tina-padding-big);margin-left:calc(var(--tina-padding-big) * -1);margin-right:calc(var(--tina-padding-big) * -1);border-top:1px solid var(--tina-color-grey-2);border-bottom:none;height:0;box-sizing:content-box;}h1,h2,h3,h4,h5,h6,p{:not([class]){font-family:\"Inter\",sans-serif;&:first-child{margin-top:0;}&:last-child{margin-bottom:0;}}}td,th{padding:0;width:auto;height:auto;border:inherit;margin:0;}h1,h2,h3,h4,h5,h6{:not([class]){font-weight:var(--tina-font-weight-bold);}}h1:not([class]){font-size:var(--tina-font-size-8);}h2:not([class]){font-size:var(--tina-font-size-7);}h3:not([class]){font-size:var(--tina-font-size-5);}h4:not([class]){font-size:var(--tina-font-size-4);}h5:not([class]){font-size:var(--tina-font-size-3);}h6:not([class]){font-size:var(--tina-font-size-2);}"]);
 const StyleReset = styled.div.withConfig({
   displayName: "Styles__StyleReset",
-  componentId: "sc-14jfffy-0"
+  componentId: "sc-10vjkee-0"
 })(["", ""], tina_reset_styles);
 
 const Button = styled.button.withConfig({
   displayName: "Button",
-  componentId: "sc-1qws1y3-0"
+  componentId: "sc-1uxq851-0"
 })(["text-align:center;border:0;border-radius:var(--tina-radius-big);box-shadow:var(--tina-shadow-small);background-color:var(--tina-color-grey-0);border:1px solid var(--tina-color-grey-2);color:var(--tina-color-primary);fill:var(--tina-color-primary);font-weight:var(--tina-font-weight-regular);cursor:pointer;font-size:var(--tina-font-size-1);height:40px;padding:0 var(--tina-padding-big);transition:all 85ms ease-out;&:hover{background-color:var(--tina-color-grey-1);}&:active{background-color:var(--tina-color-grey-2);outline:none;}", ";", ";", ";", ";", ";", ";"], p => p.disabled && css(["opacity:0.3;pointer:not-allowed;pointer-events:none;"]), p => p.primary && css(["background-color:var(--tina-color-primary);color:var(--tina-color-grey-0);fill:var(--tina-color-grey-0);border:none;&:hover{background-color:var(--tina-color-primary-light);}&:active{background-color:var(--tina-color-primary-dark);}"]), p => p.small && css(["height:32px;font-size:var(--tina-font-size-0);padding:0 var(--tina-padding-big);"]), p => p.margin && css(["&:not(:first-child){margin-left:8px;}"]), p => p.grow && css(["flex-grow:1;"]), p => p.busy && css(["cursor:wait;"]));
 const ICON_BUTTON_SIZE = 23;
 const ICON_SIZE = 23;
 const IconButton = styled(Button).withConfig({
   displayName: "Button__IconButton",
-  componentId: "sc-1qws1y3-1"
+  componentId: "sc-1uxq851-1"
 })(["padding:0;width:", "px;height:", "px;margin:0;position:relative;transform-origin:50% 50%;transition:all 150ms ease-out;padding:0;display:flex;flex-shrink:0;justify-content:center;align-items:center;svg{width:", "px;height:", "px;transition:all 150ms ease-out;}", ";"], ICON_BUTTON_SIZE, ICON_BUTTON_SIZE, ICON_SIZE, ICON_SIZE, props => props.open && css(["background-color:var(--tina-color-grey-0);border-color:var(--tina-color-grey-2);outline:none;fill:var(--tina-color-primary);svg{transform:rotate(45deg);}&:hover{background-color:var(--tina-color-grey-1);}&:active{background-color:var(--tina-color-grey-2);}"]));
 
 function InlineSettings(_ref) {
@@ -2634,16 +2634,16 @@ function SettingsContent(_ref2) {
 }
 const FormBody = styled.div.withConfig({
   displayName: "inline-settings__FormBody",
-  componentId: "sc-udgpx4-0"
+  componentId: "sc-2rpau4-0"
 })(["position:relative;flex:1 1 auto;display:flex;flex-direction:column;width:100%;height:100%;border-top:1px solid var(--tina-color-grey-2);background-color:white;"]);
 const Wrapper$1 = styled.div.withConfig({
   displayName: "inline-settings__Wrapper",
-  componentId: "sc-udgpx4-1"
+  componentId: "sc-2rpau4-1"
 })(["display:block;margin:0 auto;width:100%;height:100%;overflow-y:auto;"]);
 
 const Error$1 = styled.div.withConfig({
   displayName: "EditorSidebar__Error",
-  componentId: "sc-q0o9d2-0"
+  componentId: "sc-19oqwws-0"
 })(["", " padding:7px 6px 7px;color:hsl(0deg 0% 50% / 0.8);white-space:normal;background:hsl(0deg 100% 50% / 0.2);margin-right:10px;border-radius:2px;margin:16px;"], Fonts.body);
 const EditorSidebar = props => {
   const {
@@ -2699,23 +2699,23 @@ function useOnClickNTimes(ref, count, event) {
 const TOP_BAR_HEIGHT = 40;
 const TopBar = styled.div.withConfig({
   displayName: "EditorTopBar__TopBar",
-  componentId: "sc-15m4zax-0"
+  componentId: "sc-1shogwk-0"
 })(["position:relative;box-sizing:border-box;background-color:white;border-bottom:1px solid #eaeaea;padding:0 64px;min-height:", "px;display:flex;flex-direction:row;justify-content:center;align-items:center;"], TOP_BAR_HEIGHT);
 const Label = styled.div.withConfig({
   displayName: "EditorTopBar__Label",
-  componentId: "sc-15m4zax-1"
+  componentId: "sc-1shogwk-1"
 })(["background:", ";height:24px;", " display:flex;justify-content:center;align-items:center;padding-left:12px;padding-right:12px;border-radius:12px;color:white;"], Colors.purple, Fonts.label);
 const TopBarLeft = styled.div.withConfig({
   displayName: "EditorTopBar__TopBarLeft",
-  componentId: "sc-15m4zax-2"
+  componentId: "sc-1shogwk-2"
 })(["position:absolute;top:0;left:4px;height:100%;display:flex;flex-direction:row;align-items:center;gap:4px;"]);
 const TopBarRight = styled.div.withConfig({
   displayName: "EditorTopBar__TopBarRight",
-  componentId: "sc-15m4zax-3"
+  componentId: "sc-1shogwk-3"
 })(["position:absolute;top:0;right:8px;height:100%;display:flex;flex-direction:row;align-items:center;gap:16px;"]);
 const TopBarCenter = styled.div.withConfig({
   displayName: "EditorTopBar__TopBarCenter",
-  componentId: "sc-15m4zax-4"
+  componentId: "sc-1shogwk-4"
 })(["position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);"]);
 const EditorTopBar = _ref => {
   let {
@@ -3770,11 +3770,11 @@ function AddButton(_ref) {
 }
 const AddIconButton = styled(IconButton).withConfig({
   displayName: "AddButton__AddIconButton",
-  componentId: "sc-oh9wj9-0"
+  componentId: "sc-wx2b2l-0"
 })(["display:flex;align-items:center;&:focus{outline:none !important;}", ";"], props => props.isOpen && css(["pointer-events:none;"]));
 const AddButtonWrapper = styled.div.withConfig({
   displayName: "AddButton__AddButtonWrapper",
-  componentId: "sc-oh9wj9-1"
+  componentId: "sc-wx2b2l-1"
 })(["position:absolute;top:var( ", " );left:var( ", " );display:var( ", ",none );pointer-events:all;"], _ref2 => {
   let {
     position
@@ -3794,7 +3794,7 @@ const AddButtonWrapper = styled.div.withConfig({
 
 const Wrapper = styled.div.withConfig({
   displayName: "SelectionFramestyles__Wrapper",
-  componentId: "sc-749my-0"
+  componentId: "sc-cbcuqy-0"
 })(["position:absolute;top:0;left:0;bottom:0;right:0;display:grid;place-items:center;pointer-events:none;"]);
 const FrameWrapper = styled.div.attrs(_ref => {
   let {
@@ -3811,7 +3811,7 @@ const FrameWrapper = styled.div.attrs(_ref => {
   };
 }).withConfig({
   displayName: "SelectionFramestyles__FrameWrapper",
-  componentId: "sc-749my-1"
+  componentId: "sc-cbcuqy-1"
 })(["position:relative;z-index:1;display:grid;place-items:center;transform-origin:left;"]);
 
 function calculateAddButtonsProperties(direction, targetElementRect, viewport, containerElementRect) {
@@ -4961,31 +4961,31 @@ function checkLocalesCorrectness(locales) {
 
 const ContentContainer = styled.div.withConfig({
   displayName: "Editor__ContentContainer",
-  componentId: "sc-9tpyyl-0"
+  componentId: "sc-1160gud-0"
 })(["position:relative;flex:1 1 auto;display:flex;flex-direction:column;"]);
 const SidebarAndContentContainer = styled.div.withConfig({
   displayName: "Editor__SidebarAndContentContainer",
-  componentId: "sc-9tpyyl-1"
+  componentId: "sc-1160gud-1"
 })(["height:", ";width:100%;background:#fafafa;display:flex;flex-direction:row;align-items:stretch;"], props => `calc(${props.height} - ${TOP_BAR_HEIGHT}px)`);
 const SidebarContainer = styled.div.withConfig({
   displayName: "Editor__SidebarContainer",
-  componentId: "sc-9tpyyl-2"
+  componentId: "sc-1160gud-2"
 })(["flex:0 0 240px;background:", ";border-left:1px solid ", ";box-sizing:border-box;> *{box-sizing:border-box;}overflow-y:auto;"], Colors.white, Colors.black100);
 const DataSaverRoot = styled.div.withConfig({
   displayName: "Editor__DataSaverRoot",
-  componentId: "sc-9tpyyl-3"
+  componentId: "sc-1160gud-3"
 })(["position:fixed;width:100%;height:100%;z-index:100000;display:flex;justify-content:center;align-items:center;"]);
 const DataSaverOverlay = styled.div.withConfig({
   displayName: "Editor__DataSaverOverlay",
-  componentId: "sc-9tpyyl-4"
+  componentId: "sc-1160gud-4"
 })(["z-index:-1;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.25);"]);
 const DataSaverModal = styled.div.withConfig({
   displayName: "Editor__DataSaverModal",
-  componentId: "sc-9tpyyl-5"
+  componentId: "sc-1160gud-5"
 })(["background:white;padding:32px;border-radius:8px;display:flex;justify-content:center;align-items:center;", " font-size:16px;"], Fonts.body);
 const AuthenticationScreen = styled.div.withConfig({
   displayName: "Editor__AuthenticationScreen",
-  componentId: "sc-9tpyyl-6"
+  componentId: "sc-1160gud-6"
 })(["width:100vw;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:24px;text-align:center;", ""], Fonts.bodyLarge);
 const Editor = EditorBackendInitializer;
 function EditorBackendInitializer(props) {
@@ -5966,7 +5966,7 @@ var _StyledTypography = styled(Typography)`
         `;
 var _StyledTypography2 = styled(Typography).withConfig({
   displayName: "DocumentDataWidget___StyledTypography2",
-  componentId: "sc-w0sqpg-0"
+  componentId: "sc-a9m8b9-0"
 })(["white-space:normal;"]);
 
 /**
@@ -5975,43 +5975,43 @@ var _StyledTypography2 = styled(Typography).withConfig({
 
 const CardRoot = styled.div.withConfig({
   displayName: "SectionPicker__CardRoot",
-  componentId: "sc-f2zukc-0"
+  componentId: "sc-1qxd0kc-0"
 })(["&:hover{outline:1px solid ", ";outline-offset:8px;}.editButton{opacity:0;}&:hover{.editButton{opacity:1;}}"], Colors.black10);
 const ImageContainer = styled.div.withConfig({
   displayName: "SectionPicker__ImageContainer",
-  componentId: "sc-f2zukc-1"
+  componentId: "sc-1qxd0kc-1"
 })(["position:relative;background-color:", ";margin-bottom:8px;padding-bottom:", ";cursor:pointer;"], Colors.black10, p => p.mode === "large-3" ? "90%" : "60%");
 const CardImg = styled.img.withConfig({
   displayName: "SectionPicker__CardImg",
-  componentId: "sc-f2zukc-2"
+  componentId: "sc-1qxd0kc-2"
 })(["position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;padding:24px;box-sizing:border-box;"]);
 const CardImgPlaceholder = styled.div.withConfig({
   displayName: "SectionPicker__CardImgPlaceholder",
-  componentId: "sc-f2zukc-3"
+  componentId: "sc-1qxd0kc-3"
 })(["position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;"]);
 const CardFooter = styled.div.withConfig({
   displayName: "SectionPicker__CardFooter",
-  componentId: "sc-f2zukc-4"
+  componentId: "sc-1qxd0kc-4"
 })(["display:flex;flex-direction:row;justify-content:space-between;align-items:center;margin-top:8px;"]);
 const CardLabelContainer = styled.div.withConfig({
   displayName: "SectionPicker__CardLabelContainer",
-  componentId: "sc-f2zukc-5"
+  componentId: "sc-1qxd0kc-5"
 })(["display:flex;flex-direction:row;align-items:center;"]);
 const CardLabelTemplateName = styled.div.withConfig({
   displayName: "SectionPicker__CardLabelTemplateName",
-  componentId: "sc-f2zukc-6"
+  componentId: "sc-1qxd0kc-6"
 })(["", ";color:black;"], Fonts.body);
 const Title = styled.div.withConfig({
   displayName: "SectionPicker__Title",
-  componentId: "sc-f2zukc-7"
+  componentId: "sc-1qxd0kc-7"
 })(["", ""], Fonts.label);
 const TitleContainer = styled.div.withConfig({
   displayName: "SectionPicker__TitleContainer",
-  componentId: "sc-f2zukc-8"
+  componentId: "sc-1qxd0kc-8"
 })(["display:flex;flex-direction:row;gap:8px;align-items:center;margin-bottom:24px;"]);
 const Message = styled.div.withConfig({
   displayName: "SectionPicker__Message",
-  componentId: "sc-f2zukc-9"
+  componentId: "sc-1qxd0kc-9"
 })(["padding-top:32px;", ";"], Fonts.body);
 function getTemplatePreviewImage(template, editorContext) {
   // template.previewImage is always most important and overrides other sources of preview
@@ -6085,27 +6085,27 @@ const SectionCard = _ref => {
 
 const ModalRoot = styled.div.withConfig({
   displayName: "SectionPicker__ModalRoot",
-  componentId: "sc-f2zukc-10"
+  componentId: "sc-1qxd0kc-10"
 })(["position:absolute;top:0;left:0;width:100%;height:100%;display:grid;grid-template-columns:200px 1fr;"]);
 const ModalGridRoot = styled.div.withConfig({
   displayName: "SectionPicker__ModalGridRoot",
-  componentId: "sc-f2zukc-11"
+  componentId: "sc-1qxd0kc-11"
 })(["display:grid;grid-template-columns:", ";grid-column-gap:16px;grid-row-gap:30px;"], p => p.mode === "large-3" ? "1fr 1fr 1fr" : "1fr 1fr");
 const Sidebar = styled.div.withConfig({
   displayName: "SectionPicker__Sidebar",
-  componentId: "sc-f2zukc-12"
+  componentId: "sc-1qxd0kc-12"
 })(["overflow-y:hidden;overflow-x:hidden;border-right:1px solid ", ";height:100%;"], Colors.black5);
 const SidebarContent = styled.div.withConfig({
   displayName: "SectionPicker__SidebarContent",
-  componentId: "sc-f2zukc-13"
+  componentId: "sc-1qxd0kc-13"
 })(["padding:24px 4px;display:flex;flex-direction:column;gap:8px;"]);
 const SidebarButton = styled.button.withConfig({
   displayName: "SectionPicker__SidebarButton",
-  componentId: "sc-f2zukc-14"
+  componentId: "sc-1qxd0kc-14"
 })(["all:unset;height:38px;", " display:flex;padding-left:16px;align-items:center;&:hover{background:", ";}cursor:pointer;"], Fonts.body, Colors.black5);
 const GridRoot = styled.div.withConfig({
   displayName: "SectionPicker__GridRoot",
-  componentId: "sc-f2zukc-15"
+  componentId: "sc-1qxd0kc-15"
 })(["padding:0px 16px;height:100%;overflow-x:hidden;overflow-y:auto;"]);
 const SectionPickerModal = _ref2 => {
   let {

@@ -37,7 +37,7 @@ const Typography = _ref => {
 //    By using the `div` as the default, you don't have to worry about it.
 const TypographyRoot = styled.div.withConfig({
   displayName: "Typography__TypographyRoot",
-  componentId: "sc-8y6upa-0"
+  componentId: "sc-yrvxxm-0"
 })(["color:", ";", " text-align:", ";", ""], _ref2 => {
   let {
     $color

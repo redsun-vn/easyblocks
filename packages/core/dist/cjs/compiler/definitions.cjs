@@ -14,7 +14,7 @@ var isTrulyResponsiveValue = require('../responsiveness/isTrulyResponsiveValue.c
 var responsiveValueAt = require('../responsiveness/responsiveValueAt.cjs');
 var responsiveValueMap = require('../responsiveness/responsiveValueMap.cjs');
 var responsiveValueFill = require('../responsiveness/responsiveValueFill.cjs');
-var uniqueId = require('../utils/src/uniqueId.cjs');
+var uniqueId = require('../packages/utils/src/uniqueId.cjs');
 
 const textProvider = (schemaProp, compilationContext) => {
   const checkIfValid = x => {

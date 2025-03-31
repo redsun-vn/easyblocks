@@ -3,23 +3,20 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
+var index = require('../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
 var findComponentDefinition = require('../../compiler/findComponentDefinition.cjs');
-var index = require('../../compiler/schema/index.cjs');
+var index$2 = require('../../compiler/schema/index.cjs');
 var events = require('../../events.cjs');
 var resourcesUtils = require('../../resourcesUtils.cjs');
 var resop = require('../../responsiveness/resop.cjs');
 var Box = require('../Box/Box.cjs');
 var EasyblocksExternalDataProvider = require('../EasyblocksExternalDataProvider.cjs');
 var EasyblocksMetadataProvider = require('../EasyblocksMetadataProvider.cjs');
+var index$1 = require('../../_virtual/index.cjs');
 var responsiveValueValues = require('../../responsiveness/responsiveValueValues.cjs');
 var responsiveValueReduce = require('../../responsiveness/responsiveValueReduce.cjs');
 var isTrulyResponsiveValue = require('../../responsiveness/isTrulyResponsiveValue.cjs');
 var responsiveValueGetDefinedValue = require('../../responsiveness/responsiveValueGetDefinedValue.cjs');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 function buildBoxes(compiled, name, actionWrappers, meta) {
   if (Array.isArray(compiled)) {
@@ -32,7 +29,7 @@ function buildBoxes(compiled, name, actionWrappers, meta) {
         devices: meta.vars.devices,
         stitches: meta.stitches
       };
-      return /*#__PURE__*/React__default["default"].createElement(Box.Box, boxProps);
+      return /*#__PURE__*/index.createElement(Box.Box, boxProps);
     }
     const ret = {};
     for (const key in compiled) {
@@ -106,23 +103,23 @@ function getCompiledSubcomponents(id, compiledArray, contextProps, schemaProp, p
     path = path + "." + meta.vars.locale;
   }
   if (schemaProp.noInline) {
-    const elements = compiledArray.map((compiledChild, index) => "_component" in compiledChild ? /*#__PURE__*/React__default["default"].createElement(ComponentBuilder, {
-      path: `${path}.${index}`,
+    const elements = compiledArray.map((compiledChild, index$1) => "_component" in compiledChild ? /*#__PURE__*/index.createElement(ComponentBuilder, {
+      path: `${path}.${index$1}`,
       compiled: compiledChild,
       components: components
     }) : compiledChild);
-    if (index.isSchemaPropComponent(schemaProp)) {
+    if (index$2.isSchemaPropComponent(schemaProp)) {
       return elements[0];
     } else {
       return elements;
     }
   }
   const EditableComponentBuilder = isEditing ? components["EditableComponentBuilder.editor"] : components["EditableComponentBuilder.client"];
-  let elements = compiledArray.map((compiledChild, index) => "_component" in compiledChild ? /*#__PURE__*/React__default["default"].createElement(EditableComponentBuilder, {
+  let elements = compiledArray.map((compiledChild, index$1) => "_component" in compiledChild ? /*#__PURE__*/index.createElement(EditableComponentBuilder, {
     compiled: compiledChild,
-    index: index,
+    index: index$1,
     length: compiledArray.length,
-    path: `${path}.${index}`,
+    path: `${path}.${index$1}`,
     components: components
   }) : compiledChild);
   const Placeholder = components["Placeholder"];
@@ -132,7 +129,7 @@ function getCompiledSubcomponents(id, compiledArray, contextProps, schemaProp, p
   // We don't want to show add button for this type
   schemaProp.type !== "component-collection-localised") {
     const type = getComponentMainType(schemaProp.accepts);
-    elements = [/*#__PURE__*/React__default["default"].createElement(Placeholder, {
+    elements = [/*#__PURE__*/index.createElement(Placeholder, {
       id: id,
       path: path,
       type: type,
@@ -156,8 +153,8 @@ function getCompiledSubcomponents(id, compiledArray, contextProps, schemaProp, p
       meta: meta
     })];
   }
-  if (index.isSchemaPropComponent(schemaProp)) {
-    return elements[0] ?? /*#__PURE__*/React__default["default"].createElement(React.Fragment, null);
+  if (index$2.isSchemaPropComponent(schemaProp)) {
+    return elements[0] ?? /*#__PURE__*/index.createElement(index$1.react.exports.Fragment, null);
   } else {
     return elements;
   }
@@ -199,12 +196,12 @@ function ComponentBuilder(props) {
       return null;
     }
     if (isMissingComponent) {
-      return /*#__PURE__*/React__default["default"].createElement(MissingComponent, {
+      return /*#__PURE__*/index.createElement(MissingComponent, {
         error: true
       }, "Missing");
     } else {
       console.warn(`Missing "${compiled._component}"`);
-      return /*#__PURE__*/React__default["default"].createElement(MissingComponent, {
+      return /*#__PURE__*/index.createElement(MissingComponent, {
         component: componentDefinition,
         error: true
       }, "Missing");
@@ -214,9 +211,9 @@ function ComponentBuilder(props) {
   const renderabilityStatus = getRenderabilityStatus(compiled, meta, externalData);
   if (!renderabilityStatus.renderable) {
     const fieldsRequiredToRender = Array.from(renderabilityStatus.fieldsRequiredToRender);
-    return /*#__PURE__*/React__default["default"].createElement(MissingComponent, {
+    return /*#__PURE__*/index.createElement(MissingComponent, {
       component: componentDefinition
-    }, `Fill following fields to render the component: ${fieldsRequiredToRender.join(", ")}`, renderabilityStatus.isLoading && /*#__PURE__*/React__default["default"].createElement(React.Fragment, null, /*#__PURE__*/React__default["default"].createElement("br", null), /*#__PURE__*/React__default["default"].createElement("br", null), "Loading data..."));
+    }, `Fill following fields to render the component: ${fieldsRequiredToRender.join(", ")}`, renderabilityStatus.isLoading && /*#__PURE__*/index.createElement(index$1.react.exports.Fragment, null, /*#__PURE__*/index.createElement("br", null), /*#__PURE__*/index.createElement("br", null), "Loading data..."));
   }
   const shopstoryCompiledConfig = compiled;
 
@@ -225,7 +222,7 @@ function ComponentBuilder(props) {
 
   // Styled
   componentDefinition.schema.forEach(schemaProp => {
-    if (index.isSchemaPropComponentOrComponentCollection(schemaProp)) {
+    if (index$2.isSchemaPropComponentOrComponentCollection(schemaProp)) {
       const contextProps = shopstoryCompiledConfig.__editing?.components?.[schemaProp.prop] || {};
       const compiledChildren = shopstoryCompiledConfig.components[schemaProp.prop];
       styled[schemaProp.prop] = getCompiledSubcomponents(compiled._id, compiledChildren, contextProps, schemaProp, `${path}${pathSeparator}${schemaProp.prop}`, meta, isEditing, components);
@@ -256,7 +253,7 @@ function ComponentBuilder(props) {
     ...styled,
     __easyblocks: easyblocksProp
   };
-  return /*#__PURE__*/React__default["default"].createElement(Component, componentProps);
+  return /*#__PURE__*/index.createElement(Component, componentProps);
 }
 function getComponent(componentDefinition, components, isEditing) {
   let component;

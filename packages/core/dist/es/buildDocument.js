@@ -1,6 +1,6 @@
 /* with love from shopstory */
 import { buildEntry } from './buildEntry.js';
-import { serialize } from './utils/src/serialize.js';
+import { serialize } from './packages/utils/src/serialize.js';
 
 async function buildDocument(_ref) {
   let {

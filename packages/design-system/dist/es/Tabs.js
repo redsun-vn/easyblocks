@@ -41,7 +41,7 @@ var _StyledList = styled(List)`
         `;
 var _StyledTypography = styled(Typography).withConfig({
   displayName: "Tabs___StyledTypography",
-  componentId: "sc-p4rakk-0"
+  componentId: "sc-1nxdand-0"
 })(["padding:0;margin:0;border:0;background:transparent;@media (hover:hover){cursor:pointer;}&[data-state=\"active\"]{font-weight:bold;}&[data-state=\"inactive\"]{color:", ";}"], p => p.$_css);
 
 export { Tab, TabList, TabPanel, Tabs };

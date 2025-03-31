@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import { toArray } from '../utils/src/array/toArray.js';
+import { toArray } from '../packages/utils/src/array/toArray.js';
 
 function allDefs(context) {
   return context?.definitions.components || [];

@@ -1,7 +1,7 @@
 {
-  "name": "@easyblocks/core",
+  "name": "@redsun-vn/easyblocks-core",
   "type": "module",
-  "version": "1.0.10",
+  "version": "1.0.0",
   "description": "No-code ecommerce builder for headless CMS",
   "scripts": {
     "dev": "cross-env NODE_ENV=development concurrently -n bundle,emit-declarations 'rollup -c rollup.config.js --watch' 'tsc --watch --preserveWatchOutput'",
@@ -39,10 +39,6 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "jest": "^26.6.3"
-  },
-  "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
   },
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/es/index.js",

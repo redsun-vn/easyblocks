@@ -1,10 +1,11 @@
 'use client';
 /* with love from shopstory */
 import { createStitches } from '@stitches/core';
-import React, { useContext, createContext } from 'react';
+import React from '../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
 import { easyblocksStitchesInstances } from './ssr.js';
+import { r as react } from '../_virtual/index.js';
 
-const EasyblocksMetadataContext = /*#__PURE__*/createContext(undefined);
+const EasyblocksMetadataContext = /*#__PURE__*/react.exports.createContext(undefined);
 const EasyblocksMetadataProvider = _ref => {
   let {
     meta,
@@ -22,7 +23,7 @@ const EasyblocksMetadataProvider = _ref => {
   }, children);
 };
 function useEasyblocksMetadata() {
-  const context = useContext(EasyblocksMetadataContext);
+  const context = react.exports.useContext(EasyblocksMetadataContext);
   if (!context) {
     throw new Error("useEasyblocksMetadata must be used within a EasyblocksMetadataProvider");
   }

@@ -2,8 +2,8 @@
 import { duplicateConfig } from '../../../duplicateConfig.js';
 import { parseFocusedRichTextPartConfigPath } from './parseRichTextPartConfigPath.js';
 import { stripRichTextPartSelection } from './stripRichTextTextPartSelection.js';
-import { dotNotationGet } from '../../../../utils/src/object/dotNotationGet.js';
-import { dotNotationSet } from '../../../../utils/src/object/dotNotationSet.js';
+import { dotNotationGet } from '../../../../packages/utils/src/object/dotNotationGet.js';
+import { dotNotationSet } from '../../../../packages/utils/src/object/dotNotationSet.js';
 
 function getRichTextComponentConfigFragment(sourceRichTextComponentConfig, editorContext) {
   const {

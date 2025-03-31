@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import React, { Fragment } from 'react';
+import React from '../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
 import { findComponentDefinitionById } from '../../compiler/findComponentDefinition.js';
 import { isSchemaPropComponentOrComponentCollection, isSchemaPropComponent } from '../../compiler/schema/index.js';
 import { componentPickerOpened, itemInserted } from '../../events.js';
@@ -8,6 +8,7 @@ import { resop } from '../../responsiveness/resop.js';
 import { Box } from '../Box/Box.js';
 import { useEasyblocksExternalData } from '../EasyblocksExternalDataProvider.js';
 import { useEasyblocksMetadata } from '../EasyblocksMetadataProvider.js';
+import { r as react } from '../../_virtual/index.js';
 import { responsiveValueValues } from '../../responsiveness/responsiveValueValues.js';
 import { responsiveValueReduce } from '../../responsiveness/responsiveValueReduce.js';
 import { isTrulyResponsiveValue } from '../../responsiveness/isTrulyResponsiveValue.js';
@@ -149,7 +150,7 @@ function getCompiledSubcomponents(id, compiledArray, contextProps, schemaProp, p
     })];
   }
   if (isSchemaPropComponent(schemaProp)) {
-    return elements[0] ?? /*#__PURE__*/React.createElement(Fragment, null);
+    return elements[0] ?? /*#__PURE__*/React.createElement(react.exports.Fragment, null);
   } else {
     return elements;
   }
@@ -208,7 +209,7 @@ function ComponentBuilder(props) {
     const fieldsRequiredToRender = Array.from(renderabilityStatus.fieldsRequiredToRender);
     return /*#__PURE__*/React.createElement(MissingComponent, {
       component: componentDefinition
-    }, `Fill following fields to render the component: ${fieldsRequiredToRender.join(", ")}`, renderabilityStatus.isLoading && /*#__PURE__*/React.createElement(Fragment, null, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Loading data..."));
+    }, `Fill following fields to render the component: ${fieldsRequiredToRender.join(", ")}`, renderabilityStatus.isLoading && /*#__PURE__*/React.createElement(react.exports.Fragment, null, /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("br", null), "Loading data..."));
   }
   const shopstoryCompiledConfig = compiled;
 

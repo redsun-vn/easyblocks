@@ -1,10 +1,12 @@
 /* with love from shopstory */
 import _extends from '@babel/runtime/helpers/extends';
-import React, { useState, useRef } from 'react';
-import { flushSync } from 'react-dom';
+import React from '../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
+import '../../../node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js';
 import TextareaAutosize from 'react-textarea-autosize';
 import { useTextValue } from '../useTextValue.js';
-import { dotNotationGet } from '../../../utils/src/object/dotNotationGet.js';
+import { r as react } from '../../../_virtual/index.js';
+import { dotNotationGet } from '../../../packages/utils/src/object/dotNotationGet.js';
+import { r as reactDom } from '../../../_virtual/index2.js';
 
 function InlineTextarea(_ref) {
   let {
@@ -12,8 +14,8 @@ function InlineTextarea(_ref) {
     placeholder,
     stitches
   } = _ref;
-  const [isEnabled, setIsEnabled] = useState(false);
-  const textAreaRef = useRef(null);
+  const [isEnabled, setIsEnabled] = react.exports.useState(false);
+  const textAreaRef = react.exports.useRef(null);
   const {
     form,
     contextParams: {
@@ -58,7 +60,7 @@ function InlineTextarea(_ref) {
     onMouseDown: event => {
       if (event.detail === 2) {
         event.preventDefault();
-        flushSync(() => {
+        reactDom.exports.flushSync(() => {
           setIsEnabled(true);
         });
         textAreaRef.current?.select();

@@ -32,7 +32,7 @@ var _StyledRadixToggleGroupRoot = styled(RadixToggleGroup.Root)`
       `;
 var _StyledRadixToggleGroupItem = styled(RadixToggleGroup.Item).withConfig({
   displayName: "ToggleGroup___StyledRadixToggleGroupItem",
-  componentId: "sc-1tf1h8d-0"
+  componentId: "sc-1ceudxu-0"
 })(["all:unset;box-sizing:border-box;height:28px;width:28px;display:flex;align-items:center;justify-content:center;background-color:transparent;&[aria-checked=\"true\"]{background-color:", ";}border-radius:2px;@media (hover:hover){cursor:pointer;&:hover{box-shadow:0 0 0 1px ", ";}}& svg{flex-shrink:0;}"], p => p.$_css, p => p.$_css2);
 
 export { ToggleGroup, ToggleGroupItem };

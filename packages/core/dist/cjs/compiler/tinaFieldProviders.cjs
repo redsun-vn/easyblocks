@@ -3,7 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var assert = require('../utils/src/assert.cjs');
+var assert = require('../packages/utils/src/assert.cjs');
 
 function getCommonFieldProps(schemaProp) {
   const label = schemaProp.label || schemaProp.prop;

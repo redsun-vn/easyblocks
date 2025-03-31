@@ -1,8 +1,8 @@
 /* with love from shopstory */
 import debounce from 'lodash/debounce';
-import React from 'react';
+import React from '../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
 import { getFallbackForLocale } from '../../locales.js';
-import { cleanString } from '../../utils/src/cleanString.js';
+import { cleanString } from '../../packages/utils/src/cleanString.js';
 
 function useTextValue(value, onChange, locale, locales, defaultPlaceholder, normalize) {
   const isExternal = typeof value === "object" && value !== null;

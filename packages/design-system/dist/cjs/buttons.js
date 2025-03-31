@@ -23,7 +23,7 @@ const sharedCSS = p => styled.css(["", ";border:none;outline:none;height:", ";",
   `);
 const PrimaryButton = styled__default["default"].button.withConfig({
   displayName: "buttons__PrimaryButton",
-  componentId: "sc-1lu2w91-0"
+  componentId: "sc-1b20me-0"
 })(["", " background-color:", ";color:white;min-width:60px;", ""], p => sharedCSS(p), colors.Colors.blue50, p => p.disabled ? `
     opacity 0.7;
   ` : `
@@ -42,7 +42,7 @@ const PrimaryButton = styled__default["default"].button.withConfig({
   `);
 const DangerButton = styled__default["default"].button.withConfig({
   displayName: "buttons__DangerButton",
-  componentId: "sc-1lu2w91-1"
+  componentId: "sc-1b20me-1"
 })(["", " background-color:", ";color:white;min-width:60px;", ""], p => sharedCSS(p), colors.Colors.red, p => p.disabled ? `
     opacity 0.7;
   ` : `
@@ -61,7 +61,7 @@ const DangerButton = styled__default["default"].button.withConfig({
   `);
 const SecondaryButton = styled__default["default"].button.withConfig({
   displayName: "buttons__SecondaryButton",
-  componentId: "sc-1lu2w91-2"
+  componentId: "sc-1b20me-2"
 })(["", " background-color:", ";color:black;min-width:60px;", ""], p => sharedCSS(p), colors.Colors.black5, p => p.disabled ? `
     opacity 0.7;
   ` : `
@@ -80,15 +80,15 @@ const SecondaryButton = styled__default["default"].button.withConfig({
   `);
 const GhostButton = styled__default["default"].button.withConfig({
   displayName: "buttons__GhostButton",
-  componentId: "sc-1lu2w91-3"
+  componentId: "sc-1b20me-3"
 })(["", " background-color:transparent;color:black;border:1px solid transparent;border-radius:2px;&:hover{border-color:#e5e5e5;}&:focus-visible{box-shadow:0 0 0 2px ", ";}&:active{background-color:", ";}"], p => sharedCSS(p), colors.Colors.blue50, colors.Colors.black20);
 const GhostColorButton = styled__default["default"].button.withConfig({
   displayName: "buttons__GhostColorButton",
-  componentId: "sc-1lu2w91-4"
+  componentId: "sc-1b20me-4"
 })(["", " background-color:transparent;color:", ";&:hover{background-color:", ";}&:focus-visible{box-shadow:0 0 0 2px ", ";}&:active{background-color:", ";}"], p => sharedCSS(p), colors.Colors.blue50, colors.Colors.blue10, colors.Colors.blue50, colors.Colors.black20);
 const EnhancerContainer = styled__default["default"].div.withConfig({
   displayName: "buttons__EnhancerContainer",
-  componentId: "sc-1lu2w91-5"
+  componentId: "sc-1b20me-5"
 })(["position:relative;width:", ";height:", ";overflow:hidden;flex-shrink:0;"], p => p.variant === "large" ? "24px" : "16px", p => p.variant === "large" ? "24px" : "16px");
 const Button = /*#__PURE__*/React.forwardRef((_ref, ref) => {
   let {
@@ -136,7 +136,7 @@ const ButtonGhostColor = props => /*#__PURE__*/React__default["default"].createE
 }));
 const IconButtonPrimaryStyled = styled__default["default"](Button).withConfig({
   displayName: "buttons__IconButtonPrimaryStyled",
-  componentId: "sc-1lu2w91-6"
+  componentId: "sc-1b20me-6"
 })(["min-width:0;border-radius:50%;"]);
 const IconButtonPrimary = props => /*#__PURE__*/React__default["default"].createElement(IconButtonPrimaryStyled, _extends__default["default"]({}, props, {
   Button: PrimaryButton,

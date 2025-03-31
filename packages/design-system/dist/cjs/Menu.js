@@ -65,7 +65,7 @@ var _StyledItem = styled__default["default"](reactDropdownMenu.Item)`
       `;
 var _StyledSeparator = styled__default["default"](reactDropdownMenu.Separator).withConfig({
   displayName: "Menu___StyledSeparator",
-  componentId: "sc-y402kg-0"
+  componentId: "sc-15igjrv-0"
 })(["height:1px;background-color:", ";"], p => p.$_css4);
 
 exports.Menu = Menu;

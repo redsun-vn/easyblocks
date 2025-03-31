@@ -5,7 +5,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var slate = require('slate');
 var builders = require('../builders.cjs');
-var cleanString = require('../../../../utils/src/cleanString.cjs');
+var cleanString = require('../../../../packages/utils/src/cleanString.cjs');
 
 function convertEditorValueToRichTextElements(editorValue) {
   return editorValue.map(blockElement => {

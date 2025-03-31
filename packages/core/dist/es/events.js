@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import { serialize } from './utils/src/serialize.js';
+import { serialize } from './packages/utils/src/serialize.js';
 
 function selectionFramePositionChanged(target, container) {
   return {

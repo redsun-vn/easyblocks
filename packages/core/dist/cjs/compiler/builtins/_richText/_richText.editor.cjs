@@ -6,8 +6,8 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var _extends = require('@babel/runtime/helpers/extends');
 var throttle = require('lodash/throttle');
-var React = require('react');
-var reactDom = require('react-dom');
+var index$1 = require('../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
+require('../../../node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.cjs');
 var slate = require('slate');
 var slateReact = require('slate-react');
 var Box = require('../../../components/Box/Box.cjs');
@@ -30,16 +30,17 @@ var getFocusedFieldsFromSlateSelection = require('./utils/getFocusedFieldsFromSl
 var getFocusedRichTextPartsConfigPaths = require('./utils/getFocusedRichTextPartsConfigPaths.cjs');
 var getRichTextComponentConfigFragment = require('./utils/getRichTextComponentConfigFragment.cjs');
 var withEasyblocks = require('./withEasyblocks.cjs');
-var dotNotationGet = require('../../../utils/src/object/dotNotationGet.cjs');
-var deepClone = require('../../../utils/src/deepClone.cjs');
-var deepCompare = require('../../../utils/src/deepCompare.cjs');
+var index = require('../../../_virtual/index.cjs');
+var index$2 = require('../../../_virtual/index2.cjs');
+var dotNotationGet = require('../../../packages/utils/src/object/dotNotationGet.cjs');
+var deepClone = require('../../../packages/utils/src/deepClone.cjs');
+var deepCompare = require('../../../packages/utils/src/deepCompare.cjs');
 var responsiveValueFill = require('../../../responsiveness/responsiveValueFill.cjs');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
 var _extends__default = /*#__PURE__*/_interopDefaultLegacy(_extends);
 var throttle__default = /*#__PURE__*/_interopDefaultLegacy(throttle);
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 function RichTextEditor(props) {
   const {
@@ -65,12 +66,12 @@ function RichTextEditor(props) {
     align
   } = props;
   let richTextConfig = dotNotationGet.dotNotationGet(form.values, path);
-  const [editor] = React.useState(() => withEasyblocks.withEasyblocks(slateReact.withReact(slate.createEditor())));
+  const [editor] = index.react.exports.useState(() => withEasyblocks.withEasyblocks(slateReact.withReact(slate.createEditor())));
   const localizedRichTextElements = richTextConfig.elements[contextParams.locale];
   const fallbackRichTextElements = locales.getFallbackForLocale(richTextConfig.elements, contextParams.locale, locales$1);
   const richTextElements = localizedRichTextElements ?? fallbackRichTextElements;
   const richTextElementsConfigPath = `${path}.elements.${contextParams.locale}`;
-  const [editorValue, setEditorValue] = React.useState(() => convertRichTextElementsToEditorValue.convertRichTextElementsToEditorValue(richTextElements));
+  const [editorValue, setEditorValue] = index.react.exports.useState(() => convertRichTextElementsToEditorValue.convertRichTextElementsToEditorValue(richTextElements));
 
   // If rich text has no value, we initialize it with default config by updating it during first render
   // This is only possible when we open entry for non main locale without fallback, this is total edge case
@@ -85,7 +86,7 @@ function RichTextEditor(props) {
    * Controls the visibility of decoration imitating browser selection of
    * the selected text after the user has blurred the content editable element.
    */
-  const [isDecorationActive, setIsDecorationActive] = React.useState(false);
+  const [isDecorationActive, setIsDecorationActive] = index.react.exports.useState(false);
 
   /**
    * Keeps track what caused last change to editor value.
@@ -93,14 +94,14 @@ function RichTextEditor(props) {
    * - text-only changes of editable content shouldn't trigger update of `editor.children` ("text-input")
    * - changes from outside of editable content shouldn't trigger writing to editor's history within change callback ("external")
    */
-  const lastChangeReason = React.useRef("text-input");
+  const lastChangeReason = index.react.exports.useRef("text-input");
 
   /**
    * Whether the content editable is enabled or not. We enable it through double click.
    */
-  const [isEnabled, setIsEnabled] = React.useState(false);
-  const previousRichTextComponentConfig = React.useRef();
-  const currentSelectionRef = React.useRef(null);
+  const [isEnabled, setIsEnabled] = index.react.exports.useState(false);
+  const previousRichTextComponentConfig = index.react.exports.useRef();
+  const currentSelectionRef = index.react.exports.useRef(null);
   const isConfigChanged = !isConfigEqual(previousRichTextComponentConfig.current, richTextConfig);
   if (previousRichTextComponentConfig.current && isConfigChanged) {
     if (lastChangeReason.current !== "paste") {
@@ -131,7 +132,7 @@ function RichTextEditor(props) {
       }
     }
   }
-  React.useLayoutEffect(() => {
+  index.react.exports.useLayoutEffect(() => {
     if (isDecorationActive && currentSelectionRef.current !== null && !slate.Range.isCollapsed(currentSelectionRef.current)) {
       splitStringNodes(editor, currentSelectionRef.current);
       return () => {
@@ -140,18 +141,18 @@ function RichTextEditor(props) {
     }
   }, [editor, isDecorationActive, richTextConfig]);
   const isRichTextActive = focussedField.some(focusedField => focusedField.startsWith(path));
-  React.useLayoutEffect(() => {
+  index.react.exports.useLayoutEffect(() => {
     // When rich text becomes inactive we want to restore all original [data-slate-string] nodes
     // by removing all span wrappers that we added to show the mocked browser selection.
     if (!isRichTextActive) {
       unwrapStringNodesContent(editor);
     }
   }, [editor, isRichTextActive]);
-  React.useEffect(() => {
+  index.react.exports.useEffect(() => {
     // We set previous value of rich text only once, then we manually assign it when needed.
     previousRichTextComponentConfig.current = richTextConfig;
   }, []);
-  React.useEffect(
+  index.react.exports.useEffect(
   // Component is blurred when the user selects other component in editor. This is different from blurring content editable.
   // Content editable can be blurred, but the component can remain active ex. when we select some text within content editable
   // and want to update its color from the sidebar.
@@ -178,13 +179,13 @@ function RichTextEditor(props) {
       }
     }
   }, [focussedField, isEnabled, isRichTextActive]);
-  React.useEffect(() => {
+  index.react.exports.useEffect(() => {
     // If editor has been refocused and it was blurred earlier we have to disable the decoration to show only browser selection
     if (slateReact.ReactEditor.isFocused(editor) && isDecorationActive) {
       setIsDecorationActive(false);
     }
   });
-  React.useEffect(() => {
+  index.react.exports.useEffect(() => {
     function handleRichTextChanged(event) {
       if (!editor.selection) {
         return;
@@ -246,9 +247,9 @@ function RichTextEditor(props) {
       // This can only happen if the current locale has no value and has no fallback
       if (Elements.length === 0) {
         if (element.type === "list-item") {
-          return /*#__PURE__*/React__default["default"].createElement("div", attributes, /*#__PURE__*/React__default["default"].createElement("div", null, children));
+          return /*#__PURE__*/index$1.createElement("div", attributes, /*#__PURE__*/index$1.createElement("div", null, children));
         }
-        return /*#__PURE__*/React__default["default"].createElement("div", attributes, children);
+        return /*#__PURE__*/index$1.createElement("div", attributes, children);
       }
       throw new Error("Missing element");
     }
@@ -272,11 +273,11 @@ function RichTextEditor(props) {
     if (compiledStyles === undefined) {
       throw new Error("Unknown element type");
     }
-    return /*#__PURE__*/React__default["default"].createElement(Box.Box, _extends__default["default"]({
+    return /*#__PURE__*/index$1.createElement(Box.Box, _extends__default["default"]({
       __compiled: compiledStyles,
       devices: devices,
       stitches: stitches
-    }, attributes, "production" === "development" ), element.type === "list-item" ? /*#__PURE__*/React__default["default"].createElement("div", null, children) : children);
+    }, attributes, "production" === "development" ), element.type === "list-item" ? /*#__PURE__*/index$1.createElement("div", null, children) : children);
   }
   const TextParts = extractTextPartsFromCompiledComponents.extractTextPartsFromCompiledComponents(props);
   function renderLeaf(_ref2) {
@@ -296,18 +297,18 @@ function RichTextEditor(props) {
     if (!TextPart) {
       // This can only happen if the current locale has no value and has no fallback
       if (TextParts.length === 0) {
-        return /*#__PURE__*/React__default["default"].createElement("span", attributes, children);
+        return /*#__PURE__*/index$1.createElement("span", attributes, children);
       }
       throw new Error("Missing part");
     }
-    const TextPartComponent = /*#__PURE__*/React__default["default"].createElement($richTextPart_client.RichTextPartClient, {
+    const TextPartComponent = /*#__PURE__*/index$1.createElement($richTextPart_client.RichTextPartClient, {
       value: children,
-      Text: /*#__PURE__*/React__default["default"].createElement(Box.Box, _extends__default["default"]({
+      Text: /*#__PURE__*/index$1.createElement(Box.Box, _extends__default["default"]({
         __compiled: TextPart.styled.Text,
         devices: devices,
         stitches: stitches
       }, attributes)),
-      TextWrapper: TextPart.components.TextWrapper[0] ? /*#__PURE__*/React__default["default"].createElement(ComponentBuilder.ComponentBuilder, {
+      TextWrapper: TextPart.components.TextWrapper[0] ? /*#__PURE__*/index$1.createElement(ComponentBuilder.ComponentBuilder, {
         compiled: TextPart.components.TextWrapper[0],
         path: path,
         components: editorContext.components,
@@ -326,7 +327,7 @@ function RichTextEditor(props) {
       attributes,
       children
     } = _ref3;
-    return /*#__PURE__*/React__default["default"].createElement("span", _extends__default["default"]({}, attributes, {
+    return /*#__PURE__*/index$1.createElement("span", _extends__default["default"]({}, attributes, {
       style: {
         ...attributes.style,
         top: 0,
@@ -334,7 +335,7 @@ function RichTextEditor(props) {
       }
     }), children);
   }
-  const scheduleConfigSync = React.useCallback(throttle__default["default"](nextValue => {
+  const scheduleConfigSync = index.react.exports.useCallback(throttle__default["default"](nextValue => {
     setEditorValue(nextValue);
     const nextElements = convertEditorValueToRichTextElements.convertEditorValueToRichTextElements(nextValue);
     actions.runChange(() => {
@@ -353,7 +354,7 @@ function RichTextEditor(props) {
       }
     });
   }, $richText_constants.RICH_TEXT_CONFIG_SYNC_THROTTLE_TIMEOUT), [isConfigChanged, editorContext.contextParams.locale]);
-  const scheduleFocusedFieldsChange = React.useCallback(
+  const scheduleFocusedFieldsChange = index.react.exports.useCallback(
   // Slate internally throttles the invocation of DOMSelectionChange for performance reasons.
   // We also throttle update of our focused fields state for the same reason.
   // This gives us a good balance between perf and showing updated fields within the sidebar.
@@ -442,7 +443,7 @@ function RichTextEditor(props) {
       });
     }
   }
-  React.useEffect(() => {
+  index.react.exports.useEffect(() => {
     function saveLatestSelection() {
       const root = slateReact.ReactEditor.findDocumentOrShadowRoot(editor);
       const selection = root.getSelection();
@@ -501,7 +502,7 @@ function RichTextEditor(props) {
       event.preventDefault();
     }
   }
-  const contentEditableClassName = React.useMemo(() => {
+  const contentEditableClassName = index.react.exports.useMemo(() => {
     const responsiveAlignmentStyles = mapResponsiveAlignmentToStyles(align, {
       devices: editorContext.devices,
       resop
@@ -539,11 +540,11 @@ function RichTextEditor(props) {
     });
     return getStyles().className;
   }, [align, isDecorationActive, localizedRichTextElements, fallbackRichTextElements, isEnabled]);
-  return /*#__PURE__*/React__default["default"].createElement(slateReact.Slate, {
+  return /*#__PURE__*/index$1.createElement(slateReact.Slate, {
     editor: editor,
     value: editorValue,
     onChange: handleEditableChange
-  }, /*#__PURE__*/React__default["default"].createElement("div", null, /*#__PURE__*/React__default["default"].createElement(slateReact.Editable, {
+  }, /*#__PURE__*/index$1.createElement("div", null, /*#__PURE__*/index$1.createElement(slateReact.Editable, {
     className: contentEditableClassName,
     placeholder: "Here goes text content",
     renderElement: renderElement,
@@ -561,7 +562,7 @@ function RichTextEditor(props) {
       }
       if (event.detail === 2) {
         event.preventDefault();
-        reactDom.flushSync(() => {
+        index$2.reactDom.exports.flushSync(() => {
           setIsEnabled(true);
         });
         slateReact.ReactEditor.focus(editor);

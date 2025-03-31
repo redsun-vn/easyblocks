@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import { uniqueId } from '../../../utils/src/uniqueId.js';
+import { uniqueId } from '../../../packages/utils/src/uniqueId.js';
 
 function buildRichTextNoCodeEntry(options) {
   const {

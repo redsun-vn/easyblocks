@@ -15,7 +15,11 @@
     "publish-prerelease": "lerna version prerelease && npm run build && lerna publish from-git",
     "supabase-start": "supabase start",
     "supabase-stop": "supabase stop",
-    "supabase-restart": "npm run supabase-stop && npm run supabase-start"
+    "supabase-restart": "npm run supabase-stop && npm run supabase-start",
+    "publish:core": "cd ./packages/core && npm publish --registry=https://npm.pkg.github.com",
+    "publish:ds": "cd ./packages/design-system && npm publish --registry=https://npm.pkg.github.com",
+    "publish:editor": "cd ./packages/editor && npm publish --registry=https://npm.pkg.github.com",
+    "publish:all": "npm run publish:core && npm run publish:design-system && npm run publish:editor"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -65,5 +69,8 @@
     "overrides": {
       "@types/react": "^18.2.20"
     }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

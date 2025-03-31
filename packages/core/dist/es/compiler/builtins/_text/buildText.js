@@ -1,6 +1,6 @@
 /* with love from shopstory */
 import { getDefaultLocale } from '../../../locales.js';
-import { uniqueId } from '../../../utils/src/uniqueId.js';
+import { uniqueId } from '../../../packages/utils/src/uniqueId.js';
 
 function buildText(x, editorContext) {
   const defaultLocale = getDefaultLocale(editorContext.locales);

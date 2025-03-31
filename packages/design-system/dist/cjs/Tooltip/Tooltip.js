@@ -63,7 +63,7 @@ var _StyledRadixTooltipContent = styled__default["default"](RadixTooltip__namesp
         `;
 var _StyledRadixTooltipArrow = styled__default["default"](RadixTooltip__namespace.Arrow).withConfig({
   displayName: "Tooltip___StyledRadixTooltipArrow",
-  componentId: "sc-o28plx-0"
+  componentId: "sc-5s6xlu-0"
 })(["fill:", ";"], p => p.$_css3);
 
 exports.Tooltip = Tooltip;

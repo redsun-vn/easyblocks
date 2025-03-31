@@ -3,18 +3,14 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var index = require('../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
 
 const easyblocksStitchesInstances = [];
 function easyblocksGetCssText() {
   return easyblocksStitchesInstances.map(stitches => stitches.getCssText()).join(" ");
 }
 function easyblocksGetStyleTag() {
-  return /*#__PURE__*/React__default["default"].createElement("style", {
+  return /*#__PURE__*/index.createElement("style", {
     id: "stitches",
     dangerouslySetInnerHTML: {
       __html: easyblocksGetCssText()

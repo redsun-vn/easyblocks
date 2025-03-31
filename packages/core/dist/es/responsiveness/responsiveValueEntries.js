@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import { entries } from '../utils/src/object/entries.js';
+import { entries } from '../packages/utils/src/object/entries.js';
 
 function responsiveValueEntries(value) {
   const values = [];

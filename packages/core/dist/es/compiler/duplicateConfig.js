@@ -1,8 +1,8 @@
 /* with love from shopstory */
 import { configTraverse } from './configTraverse.js';
 import { traverseComponents } from './traverseComponents.js';
-import { deepClone } from '../utils/src/deepClone.js';
-import { uniqueId } from '../utils/src/uniqueId.js';
+import { deepClone } from '../packages/utils/src/deepClone.js';
+import { uniqueId } from '../packages/utils/src/uniqueId.js';
 
 function duplicateConfig(inputConfig, compilationContext) {
   // deep copy first

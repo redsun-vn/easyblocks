@@ -3,7 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var uniqueId = require('../../../utils/src/uniqueId.cjs');
+var uniqueId = require('../../../packages/utils/src/uniqueId.cjs');
 
 function buildRichTextNoCodeEntry(options) {
   const {

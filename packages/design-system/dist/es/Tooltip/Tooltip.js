@@ -35,7 +35,7 @@ var _StyledRadixTooltipContent = styled(RadixTooltip.Content)`
         `;
 var _StyledRadixTooltipArrow = styled(RadixTooltip.Arrow).withConfig({
   displayName: "Tooltip___StyledRadixTooltipArrow",
-  componentId: "sc-o28plx-0"
+  componentId: "sc-5s6xlu-0"
 })(["fill:", ";"], p => p.$_css3);
 
 export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger };

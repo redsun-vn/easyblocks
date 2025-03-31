@@ -2,8 +2,8 @@
 /* with love from shopstory */
 import _extends from '@babel/runtime/helpers/extends';
 import throttle from 'lodash/throttle';
-import React, { useState, useRef, useLayoutEffect, useEffect, useCallback, useMemo } from 'react';
-import { flushSync } from 'react-dom';
+import React from '../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.js';
+import '../../../node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/index.js';
 import { createEditor, Transforms, Range, Editor, Text } from 'slate';
 import { withReact, ReactEditor, Slate, Editable } from 'slate-react';
 import { Box } from '../../../components/Box/Box.js';
@@ -26,9 +26,11 @@ import { getFocusedFieldsFromSlateSelection } from './utils/getFocusedFieldsFrom
 import { getFocusedRichTextPartsConfigPaths } from './utils/getFocusedRichTextPartsConfigPaths.js';
 import { getRichTextComponentConfigFragment } from './utils/getRichTextComponentConfigFragment.js';
 import { withEasyblocks, NORMALIZED_IDS_TO_IDS } from './withEasyblocks.js';
-import { dotNotationGet } from '../../../utils/src/object/dotNotationGet.js';
-import { deepClone } from '../../../utils/src/deepClone.js';
-import { deepCompare } from '../../../utils/src/deepCompare.js';
+import { r as react } from '../../../_virtual/index.js';
+import { r as reactDom } from '../../../_virtual/index2.js';
+import { dotNotationGet } from '../../../packages/utils/src/object/dotNotationGet.js';
+import { deepClone } from '../../../packages/utils/src/deepClone.js';
+import { deepCompare } from '../../../packages/utils/src/deepCompare.js';
 import { responsiveValueFill } from '../../../responsiveness/responsiveValueFill.js';
 
 function RichTextEditor(props) {
@@ -55,12 +57,12 @@ function RichTextEditor(props) {
     align
   } = props;
   let richTextConfig = dotNotationGet(form.values, path);
-  const [editor] = useState(() => withEasyblocks(withReact(createEditor())));
+  const [editor] = react.exports.useState(() => withEasyblocks(withReact(createEditor())));
   const localizedRichTextElements = richTextConfig.elements[contextParams.locale];
   const fallbackRichTextElements = getFallbackForLocale(richTextConfig.elements, contextParams.locale, locales);
   const richTextElements = localizedRichTextElements ?? fallbackRichTextElements;
   const richTextElementsConfigPath = `${path}.elements.${contextParams.locale}`;
-  const [editorValue, setEditorValue] = useState(() => convertRichTextElementsToEditorValue(richTextElements));
+  const [editorValue, setEditorValue] = react.exports.useState(() => convertRichTextElementsToEditorValue(richTextElements));
 
   // If rich text has no value, we initialize it with default config by updating it during first render
   // This is only possible when we open entry for non main locale without fallback, this is total edge case
@@ -75,7 +77,7 @@ function RichTextEditor(props) {
    * Controls the visibility of decoration imitating browser selection of
    * the selected text after the user has blurred the content editable element.
    */
-  const [isDecorationActive, setIsDecorationActive] = useState(false);
+  const [isDecorationActive, setIsDecorationActive] = react.exports.useState(false);
 
   /**
    * Keeps track what caused last change to editor value.
@@ -83,14 +85,14 @@ function RichTextEditor(props) {
    * - text-only changes of editable content shouldn't trigger update of `editor.children` ("text-input")
    * - changes from outside of editable content shouldn't trigger writing to editor's history within change callback ("external")
    */
-  const lastChangeReason = useRef("text-input");
+  const lastChangeReason = react.exports.useRef("text-input");
 
   /**
    * Whether the content editable is enabled or not. We enable it through double click.
    */
-  const [isEnabled, setIsEnabled] = useState(false);
-  const previousRichTextComponentConfig = useRef();
-  const currentSelectionRef = useRef(null);
+  const [isEnabled, setIsEnabled] = react.exports.useState(false);
+  const previousRichTextComponentConfig = react.exports.useRef();
+  const currentSelectionRef = react.exports.useRef(null);
   const isConfigChanged = !isConfigEqual(previousRichTextComponentConfig.current, richTextConfig);
   if (previousRichTextComponentConfig.current && isConfigChanged) {
     if (lastChangeReason.current !== "paste") {
@@ -121,7 +123,7 @@ function RichTextEditor(props) {
       }
     }
   }
-  useLayoutEffect(() => {
+  react.exports.useLayoutEffect(() => {
     if (isDecorationActive && currentSelectionRef.current !== null && !Range.isCollapsed(currentSelectionRef.current)) {
       splitStringNodes(editor, currentSelectionRef.current);
       return () => {
@@ -130,18 +132,18 @@ function RichTextEditor(props) {
     }
   }, [editor, isDecorationActive, richTextConfig]);
   const isRichTextActive = focussedField.some(focusedField => focusedField.startsWith(path));
-  useLayoutEffect(() => {
+  react.exports.useLayoutEffect(() => {
     // When rich text becomes inactive we want to restore all original [data-slate-string] nodes
     // by removing all span wrappers that we added to show the mocked browser selection.
     if (!isRichTextActive) {
       unwrapStringNodesContent(editor);
     }
   }, [editor, isRichTextActive]);
-  useEffect(() => {
+  react.exports.useEffect(() => {
     // We set previous value of rich text only once, then we manually assign it when needed.
     previousRichTextComponentConfig.current = richTextConfig;
   }, []);
-  useEffect(
+  react.exports.useEffect(
   // Component is blurred when the user selects other component in editor. This is different from blurring content editable.
   // Content editable can be blurred, but the component can remain active ex. when we select some text within content editable
   // and want to update its color from the sidebar.
@@ -168,13 +170,13 @@ function RichTextEditor(props) {
       }
     }
   }, [focussedField, isEnabled, isRichTextActive]);
-  useEffect(() => {
+  react.exports.useEffect(() => {
     // If editor has been refocused and it was blurred earlier we have to disable the decoration to show only browser selection
     if (ReactEditor.isFocused(editor) && isDecorationActive) {
       setIsDecorationActive(false);
     }
   });
-  useEffect(() => {
+  react.exports.useEffect(() => {
     function handleRichTextChanged(event) {
       if (!editor.selection) {
         return;
@@ -324,7 +326,7 @@ function RichTextEditor(props) {
       }
     }), children);
   }
-  const scheduleConfigSync = useCallback(throttle(nextValue => {
+  const scheduleConfigSync = react.exports.useCallback(throttle(nextValue => {
     setEditorValue(nextValue);
     const nextElements = convertEditorValueToRichTextElements(nextValue);
     actions.runChange(() => {
@@ -343,7 +345,7 @@ function RichTextEditor(props) {
       }
     });
   }, RICH_TEXT_CONFIG_SYNC_THROTTLE_TIMEOUT), [isConfigChanged, editorContext.contextParams.locale]);
-  const scheduleFocusedFieldsChange = useCallback(
+  const scheduleFocusedFieldsChange = react.exports.useCallback(
   // Slate internally throttles the invocation of DOMSelectionChange for performance reasons.
   // We also throttle update of our focused fields state for the same reason.
   // This gives us a good balance between perf and showing updated fields within the sidebar.
@@ -432,7 +434,7 @@ function RichTextEditor(props) {
       });
     }
   }
-  useEffect(() => {
+  react.exports.useEffect(() => {
     function saveLatestSelection() {
       const root = ReactEditor.findDocumentOrShadowRoot(editor);
       const selection = root.getSelection();
@@ -491,7 +493,7 @@ function RichTextEditor(props) {
       event.preventDefault();
     }
   }
-  const contentEditableClassName = useMemo(() => {
+  const contentEditableClassName = react.exports.useMemo(() => {
     const responsiveAlignmentStyles = mapResponsiveAlignmentToStyles(align, {
       devices: editorContext.devices,
       resop
@@ -551,7 +553,7 @@ function RichTextEditor(props) {
       }
       if (event.detail === 2) {
         event.preventDefault();
-        flushSync(() => {
+        reactDom.exports.flushSync(() => {
           setIsEnabled(true);
         });
         ReactEditor.focus(editor);

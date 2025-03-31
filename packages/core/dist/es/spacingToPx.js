@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import { reduceCSSCalc } from './reduce-css-calc/src/index.js';
+import { reduceCSSCalc } from './packages/reduce-css-calc/src/index.js';
 
 function parseSpacing(spacing) {
   if (spacing.endsWith("px")) {

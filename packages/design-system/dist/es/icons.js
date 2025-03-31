@@ -8,7 +8,7 @@ const IconContainer = styled.div.withConfig({
   }
 }).withConfig({
   displayName: "icons__IconContainer",
-  componentId: "sc-mjxv82-0"
+  componentId: "sc-9uvw0q-0"
 })(["svg{width:", ";height:", ";display:block;}", ""], p => (p.size || 16) + "px", p => (p.size || 16) + "px", p => p.isStroke ? `
     svg > [stroke] {
       stroke: currentColor;

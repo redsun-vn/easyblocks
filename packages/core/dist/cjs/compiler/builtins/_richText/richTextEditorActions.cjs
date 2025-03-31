@@ -6,7 +6,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var slate = require('slate');
 var convertEditorValueToRichTextElements = require('./utils/convertEditorValueToRichTextElements.cjs');
 var getFocusedRichTextPartsConfigPaths = require('./utils/getFocusedRichTextPartsConfigPaths.cjs');
-var nonNullable = require('../../../utils/src/array/nonNullable.cjs');
+var nonNullable = require('../../../packages/utils/src/array/nonNullable.cjs');
 
 function isEditorSelection(editor) {
   return editor.selection !== null;

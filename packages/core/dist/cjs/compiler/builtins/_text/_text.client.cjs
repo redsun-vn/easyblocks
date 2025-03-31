@@ -3,12 +3,8 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
-var cleanString = require('../../../utils/src/cleanString.cjs');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var index = require('../../../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
+var cleanString = require('../../../packages/utils/src/cleanString.cjs');
 
 function TextClient(props) {
   const {
@@ -19,17 +15,17 @@ function TextClient(props) {
   // We need to transform new lines into <br />
   const lines = cleanString.cleanString(value || "").split(/(?:\r\n|\r|\n)/g);
   const elements = [];
-  lines.forEach((line, index) => {
-    elements.push(/*#__PURE__*/React__default["default"].createElement(React__default["default"].Fragment, {
-      key: index
+  lines.forEach((line, index$1) => {
+    elements.push(/*#__PURE__*/index.createElement(index.Fragment, {
+      key: index$1
     }, line));
-    if (index !== lines.length - 1) {
-      elements.push(/*#__PURE__*/React__default["default"].createElement("br", {
-        key: "br" + index
+    if (index$1 !== lines.length - 1) {
+      elements.push(/*#__PURE__*/index.createElement("br", {
+        key: "br" + index$1
       }));
     }
   });
-  return /*#__PURE__*/React__default["default"].createElement(Text.type, Text.props, elements);
+  return /*#__PURE__*/index.createElement(Text.type, Text.props, elements);
 }
 
 exports.TextClient = TextClient;

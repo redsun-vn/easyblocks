@@ -3,7 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var dotNotationGet = require('../utils/src/object/dotNotationGet.cjs');
+var dotNotationGet = require('../packages/utils/src/object/dotNotationGet.cjs');
 
 /**
  * When selecting text within $richText, we keep information about which text parts are selected

@@ -1,8 +1,8 @@
 /* with love from shopstory */
 import { Element, Node, Transforms, Text } from 'slate';
-import { keys } from '../../../utils/src/object/keys.js';
-import { uniqueId } from '../../../utils/src/uniqueId.js';
-import { deepCompare } from '../../../utils/src/deepCompare.js';
+import { keys } from '../../../packages/utils/src/object/keys.js';
+import { uniqueId } from '../../../packages/utils/src/uniqueId.js';
+import { deepCompare } from '../../../packages/utils/src/deepCompare.js';
 
 /**
  * Tracks which ids were used during current normalization run

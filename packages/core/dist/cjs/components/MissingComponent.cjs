@@ -3,11 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
-
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var index = require('../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
 
 const rootStyles = {
   position: "relative",
@@ -72,13 +68,13 @@ function MissingComponent(_ref3) {
   } else if (isButton) {
     type = "BUTTON";
   }
-  return /*#__PURE__*/React__default["default"].createElement("div", {
+  return /*#__PURE__*/index.createElement("div", {
     style: rootStyles
-  }, /*#__PURE__*/React__default["default"].createElement("div", {
+  }, /*#__PURE__*/index.createElement("div", {
     style: ratioStyles({
       type
     })
-  }), /*#__PURE__*/React__default["default"].createElement("div", {
+  }), /*#__PURE__*/index.createElement("div", {
     style: contentStyles({
       type,
       error

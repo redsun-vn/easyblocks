@@ -3,7 +3,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var entries = require('../utils/src/object/entries.cjs');
+var entries = require('../packages/utils/src/object/entries.cjs');
 
 function responsiveValueValues(value) {
   const values = [];

@@ -1,5 +1,5 @@
 /* with love from shopstory */
-import { dotNotationGet } from '../utils/src/object/dotNotationGet.js';
+import { dotNotationGet } from '../packages/utils/src/object/dotNotationGet.js';
 
 /**
  * When selecting text within $richText, we keep information about which text parts are selected

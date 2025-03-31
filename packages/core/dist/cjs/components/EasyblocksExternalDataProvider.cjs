@@ -4,15 +4,12 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React = require('react');
+var index$1 = require('../node_modules/.pnpm/react@18.2.0/node_modules/react/index.cjs');
+var index = require('../_virtual/index.cjs');
 
-function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
-
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
-
-const EasyblocksExternalDataContext = /*#__PURE__*/React.createContext(null);
+const EasyblocksExternalDataContext = /*#__PURE__*/index.react.exports.createContext(null);
 function useEasyblocksExternalData() {
-  const context = React.useContext(EasyblocksExternalDataContext);
+  const context = index.react.exports.useContext(EasyblocksExternalDataContext);
   if (!context) {
     throw new Error("useEasyblocksExternalData must be used within a EasyblocksExternalDataProvider");
   }
@@ -23,7 +20,7 @@ function EasyblocksExternalDataProvider(_ref) {
     children,
     externalData
   } = _ref;
-  return /*#__PURE__*/React__default["default"].createElement(EasyblocksExternalDataContext.Provider, {
+  return /*#__PURE__*/index$1.createElement(EasyblocksExternalDataContext.Provider, {
     value: externalData
   }, children);
 }

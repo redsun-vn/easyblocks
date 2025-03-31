@@ -7,9 +7,9 @@ var locales = require('../../../locales.cjs');
 var configFindAllPaths = require('../../configFindAllPaths.cjs');
 var $richText_styles = require('./_richText.styles.cjs');
 var $richTextBlockElement = require('./_richTextBlockElement/_richTextBlockElement.cjs');
-var range = require('../../../utils/src/array/range.cjs');
-var nonNullable = require('../../../utils/src/array/nonNullable.cjs');
-var dotNotationGet = require('../../../utils/src/object/dotNotationGet.cjs');
+var range = require('../../../packages/utils/src/array/range.cjs');
+var nonNullable = require('../../../packages/utils/src/array/nonNullable.cjs');
+var dotNotationGet = require('../../../packages/utils/src/object/dotNotationGet.cjs');
 
 const editing = _ref => {
   let {
