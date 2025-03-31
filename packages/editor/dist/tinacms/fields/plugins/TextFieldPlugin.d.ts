@@ -1,5 +1,5 @@
-import { LocalTextReference, ResponsiveValue } from "@easyblocks/core";
-import { InternalField } from "@easyblocks/core/_internals";
+import { LocalTextReference, ResponsiveValue } from "@redsun-vn/easyblocks-core";
+import { InternalField } from "@redsun-vn/easyblocks-core/_internals";
 import React from "react";
 import { FieldRenderProps } from "react-final-form";
 type TextFieldProps = FieldRenderProps<ResponsiveValue<string> | LocalTextReference> & {

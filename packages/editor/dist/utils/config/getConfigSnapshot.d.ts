@@ -1,4 +1,4 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 /**
  * Outputs comparable config that is FULL COPY of config
  */

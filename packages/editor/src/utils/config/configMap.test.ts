@@ -1,9 +1,9 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 import {
   CompilationContextType,
   createTestCompilationContext,
   // @ts-ignore
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import { configMap } from "./configMap";
 
 function createCard(color: string) {

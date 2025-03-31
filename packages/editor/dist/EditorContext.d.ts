@@ -1,5 +1,5 @@
-import { Backend, CompiledComponentConfig, Document, ExternalTypeDefinition, InlineTypeDefinition, InlineTypeWidgetComponentProps, NoCodeComponentEntry, Template, TokenTypeDefinition, TokenTypeWidgetComponentProps, Widget } from "@easyblocks/core";
-import { EditorContextType as BaseEditorContextType, CompilationCache, InternalAnyField } from "@easyblocks/core/_internals";
+import { Backend, CompiledComponentConfig, Document, ExternalTypeDefinition, InlineTypeDefinition, InlineTypeWidgetComponentProps, NoCodeComponentEntry, Template, TokenTypeDefinition, TokenTypeWidgetComponentProps, Widget } from "@redsun-vn/easyblocks-core";
+import { EditorContextType as BaseEditorContextType, CompilationCache, InternalAnyField } from "@redsun-vn/easyblocks-core/_internals";
 import React, { ComponentType } from "react";
 import { Form } from "./form";
 import { ActionsType, InternalWidgetComponentProps } from "./types";

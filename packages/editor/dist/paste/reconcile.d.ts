@@ -1,5 +1,5 @@
-import { CompilationContextType } from "@easyblocks/core/_internals";
-import { NoCodeComponentEntry } from "@easyblocks/core";
+import { CompilationContextType } from "@redsun-vn/easyblocks-core/_internals";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 export declare function reconcile({ context, templateId, fieldName, }: {
     context: CompilationContextType;
     templateId?: string;

@@ -1,4 +1,4 @@
-import { Config } from "@easyblocks/core";
+import { Config } from "@redsun-vn/easyblocks-core";
 
 const validate = (value: any) => {
   return (

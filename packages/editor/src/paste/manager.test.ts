@@ -1,4 +1,4 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 import { pasteManager } from "./manager";
 
 describe("pasteManager", () => {

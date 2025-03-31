@@ -9,13 +9,13 @@ import {
   resolveExternalValue,
   resolveLocalisedValue,
   responsiveValueForceGet,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   Component$$$SchemaProp,
   InternalField,
   findComponentDefinition,
   isExternalSchemaProp,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import {
   ButtonGhost,
   Colors,
@@ -24,7 +24,7 @@ import {
   ThumbnailButton,
   ThumbnailType,
   Typography,
-} from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-design-system";
 import { dotNotationGet, toArray } from "@easyblocks/utils";
 import React from "react";
 import ReactDOM from "react-dom";

@@ -2,12 +2,12 @@ import {
   NoCodeComponentEntry,
   ComponentSchemaProp,
   Template,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   duplicateConfig,
   findComponentDefinition,
   normalize,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import { dotNotationGet } from "@easyblocks/utils";
 import React, { FC } from "react";
 import { useEditorContext } from "./EditorContext";

@@ -10,9 +10,9 @@ import {
   Input,
   Modal,
   useToaster,
-} from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-design-system";
 import { useEditorContext } from "./EditorContext";
-import { Backend } from "@easyblocks/core";
+import { Backend } from "@redsun-vn/easyblocks-core";
 
 type TemplateModalProps = {
   action: OpenTemplateModalAction;

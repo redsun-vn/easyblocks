@@ -10,14 +10,14 @@ import {
   responsiveValueFill,
   responsiveValueForceGet,
   responsiveValueGetDefinedValue,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   Colors,
   Input,
   Select,
   SelectItem,
   SelectSeparator,
-} from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-design-system";
 import React, {
   ComponentType,
   Fragment,

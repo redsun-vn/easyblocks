@@ -1,7 +1,7 @@
 import React from "react";
-import { InlineTypeWidgetComponentProps } from "@easyblocks/core";
+import { InlineTypeWidgetComponentProps } from "@redsun-vn/easyblocks-core";
 import { useEffect, useState } from "react";
-import { Input } from "@easyblocks/design-system";
+import { Input } from "@redsun-vn/easyblocks-design-system";
 
 export function DebugUrlWidget(props: InlineTypeWidgetComponentProps<string>) {
   const [active, setActive] = useState(false);

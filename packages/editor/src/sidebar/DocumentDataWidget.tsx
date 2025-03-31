@@ -2,9 +2,9 @@ import {
   getExternalReferenceLocationKey,
   isResolvedCompoundExternalDataValue,
   type ExternalDataCompoundResourceResolvedResult,
-} from "@easyblocks/core";
-import { findComponentDefinitionById } from "@easyblocks/core/_internals";
-import { Typography } from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-core";
+import { findComponentDefinitionById } from "@redsun-vn/easyblocks-core/_internals";
+import { Typography } from "@redsun-vn/easyblocks-design-system";
 import { assertDefined, dotNotationGet } from "@easyblocks/utils";
 import React from "react";
 import {

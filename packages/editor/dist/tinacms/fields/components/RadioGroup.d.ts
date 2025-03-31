@@ -1,5 +1,5 @@
-import { Option } from "@easyblocks/core";
-import { InternalField } from "@easyblocks/core/_internals";
+import { Option } from "@redsun-vn/easyblocks-core";
+import { InternalField } from "@redsun-vn/easyblocks-core/_internals";
 import React from "react";
 import { FieldMixedValue } from "../../../types";
 import { FieldRenderProps } from "../../form-builder";

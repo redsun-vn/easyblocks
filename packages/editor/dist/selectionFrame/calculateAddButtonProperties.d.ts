@@ -1,4 +1,4 @@
-import type { EditingInfoBase } from "@easyblocks/core";
+import type { EditingInfoBase } from "@redsun-vn/easyblocks-core";
 declare function calculateAddButtonsProperties(direction: Required<EditingInfoBase>["direction"], targetElementRect: DOMRect, viewport: {
     width: number;
     height: number;

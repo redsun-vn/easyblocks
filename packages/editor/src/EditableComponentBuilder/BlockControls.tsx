@@ -9,9 +9,12 @@ import {
   CompiledShopstoryComponentConfig,
   ComponentCollectionSchemaProp,
   SerializedRenderableComponentDefinition,
-} from "@easyblocks/core";
-import { parsePath, useEasyblocksMetadata } from "@easyblocks/core/_internals";
-import { Colors } from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-core";
+import {
+  parsePath,
+  useEasyblocksMetadata,
+} from "@redsun-vn/easyblocks-core/_internals";
+import { Colors } from "@redsun-vn/easyblocks-design-system";
 import { toArray } from "@easyblocks/utils";
 import React, { Fragment } from "react";
 import { SelectionFrameController } from "./SelectionFrameController";

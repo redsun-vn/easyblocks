@@ -1,14 +1,14 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 import {
   findComponentDefinition,
   stripRichTextPartSelection,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import {
   ButtonPrimary,
   ButtonSecondary,
   Colors,
   Fonts,
-} from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-design-system";
 import { dotNotationGet } from "@easyblocks/utils";
 import * as React from "react";
 import styled from "styled-components";

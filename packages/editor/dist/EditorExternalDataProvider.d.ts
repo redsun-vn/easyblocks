@@ -1,4 +1,4 @@
-import { ExternalData } from "@easyblocks/core";
+import { ExternalData } from "@redsun-vn/easyblocks-core";
 import React, { ReactNode } from "react";
 declare function EditorExternalDataProvider({ children, externalData, }: {
     children: ReactNode;

@@ -1,4 +1,4 @@
-import { InternalAnyField, InternalField } from "@easyblocks/core/_internals";
+import { InternalAnyField, InternalField } from "@redsun-vn/easyblocks-core/_internals";
 import { Config, FormApi, FormState } from "final-form";
 export interface FormOptions<S, F extends InternalField = InternalAnyField> extends Config<S> {
     id: any;

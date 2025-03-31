@@ -1,5 +1,5 @@
-import { NoCodeComponentEntry, ComponentSchemaProp } from "@easyblocks/core";
-import { Component$$$SchemaProp, InternalField } from "@easyblocks/core/_internals";
+import { NoCodeComponentEntry, ComponentSchemaProp } from "@redsun-vn/easyblocks-core";
+import { Component$$$SchemaProp, InternalField } from "@redsun-vn/easyblocks-core/_internals";
 import React from "react";
 import { FieldMixedValue } from "../../../types";
 import { FieldRenderProps } from "../../form-builder";

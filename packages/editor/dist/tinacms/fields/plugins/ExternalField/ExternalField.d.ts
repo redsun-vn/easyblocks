@@ -1,4 +1,4 @@
-import { ExternalReference, FetchCompoundResourceResultValues } from "@easyblocks/core";
+import { ExternalReference, FetchCompoundResourceResultValues } from "@redsun-vn/easyblocks-core";
 import React from "react";
 import { FieldMixedValue } from "../../../../types";
 import { FieldRenderProps } from "../../../form-builder";
@@ -14,7 +14,7 @@ export declare function getBasicResourcesOfType(compoundResourceValues: FetchCom
     key: string;
 } | {
     type: string & Record<never, never>;
-    value: import("@easyblocks/core").NonNullish;
+    value: import("@redsun-vn/easyblocks-core").NonNullish;
     label?: string;
     key: string;
 })[];

@@ -7,7 +7,7 @@ import {
   useSensor,
 } from "@dnd-kit/core";
 import { SortableContext } from "@dnd-kit/sortable";
-import { NoCodeComponentEntry, Easyblocks } from "@easyblocks/core";
+import { NoCodeComponentEntry, Easyblocks } from "@redsun-vn/easyblocks-core";
 import {
   EasyblocksMetadataProvider,
   EditorContextType,
@@ -15,7 +15,7 @@ import {
   TextEditor,
   configTraverse,
   itemMoved,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import { useForceRerender } from "@easyblocks/utils";
 import React, { useEffect, useRef, useState } from "react";
 import { z } from "zod";

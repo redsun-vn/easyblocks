@@ -1,4 +1,4 @@
-import { CompiledCustomComponentConfig, CompiledShopstoryComponentConfig } from "@easyblocks/core";
+import { CompiledCustomComponentConfig, CompiledShopstoryComponentConfig } from "@redsun-vn/easyblocks-core";
 import React from "react";
 interface BlocksControlsProps {
     children: React.ReactNode;

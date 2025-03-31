@@ -5,8 +5,8 @@ import {
   isEmptyExternalReference,
   isIdReferenceToDocumentExternalValue,
   isResolvedCompoundExternalDataValue,
-} from "@easyblocks/core";
-import { Select, SelectItem } from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-core";
+import { Select, SelectItem } from "@redsun-vn/easyblocks-design-system";
 import { dotNotationGet, toArray } from "@easyblocks/utils";
 import React, { ComponentType, useLayoutEffect } from "react";
 import {

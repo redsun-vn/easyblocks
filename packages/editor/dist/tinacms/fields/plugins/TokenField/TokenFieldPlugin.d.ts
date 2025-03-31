@@ -1,4 +1,4 @@
-import { TokenValue as CoreTokenValue, Field, NonNullish, ThemeTokenValue } from "@easyblocks/core";
+import { TokenValue as CoreTokenValue, Field, NonNullish, ThemeTokenValue } from "@redsun-vn/easyblocks-core";
 import React, { ReactNode } from "react";
 import { FieldRenderProps } from "react-final-form";
 import { FieldMixedValue } from "../../../../types";

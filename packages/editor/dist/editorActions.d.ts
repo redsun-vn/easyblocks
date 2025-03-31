@@ -1,5 +1,5 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
-import { CompilationContextType } from "@easyblocks/core/_internals";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
+import { CompilationContextType } from "@redsun-vn/easyblocks-core/_internals";
 import { EditorContextType } from "./EditorContext";
 import { Form } from "./form";
 import { ResolveDestination } from "./paste/destinationResolver";

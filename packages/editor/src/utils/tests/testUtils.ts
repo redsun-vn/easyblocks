@@ -1,8 +1,8 @@
-import { Devices } from "@easyblocks/core";
+import { Devices } from "@redsun-vn/easyblocks-core";
 import {
   CompilationCache,
   createTestCompilationContext,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import { EditorContextType } from "../../EditorContext";
 import { Form } from "../../form";
 

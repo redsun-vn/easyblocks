@@ -1,4 +1,4 @@
-import { CompilationContextType } from "@easyblocks/core/_internals";
+import { CompilationContextType } from "@redsun-vn/easyblocks-core/_internals";
 import { Form } from "../form";
 import { insertCommand } from "./insert";
 export interface Destination {

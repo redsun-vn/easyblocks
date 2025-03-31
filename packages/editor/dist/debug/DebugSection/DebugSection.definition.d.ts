@@ -1,3 +1,3 @@
-import { NoCodeComponentDefinition } from "@easyblocks/core";
+import { NoCodeComponentDefinition } from "@redsun-vn/easyblocks-core";
 export declare const debugSectionDefinition: NoCodeComponentDefinition;
 //# sourceMappingURL=DebugSection.definition.d.ts.map

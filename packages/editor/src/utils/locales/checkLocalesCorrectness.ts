@@ -1,4 +1,4 @@
-import { getDefaultLocale, Locale } from "@easyblocks/core";
+import { getDefaultLocale, Locale } from "@redsun-vn/easyblocks-core";
 
 export function checkLocalesCorrectness(locales: Locale[]): boolean {
   if (locales.length === 0) {

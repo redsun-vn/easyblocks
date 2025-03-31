@@ -1,4 +1,4 @@
-import { Field, NoCodeComponentEntry } from "@easyblocks/core";
+import { Field, NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 import React from "react";
 import type { FieldRenderProps } from "react-final-form";
 interface IdentityFieldProps extends FieldRenderProps<NoCodeComponentEntry, HTMLElement> {

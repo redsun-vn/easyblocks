@@ -2,12 +2,16 @@ import {
   ComponentSchemaProp,
   Field,
   NoCodeComponentEntry,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   findComponentDefinitionById,
   parsePath,
-} from "@easyblocks/core/_internals";
-import { ButtonGhost, Icons, Typography } from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-core/_internals";
+import {
+  ButtonGhost,
+  Icons,
+  Typography,
+} from "@redsun-vn/easyblocks-design-system";
 import { toArray } from "@easyblocks/utils";
 import React, { useContext } from "react";
 import type { FieldRenderProps } from "react-final-form";

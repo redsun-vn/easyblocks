@@ -1,4 +1,4 @@
-import { Document } from "@easyblocks/core";
+import { Document } from "@redsun-vn/easyblocks-core";
 import { EditorContextType } from "./EditorContext";
 /**
  * useDataSaver works in a realm of SINGLE CONFIG.

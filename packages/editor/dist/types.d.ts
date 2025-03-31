@@ -1,4 +1,4 @@
-import { CompilationMetadata, CompiledShopstoryComponentConfig, NoCodeComponentEntry, ExternalData, ExternalReference, WidgetComponentProps } from "@easyblocks/core";
+import { CompilationMetadata, CompiledShopstoryComponentConfig, NoCodeComponentEntry, ExternalData, ExternalReference, WidgetComponentProps } from "@redsun-vn/easyblocks-core";
 import { EditorContextType } from "./EditorContext";
 export type OpenComponentPickerConfig = {
     path: string;

@@ -5,12 +5,12 @@ import {
   Template,
   UserDefinedTemplate,
   getDefaultLocale,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   InternalComponentDefinition,
   findComponentDefinitionById,
   normalize,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import { uniqueId } from "@easyblocks/utils";
 import { EditorContextType } from "../EditorContext";
 import { configMap } from "../utils/config/configMap";

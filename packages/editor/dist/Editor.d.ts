@@ -1,4 +1,4 @@
-import { Config, Document, FetchOutputResources, InlineTypeWidgetComponentProps, TokenTypeWidgetComponentProps, WidgetComponentProps } from "@easyblocks/core";
+import { Config, Document, FetchOutputResources, InlineTypeWidgetComponentProps, TokenTypeWidgetComponentProps, WidgetComponentProps } from "@redsun-vn/easyblocks-core";
 import React, { ComponentType } from "react";
 import { ExternalDataChangeHandler } from "./EasyblocksEditorProps";
 import { TemplatePicker } from "./TemplatePicker";

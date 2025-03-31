@@ -1,4 +1,4 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 export interface HistoryEntry {
     focussedField: Array<string>;
     config: NoCodeComponentEntry;

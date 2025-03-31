@@ -1,5 +1,5 @@
-import { NoCodeComponentEntry, SchemaProp } from "@easyblocks/core";
-import { CompilationContextType } from "@easyblocks/core/_internals";
+import { NoCodeComponentEntry, SchemaProp } from "@redsun-vn/easyblocks-core";
+import { CompilationContextType } from "@redsun-vn/easyblocks-core/_internals";
 import { Form } from "../form";
 declare const insertCommand: ({ context, form, schema, templateId, }: {
     context: CompilationContextType;

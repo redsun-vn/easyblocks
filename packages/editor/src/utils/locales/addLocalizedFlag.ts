@@ -1,5 +1,5 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
-import { CompilationContextType } from "@easyblocks/core/_internals";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
+import { CompilationContextType } from "@redsun-vn/easyblocks-core/_internals";
 import { configMap } from "../config/configMap";
 
 export function addLocalizedFlag(

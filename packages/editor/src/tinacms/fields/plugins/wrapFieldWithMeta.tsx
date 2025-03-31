@@ -10,18 +10,18 @@ import {
   isTrulyResponsiveValue,
   responsiveValueFindDeviceWithDefinedValue,
   responsiveValueForceGet,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   InternalField,
   isExternalSchemaProp,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import {
   Fonts,
   Loader,
   Select,
   SelectItem,
   Typography,
-} from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-design-system";
 import { dotNotationGet, toArray, uniqueId } from "@easyblocks/utils";
 import React, { ReactNode, useState } from "react";
 import styled, { css } from "styled-components";

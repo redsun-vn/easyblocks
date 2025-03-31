@@ -22,7 +22,7 @@ import {
   normalizeInput,
   responsiveValueGet,
   validate,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   CompilationContextType,
   ComponentPickerOpenedEvent,
@@ -33,8 +33,8 @@ import {
   findComponentDefinitionById,
   parsePath,
   traverseComponents,
-} from "@easyblocks/core/_internals";
-import { Colors, Fonts, useToaster } from "@easyblocks/design-system";
+} from "@redsun-vn/easyblocks-core/_internals";
+import { Colors, Fonts, useToaster } from "@redsun-vn/easyblocks-design-system";
 import { dotNotationGet, uniqueId, useForceRerender } from "@easyblocks/utils";
 import throttle from "lodash.throttle";
 import React, {

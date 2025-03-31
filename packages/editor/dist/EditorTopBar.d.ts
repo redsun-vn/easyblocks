@@ -1,4 +1,4 @@
-import { Devices, Locale } from "@easyblocks/core";
+import { Devices, Locale } from "@redsun-vn/easyblocks-core";
 import React from "react";
 export declare const TOP_BAR_HEIGHT = 40;
 export declare const EditorTopBar: React.FC<{

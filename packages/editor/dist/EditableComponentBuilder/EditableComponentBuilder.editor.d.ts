@@ -1,4 +1,4 @@
-import { ComponentBuilderProps } from "@easyblocks/core/_internals";
+import { ComponentBuilderProps } from "@redsun-vn/easyblocks-core/_internals";
 import React from "react";
 type EditableComponentBuilderProps = ComponentBuilderProps & {
     index: number;

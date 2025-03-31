@@ -1,4 +1,4 @@
-import { RequestedExternalData, Config, ContextParams, ExternalData, InlineTypeWidgetComponentProps, WidgetComponentProps } from "@easyblocks/core";
+import { RequestedExternalData, Config, ContextParams, ExternalData, InlineTypeWidgetComponentProps, WidgetComponentProps } from "@redsun-vn/easyblocks-core";
 import React, { ComponentType } from "react";
 import { TemplatePicker } from "./TemplatePicker";
 export type ExternalDataChangeHandler = (externalData: RequestedExternalData, contextParams: ContextParams) => void;

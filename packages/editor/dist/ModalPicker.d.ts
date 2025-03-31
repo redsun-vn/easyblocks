@@ -1,4 +1,4 @@
-import { NoCodeComponentEntry } from "@easyblocks/core";
+import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 import { FC } from "react";
 import { TemplatePicker } from "./TemplatePicker";
 import { OpenComponentPickerConfig } from "./types";

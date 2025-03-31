@@ -1,4 +1,4 @@
-import { Position } from "@easyblocks/core";
+import { Position } from "@redsun-vn/easyblocks-core";
 import React from "react";
 declare function PositionPickerInput({ position, onPositionChange, }: {
     position: Position;

@@ -1,5 +1,5 @@
-import { CompiledComponentConfig } from "@easyblocks/core";
-import { Fonts } from "@easyblocks/design-system";
+import { CompiledComponentConfig } from "@redsun-vn/easyblocks-core";
+import { Fonts } from "@redsun-vn/easyblocks-design-system";
 import { dotNotationGet } from "@easyblocks/utils";
 import React from "react";
 import styled from "styled-components";

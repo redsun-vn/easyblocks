@@ -2,13 +2,13 @@ import {
   NoCodeComponentEntry,
   ComponentSchemaProp,
   isNoCodeComponentOfType,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   CompilationContextType,
   duplicateConfig,
   findComponentDefinitionById,
   parsePath,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import {
   dotNotationGet,
   last,

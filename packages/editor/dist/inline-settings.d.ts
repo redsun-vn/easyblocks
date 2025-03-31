@@ -1,4 +1,4 @@
-import { InternalField } from "@easyblocks/core/_internals";
+import { InternalField } from "@redsun-vn/easyblocks-core/_internals";
 import React from "react";
 interface InlineSettingsProps {
     fields: InternalField[];

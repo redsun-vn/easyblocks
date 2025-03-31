@@ -1,4 +1,4 @@
-import type { NoCodeComponentEntry } from "@easyblocks/core";
+import type { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
 import { EditorHistory, HistoryEntry } from "./EditorHistory";
 interface UseEditorHistoryParameters {
     onChange: (editorHistoryChange: EditorHistoryChange) => void;

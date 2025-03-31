@@ -1,4 +1,4 @@
-import { PlaceholderAppearance } from "@easyblocks/core";
+import { PlaceholderAppearance } from "@redsun-vn/easyblocks-core";
 import React from "react";
 type TypePlaceholderComponentBuilderProps = {
     id: string;

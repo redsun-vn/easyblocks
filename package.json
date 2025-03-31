@@ -18,8 +18,7 @@
     "supabase-restart": "npm run supabase-stop && npm run supabase-start",
     "publish:core": "cd ./packages/core && npm publish --registry=https://npm.pkg.github.com",
     "publish:ds": "cd ./packages/design-system && npm publish --registry=https://npm.pkg.github.com",
-    "publish:editor": "cd ./packages/editor && npm publish --registry=https://npm.pkg.github.com",
-    "publish:all": "npm run publish:core && npm run publish:design-system && npm run publish:editor"
+    "publish:editor": "cd ./packages/editor && npm publish --registry=https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

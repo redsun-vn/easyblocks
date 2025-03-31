@@ -1,4 +1,4 @@
-import { ComponentDefinitionShared, Template } from "@easyblocks/core";
+import { ComponentDefinitionShared, Template } from "@redsun-vn/easyblocks-core";
 export type TemplatesDictionary = {
     [componentId: string]: {
         component: ComponentDefinitionShared;

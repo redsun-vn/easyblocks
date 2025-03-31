@@ -1,4 +1,4 @@
-import { InternalField } from "@easyblocks/core/_internals";
+import { InternalField } from "@redsun-vn/easyblocks-core/_internals";
 import { EditorContextType } from "../../../../EditorContext";
 import { Form } from "../../../../form";
 export type ResponsiveFieldDefinition = Omit<InternalField, "component"> & {

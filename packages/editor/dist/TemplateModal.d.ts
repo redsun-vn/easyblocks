@@ -1,6 +1,6 @@
 import React from "react";
 import { OpenTemplateModalAction } from "./types";
-import { Backend } from "@easyblocks/core";
+import { Backend } from "@redsun-vn/easyblocks-core";
 type TemplateModalProps = {
     action: OpenTemplateModalAction;
     onClose: () => void;

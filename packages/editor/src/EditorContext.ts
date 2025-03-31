@@ -10,12 +10,12 @@ import {
   TokenTypeDefinition,
   TokenTypeWidgetComponentProps,
   Widget,
-} from "@easyblocks/core";
+} from "@redsun-vn/easyblocks-core";
 import {
   EditorContextType as BaseEditorContextType,
   CompilationCache,
   InternalAnyField,
-} from "@easyblocks/core/_internals";
+} from "@redsun-vn/easyblocks-core/_internals";
 import React, { ComponentType, useContext } from "react";
 import { Form } from "./form";
 import { ActionsType, InternalWidgetComponentProps } from "./types";
