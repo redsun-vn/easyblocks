@@ -11,7 +11,7 @@ import {
   findComponentDefinitionById,
   normalize,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { uniqueId } from "@easyblocks/utils";
+import { uniqueId } from "@redsun-vn/easyblocks-utils";
 import { EditorContextType } from "../EditorContext";
 import { configMap } from "../utils/config/configMap";
 

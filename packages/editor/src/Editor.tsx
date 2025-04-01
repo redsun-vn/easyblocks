@@ -35,7 +35,11 @@ import {
   traverseComponents,
 } from "@redsun-vn/easyblocks-core/_internals";
 import { Colors, Fonts, useToaster } from "@redsun-vn/easyblocks-design-system";
-import { dotNotationGet, uniqueId, useForceRerender } from "@easyblocks/utils";
+import {
+  dotNotationGet,
+  uniqueId,
+  useForceRerender,
+} from "@redsun-vn/easyblocks-utils";
 import throttle from "lodash.throttle";
 import React, {
   ComponentType,

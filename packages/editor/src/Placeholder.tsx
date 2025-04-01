@@ -6,7 +6,7 @@ import {
   useEasyblocksMetadata,
 } from "@redsun-vn/easyblocks-core/_internals";
 import { Colors, Fonts } from "@redsun-vn/easyblocks-design-system";
-import { toArray } from "@easyblocks/utils";
+import { toArray } from "@redsun-vn/easyblocks-utils";
 import React from "react";
 import { EditorContextType } from "./EditorContext";
 

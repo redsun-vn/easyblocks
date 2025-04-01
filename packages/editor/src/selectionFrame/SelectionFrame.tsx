@@ -8,7 +8,7 @@ import {
   isSchemaPropCollection,
   parsePath,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import React, { useLayoutEffect } from "react";
 import { EditorContextType, useEditorContext } from "../EditorContext";
 import { pathToCompiledPath } from "../pathToCompiledPath";

@@ -1,6 +1,6 @@
 import { responsiveValueForceGet } from "@redsun-vn/easyblocks-core";
 import { Colors, Fonts, Icons } from "@redsun-vn/easyblocks-design-system";
-import { dotNotationGet, toArray } from "@easyblocks/utils";
+import { dotNotationGet, toArray } from "@redsun-vn/easyblocks-utils";
 import React from "react";
 import styled from "styled-components";
 import { useConfigAfterAuto } from "../../../../ConfigAfterAutoContext";

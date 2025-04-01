@@ -9,7 +9,7 @@ import {
   Colors,
   Fonts,
 } from "@redsun-vn/easyblocks-design-system";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import * as React from "react";
 import styled from "styled-components";
 import { useEditorContext } from "./EditorContext";

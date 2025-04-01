@@ -25,7 +25,7 @@ import {
   ThumbnailType,
   Typography,
 } from "@redsun-vn/easyblocks-design-system";
-import { dotNotationGet, toArray } from "@easyblocks/utils";
+import { dotNotationGet, toArray } from "@redsun-vn/easyblocks-utils";
 import React from "react";
 import ReactDOM from "react-dom";
 import styled, { css, keyframes } from "styled-components";

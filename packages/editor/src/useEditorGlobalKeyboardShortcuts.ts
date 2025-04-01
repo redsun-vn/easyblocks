@@ -2,7 +2,10 @@ import {
   EditorContextType,
   duplicateConfig,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet, preOrderPathComparator } from "@easyblocks/utils";
+import {
+  dotNotationGet,
+  preOrderPathComparator,
+} from "@redsun-vn/easyblocks-utils";
 import { useEffect } from "react";
 
 const GLOBAL_SHORTCUTS_KEYS = [

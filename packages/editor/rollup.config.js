@@ -8,7 +8,7 @@ import {
   getFullySpecifiedEnvs,
   isDevelopment,
   isProduction,
-} from "@easyblocks/build-tools";
+} from "@redsun-vn/easyblocks-build-tools";
 import visualizer from "rollup-plugin-visualizer";
 import packageJson from "./package.json";
 

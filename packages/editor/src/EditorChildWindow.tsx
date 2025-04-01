@@ -16,7 +16,7 @@ import {
   configTraverse,
   itemMoved,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { useForceRerender } from "@easyblocks/utils";
+import { useForceRerender } from "@redsun-vn/easyblocks-utils";
 import React, { useEffect, useRef, useState } from "react";
 import { z } from "zod";
 import { CanvasRoot } from "./CanvasRoot/CanvasRoot";

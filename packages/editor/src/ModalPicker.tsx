@@ -8,7 +8,7 @@ import {
   findComponentDefinition,
   normalize,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import React, { FC } from "react";
 import { useEditorContext } from "./EditorContext";
 import { SearchableSmallPickerModal } from "./SearchableSmallPickerModal";

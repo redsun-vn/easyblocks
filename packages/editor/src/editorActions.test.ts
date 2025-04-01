@@ -1,6 +1,6 @@
 // @ts-ignore
 import { CompilationContextType } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import {
   duplicateItems,
   logItems,

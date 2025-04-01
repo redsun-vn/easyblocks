@@ -2,7 +2,7 @@ import {
   InternalAnyField,
   InternalField,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import { Config, FORM_ERROR, FormApi, FormState, createForm } from "final-form";
 import arrayMutators from "final-form-arrays";
 

@@ -16,7 +16,7 @@ import {
   richTextChangedEvent,
   traverseComponents,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet, last, toArray } from "@easyblocks/utils";
+import { dotNotationGet, last, toArray } from "@redsun-vn/easyblocks-utils";
 import { EditorContextType } from "../../../EditorContext";
 import { getUniqueValues } from "../../fields/components/getUniqueValues";
 import { isConfigPathRichTextPart } from "../../../utils/isConfigPathRichTextPart";

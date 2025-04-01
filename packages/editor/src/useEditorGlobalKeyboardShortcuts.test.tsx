@@ -1,5 +1,5 @@
 import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
-import { dotNotationSet } from "@easyblocks/utils";
+import { dotNotationSet } from "@redsun-vn/easyblocks-utils";
 import { createEvent, fireEvent, render } from "@testing-library/react";
 import React from "react";
 import { Form } from "./form";

@@ -48,8 +48,8 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@easyblocks/build-tools": "workspace:*",
-    "@easyblocks/utils": "workspace:*",
+    "@redsun-vn/easyblocks-build-tools": "^1.0.0",
+    "@redsun-vn/easyblocks-utils": "^1.0.0",
     "@jest/types": "^26.6.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",

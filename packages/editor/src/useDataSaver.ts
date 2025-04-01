@@ -1,5 +1,5 @@
 import { NoCodeComponentEntry, Document } from "@redsun-vn/easyblocks-core";
-import { deepClone, deepCompare, sleep } from "@easyblocks/utils";
+import { deepClone, deepCompare, sleep } from "@redsun-vn/easyblocks-utils";
 import { useEffect, useRef, useState } from "react";
 import { EditorContextType } from "./EditorContext";
 import { getConfigSnapshot } from "./utils/config/getConfigSnapshot";

@@ -3,7 +3,7 @@ import {
   responsiveValueForceGet,
 } from "@redsun-vn/easyblocks-core";
 import { InternalField } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet, toArray } from "@easyblocks/utils";
+import { dotNotationGet, toArray } from "@redsun-vn/easyblocks-utils";
 import { EditorContextType } from "../../../../EditorContext";
 import { Form } from "../../../../form";
 

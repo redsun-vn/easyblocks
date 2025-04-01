@@ -6,7 +6,7 @@ import {
   findComponentDefinitionById,
   parsePath,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import { Form } from "../form";
 import { insertCommand } from "./insert";
 

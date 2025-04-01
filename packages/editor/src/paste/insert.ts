@@ -9,7 +9,7 @@ import {
   duplicateConfig,
   findComponentDefinition,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { includesAny } from "@easyblocks/utils";
+import { includesAny } from "@redsun-vn/easyblocks-utils";
 import { Form } from "../form";
 import { normalizeToStringArray } from "../normalizeToStringArray";
 import { reconcile } from "./reconcile";

@@ -9,7 +9,7 @@ import {
   compileInternal,
   normalize,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import { EditorContextType } from "../../../EditorContext";
 import { isFieldPortal } from "../../../buildTinaFields";
 import { Form } from "../../../form";

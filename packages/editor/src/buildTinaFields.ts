@@ -7,7 +7,7 @@ import {
   InternalField,
   stripRichTextPartSelection,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import type { EditorContextType } from "./EditorContext";
 import { pathToCompiledPath } from "./pathToCompiledPath";
 

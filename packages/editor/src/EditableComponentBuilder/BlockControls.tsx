@@ -15,7 +15,7 @@ import {
   useEasyblocksMetadata,
 } from "@redsun-vn/easyblocks-core/_internals";
 import { Colors } from "@redsun-vn/easyblocks-design-system";
-import { toArray } from "@easyblocks/utils";
+import { toArray } from "@redsun-vn/easyblocks-utils";
 import React, { Fragment } from "react";
 import { SelectionFrameController } from "./SelectionFrameController";
 import {

@@ -1,7 +1,6 @@
 {
-  "name": "@easyblocks/build-tools",
-  "version": "1.0.10",
-  "private": true,
+  "name": "@redsun-vn/easyblocks-build-tools",
+  "version": "1.0.1",
   "main": "./src/index.js",
   "types": "./src/index.js"
 }

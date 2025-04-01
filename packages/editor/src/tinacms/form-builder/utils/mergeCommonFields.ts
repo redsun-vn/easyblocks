@@ -3,7 +3,7 @@ import {
   InternalComponentDefinition,
   InternalField,
 } from "@redsun-vn/easyblocks-core/_internals";
-import { last } from "@easyblocks/utils";
+import { last } from "@redsun-vn/easyblocks-utils";
 import { getUniqueValues } from "../../fields/components/getUniqueValues";
 
 export interface MergeCommonFieldsParameters {

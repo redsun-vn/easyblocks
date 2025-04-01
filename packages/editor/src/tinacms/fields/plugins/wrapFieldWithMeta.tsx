@@ -22,7 +22,7 @@ import {
   SelectItem,
   Typography,
 } from "@redsun-vn/easyblocks-design-system";
-import { dotNotationGet, toArray, uniqueId } from "@easyblocks/utils";
+import { dotNotationGet, toArray, uniqueId } from "@redsun-vn/easyblocks-utils";
 import React, { ReactNode, useState } from "react";
 import styled, { css } from "styled-components";
 import { useConfigAfterAuto } from "../../../ConfigAfterAutoContext";

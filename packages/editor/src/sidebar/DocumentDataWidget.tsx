@@ -5,7 +5,7 @@ import {
 } from "@redsun-vn/easyblocks-core";
 import { findComponentDefinitionById } from "@redsun-vn/easyblocks-core/_internals";
 import { Typography } from "@redsun-vn/easyblocks-design-system";
-import { assertDefined, dotNotationGet } from "@easyblocks/utils";
+import { assertDefined, dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import React from "react";
 import {
   CompoundResourceValueSelect,

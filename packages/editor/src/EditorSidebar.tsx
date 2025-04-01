@@ -1,6 +1,6 @@
 import { CompiledComponentConfig } from "@redsun-vn/easyblocks-core";
 import { Fonts } from "@redsun-vn/easyblocks-design-system";
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import React from "react";
 import styled from "styled-components";
 import { buildTinaFields } from "./buildTinaFields";

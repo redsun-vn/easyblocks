@@ -7,7 +7,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { parseQueryParams } from "./parseQueryParams";
 import { EasyblocksEditorProps } from "./EasyblocksEditorProps";
-import { serialize } from "@easyblocks/utils";
+import { serialize } from "@redsun-vn/easyblocks-utils";
 
 export const PreviewRenderer: React.FC<EasyblocksEditorProps> = (props) => {
   const config = props.config;

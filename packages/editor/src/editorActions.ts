@@ -13,7 +13,7 @@ import {
   dotNotationGet,
   last,
   preOrderPathComparator,
-} from "@easyblocks/utils";
+} from "@redsun-vn/easyblocks-utils";
 import { EditorContextType } from "./EditorContext";
 import { Form } from "./form";
 import { ResolveDestination } from "./paste/destinationResolver";

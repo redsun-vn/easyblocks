@@ -7,7 +7,7 @@ import {
   isResolvedCompoundExternalDataValue,
 } from "@redsun-vn/easyblocks-core";
 import { Select, SelectItem } from "@redsun-vn/easyblocks-design-system";
-import { dotNotationGet, toArray } from "@easyblocks/utils";
+import { dotNotationGet, toArray } from "@redsun-vn/easyblocks-utils";
 import React, { ComponentType, useLayoutEffect } from "react";
 import {
   EditorContextType,

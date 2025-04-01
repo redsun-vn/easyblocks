@@ -17,7 +17,11 @@
     "supabase-stop": "supabase stop",
     "supabase-restart": "npm run supabase-stop && npm run supabase-start",
     "publish:core": "cd ./packages/core && npm publish --registry=https://npm.pkg.github.com",
-    "publish:ds": "cd ./packages/design-system && npm publish --registry=https://npm.pkg.github.com",
+    "publish:design-system": "cd ./packages/design-system && npm publish --registry=https://npm.pkg.github.com",
+    "publish:build-tools": "cd ./packages/build-tools && npm publish --registry=https://npm.pkg.github.com",
+    "publish:reduce-css-calc": "cd ./packages/reduce-css-calc && npm publish --registry=https://npm.pkg.github.com",
+    "publish:test-utils": "cd ./packages/test-utils && npm publish --registry=https://npm.pkg.github.com",
+    "publish:utils": "cd ./packages/utils && npm publish --registry=https://npm.pkg.github.com",
     "publish:editor": "cd ./packages/editor && npm publish --registry=https://npm.pkg.github.com"
   },
   "devDependencies": {

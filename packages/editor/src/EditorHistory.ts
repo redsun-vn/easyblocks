@@ -1,5 +1,5 @@
 import { NoCodeComponentEntry } from "@redsun-vn/easyblocks-core";
-import { deepCompare } from "@easyblocks/utils";
+import { deepCompare } from "@redsun-vn/easyblocks-utils";
 
 const HISTORY_SIZE = 50;
 

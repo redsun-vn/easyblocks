@@ -32,9 +32,6 @@ importers:
       '@microsoft/api-extractor':
         specifier: ^7.39.1
         version: 7.52.2(@types/node@18.14.2)
-      '@rollup/plugin-alias':
-        specifier: ^5.1.1
-        version: 5.1.1(rollup@2.79.2)
       '@rollup/plugin-babel':
         specifier: ^5.3.0
         version: 5.3.1(@babel/core@7.26.10)(@types/babel__core@7.20.5)(rollup@2.79.2)
@@ -173,21 +170,21 @@ importers:
       '@babel/plugin-transform-runtime':
         specifier: ^7.15.0
         version: 7.26.10(@babel/core@7.26.10)
-      '@easyblocks/build-tools':
-        specifier: workspace:*
-        version: link:../build-tools
-      '@easyblocks/reduce-css-calc':
-        specifier: workspace:*
-        version: link:../reduce-css-calc
-      '@easyblocks/test-utils':
-        specifier: workspace:*
-        version: link:../test-utils
-      '@easyblocks/utils':
-        specifier: workspace:*
-        version: link:../utils
       '@jest/types':
         specifier: ^26.6.2
         version: 26.6.2
+      '@redsun-vn/easyblocks-build-tools':
+        specifier: ^1.0.0
+        version: 1.0.1
+      '@redsun-vn/easyblocks-reduce-css-calc':
+        specifier: ^1.0.0
+        version: 1.0.1
+      '@redsun-vn/easyblocks-test-utils':
+        specifier: ^1.0.0
+        version: 1.0.1
+      '@redsun-vn/easyblocks-utils':
+        specifier: ^1.0.0
+        version: 1.0.1
       '@types/jest':
         specifier: ^26.0.20
         version: 26.0.24
@@ -246,9 +243,9 @@ importers:
         specifier: ^6.0.7
         version: 6.1.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
-      '@easyblocks/build-tools':
-        specifier: workspace:*
-        version: link:../build-tools
+      '@redsun-vn/easyblocks-build-tools':
+        specifier: ^1.0.0
+        version: 1.0.1
       '@types/lodash':
         specifier: ^4.14.191
         version: 4.17.16
@@ -325,15 +322,15 @@ importers:
         specifier: ^3.21.4
         version: 3.24.2
     devDependencies:
-      '@easyblocks/build-tools':
-        specifier: workspace:*
-        version: link:../build-tools
-      '@easyblocks/utils':
-        specifier: workspace:*
-        version: link:../utils
       '@jest/types':
         specifier: ^26.6.2
         version: 26.6.2
+      '@redsun-vn/easyblocks-build-tools':
+        specifier: ^1.0.0
+        version: 1.0.1
+      '@redsun-vn/easyblocks-utils':
+        specifier: ^1.0.0
+        version: 1.0.1
       '@testing-library/jest-dom':
         specifier: ^5.16.5
         version: 5.17.0
@@ -2147,6 +2144,9 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
+  '@redsun-vn/easyblocks-build-tools@1.0.1':
+    resolution: {integrity: sha512-eUWm/5Bqnl8ApoM+9CbzeJto2h73DiY6ujkm/Tkf6nqgszaV3E296MPpSvRwMzyZTQKOo3e5l/FYtMYgRV8WUA==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-build-tools/1.0.1/db134934e8ecb85f9dff2aa5fb373c6b01aeb9d0}
+
   '@redsun-vn/easyblocks-core@1.0.1':
     resolution: {integrity: sha512-KV1ShCaVgLJeKtGz4S3+KSCvt+JpIriehx/hyGXOqDEvonkxKv+GvKRk7SkhhC/YXsCheb53Yh2Fm5J5M8cIJA==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-core/1.0.1/a8395b75d57689b571f6268da128de423b7b1e7d}
 
@@ -2155,14 +2155,14 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
 
-  '@rollup/plugin-alias@5.1.1':
-    resolution: {integrity: sha512-PR9zDb+rOzkRb2VD+EuKB7UC41vU5DIwZ5qqCpk0KJudcWAyi8rvYOhS7+L5aZCspw1stTViLgN5v6FF1p5cgQ==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
+  '@redsun-vn/easyblocks-reduce-css-calc@1.0.1':
+    resolution: {integrity: sha512-/7VGyvHtSr3vxyFd6mVhgQTrVC4WKJ7xGR2l6e73odwruoEY0Phk2da99/xXNmyx4sUrVQjDRJJF0Lqx4eEJmw==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-reduce-css-calc/1.0.1/3a545dcddd7f7382d5d3d334c2d03bf5f5542405}
+
+  '@redsun-vn/easyblocks-test-utils@1.0.1':
+    resolution: {integrity: sha512-tobkS7fn9aQB8QxnhjYlldJCf28VUpWuSUwamqfbgPGbpDhlmxxVJmW0F54zLUDizgKCHzpicJwdzeP4VnIJkg==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-test-utils/1.0.1/20cfcd709254c28e781e7a7f791e32004c829cce}
+
+  '@redsun-vn/easyblocks-utils@1.0.1':
+    resolution: {integrity: sha512-uLFrpXVx965UwxHoCypblh5vAPjr4ry7wlCUCVbCXHR2ajfCBgckKdN37IU/FJnRQP/loLLLrXRWGrGA2vXfoQ==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-utils/1.0.1/d2df49dca274558418f5e7f2a36d60440c70ea3f}
 
   '@rollup/plugin-babel@5.3.1':
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -10516,6 +10516,8 @@ snapshots:
       '@react-types/shared': 3.28.0(react@18.2.0)
       react: 18.2.0
 
+  '@redsun-vn/easyblocks-build-tools@1.0.1': {}
+
   '@redsun-vn/easyblocks-core@1.0.1(@types/react@18.3.20)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@babel/runtime': 7.27.0
@@ -10554,9 +10556,15 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@rollup/plugin-alias@5.1.1(rollup@2.79.2)':
-    optionalDependencies:
-      rollup: 2.79.2
+  '@redsun-vn/easyblocks-reduce-css-calc@1.0.1':
+    dependencies:
+      postcss-value-parser: 3.3.1
+
+  '@redsun-vn/easyblocks-test-utils@1.0.1': {}
+
+  '@redsun-vn/easyblocks-utils@1.0.1':
+    dependencies:
+      react: 18.2.0
 
   '@rollup/plugin-babel@5.3.1(@babel/core@7.26.10)(@types/babel__core@7.20.5)(rollup@2.79.2)':
     dependencies:
@@ -14066,7 +14074,7 @@ snapshots:
       jest-environment-jsdom: 26.6.2
       jest-environment-node: 26.6.2
       jest-get-type: 26.3.0
-      jest-jasmine2: 26.6.3(ts-node@10.9.2(@types/node@18.14.2)(typescript@5.8.2))
+      jest-jasmine2: 26.6.3
       jest-regex-util: 26.0.0
       jest-resolve: 26.6.2
       jest-util: 26.6.2
@@ -14155,7 +14163,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jest-jasmine2@26.6.3(ts-node@10.9.2(@types/node@18.14.2)(typescript@5.8.2)):
+  jest-jasmine2@26.6.3:
     dependencies:
       '@babel/traverse': 7.27.0
       '@jest/environment': 26.6.2
@@ -14176,11 +14184,7 @@ snapshots:
       pretty-format: 26.6.2
       throat: 5.0.0
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   jest-leak-detector@26.6.2:
     dependencies:

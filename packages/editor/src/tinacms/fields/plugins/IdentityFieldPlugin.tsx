@@ -12,7 +12,7 @@ import {
   Icons,
   Typography,
 } from "@redsun-vn/easyblocks-design-system";
-import { toArray } from "@easyblocks/utils";
+import { toArray } from "@redsun-vn/easyblocks-utils";
 import React, { useContext } from "react";
 import type { FieldRenderProps } from "react-final-form";
 import { css } from "styled-components";

@@ -11,8 +11,8 @@ test("idle", () => {
 //   ResponsiveValue,
 // } from "@redsun-vn/easyblocks-core";
 // import { normalize } from "@redsun-vn/easyblocks-core/_internals";
-// import { mock, mockConsoleMethod } from "@easyblocks/test-utils";
-// import { assertDefined, deepClone, dotNotationSet } from "@easyblocks/utils";
+// import { mock, mockConsoleMethod } from "@redsun-vn/easyblocks-test-utils";
+// import { assertDefined, deepClone, dotNotationSet } from "@redsun-vn/easyblocks-utils";
 // import { renderHook } from "@testing-library/react";
 // import React from "react";
 // import { PartialDeep } from "type-fest";

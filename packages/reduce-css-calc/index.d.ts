@@ -1,4 +1,4 @@
-declare module "@easyblocks/reduce-css-calc" {
+declare module "@redsun-vn/easyblocks-reduce-css-calc" {
   const reduceCSSCalc: (
     x: string,
     precision: number,
