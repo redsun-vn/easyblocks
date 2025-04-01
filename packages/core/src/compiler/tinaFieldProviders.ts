@@ -1,4 +1,4 @@
-import { assertDefined } from "@easyblocks/utils";
+import { assertDefined } from "@redsun-vn/easyblocks-utils";
 import {
   AnyTinaField,
   BooleanSchemaProp,

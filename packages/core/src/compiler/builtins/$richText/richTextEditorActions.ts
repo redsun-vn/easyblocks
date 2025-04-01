@@ -1,4 +1,4 @@
-import { nonNullable } from "@easyblocks/utils";
+import { nonNullable } from "@redsun-vn/easyblocks-utils";
 import { BaseRange, Editor, Node, Range, Text, Transforms } from "slate";
 import { SetNonNullable } from "type-fest";
 import { RichTextComponentConfig } from "./$richText";

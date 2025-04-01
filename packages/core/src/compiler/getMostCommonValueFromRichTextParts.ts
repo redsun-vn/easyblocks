@@ -1,4 +1,4 @@
-import { entries } from "@easyblocks/utils";
+import { entries } from "@redsun-vn/easyblocks-utils";
 import { getFallbackForLocale } from "../locales";
 import { DeviceRange } from "../types";
 import { CompilationCache } from "./CompilationCache";

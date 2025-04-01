@@ -1,4 +1,4 @@
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 /**
  * When selecting text within $richText, we keep information about which text parts are selected
  * within focused fields. If the text part is partially selected, we add information about the selection.

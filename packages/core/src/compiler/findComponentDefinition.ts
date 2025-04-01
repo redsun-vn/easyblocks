@@ -1,4 +1,4 @@
-import { toArray } from "@easyblocks/utils";
+import { toArray } from "@redsun-vn/easyblocks-utils";
 import { NoCodeComponentEntry } from "../types";
 import {
   InternalComponentDefinition,

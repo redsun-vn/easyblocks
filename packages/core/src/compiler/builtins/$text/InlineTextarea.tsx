@@ -1,4 +1,4 @@
-import { dotNotationGet } from "@easyblocks/utils";
+import { dotNotationGet } from "@redsun-vn/easyblocks-utils";
 import React, { ElementRef, useRef, useState } from "react";
 import { flushSync } from "react-dom";
 import TextareaAutosize from "react-textarea-autosize";

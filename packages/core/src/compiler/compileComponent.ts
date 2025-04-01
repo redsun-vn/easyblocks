@@ -9,7 +9,7 @@ import {
   raiseError,
   toArray,
   uniqueId,
-} from "@easyblocks/utils";
+} from "@redsun-vn/easyblocks-utils";
 import { xxHash32 } from "js-xxhash";
 import { isComponentConfig } from "../checkers";
 import {

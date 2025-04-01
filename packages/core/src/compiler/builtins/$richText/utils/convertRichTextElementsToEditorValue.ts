@@ -1,4 +1,4 @@
-import { uniqueId } from "@easyblocks/utils";
+import { uniqueId } from "@redsun-vn/easyblocks-utils";
 import type { Text } from "slate";
 import type { RichTextComponentConfig } from "../$richText";
 import type { BlockElement } from "../$richText.types";

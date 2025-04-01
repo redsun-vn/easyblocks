@@ -1,4 +1,4 @@
-import { dotNotationSet } from "@easyblocks/utils";
+import { dotNotationSet } from "@redsun-vn/easyblocks-utils";
 import { EasyblocksBackend } from "./EasyblocksBackend";
 import { createCompilationContext } from "./compiler/createCompilationContext";
 import { Devices } from "./types";

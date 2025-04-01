@@ -1,4 +1,8 @@
-import { dotNotationGet, nonNullable, range } from "@easyblocks/utils";
+import {
+  dotNotationGet,
+  nonNullable,
+  range,
+} from "@redsun-vn/easyblocks-utils";
 import { Locale, getFallbackLocaleForLocale } from "../../../locales";
 import {
   NoCodeComponentDefinition,

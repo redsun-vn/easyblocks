@@ -1,4 +1,4 @@
-import { mockConsoleMethod } from "@easyblocks/test-utils";
+import { mockConsoleMethod } from "@redsun-vn/easyblocks-test-utils";
 import { isTrulyResponsiveValue, responsiveValueFill } from "../responsiveness";
 import {
   CompiledComponentConfig,
@@ -16,7 +16,7 @@ import {
   EditorContextType,
   InternalRenderableComponentDefinition,
 } from "./types";
-import { dotNotationSet } from "@easyblocks/utils";
+import { dotNotationSet } from "@redsun-vn/easyblocks-utils";
 import { createCompilationContext } from "./createCompilationContext";
 import { EasyblocksBackend } from "../EasyblocksBackend";
 

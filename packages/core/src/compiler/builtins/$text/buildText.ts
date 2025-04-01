@@ -1,4 +1,4 @@
-import { uniqueId } from "@easyblocks/utils";
+import { uniqueId } from "@redsun-vn/easyblocks-utils";
 import { getDefaultLocale } from "../../../locales";
 import { EditorContextType } from "../../types";
 

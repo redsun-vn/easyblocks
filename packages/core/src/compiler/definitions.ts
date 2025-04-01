@@ -1,4 +1,4 @@
-import { uniqueId } from "@easyblocks/utils";
+import { uniqueId } from "@redsun-vn/easyblocks-utils";
 import { SetOptional } from "type-fest";
 import { isLocalValue } from "..";
 import { getFallbackForLocale, getFallbackLocaleForLocale } from "../locales";

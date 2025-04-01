@@ -1,4 +1,4 @@
-import { cleanString } from "@easyblocks/utils";
+import { cleanString } from "@redsun-vn/easyblocks-utils";
 import { Element } from "slate";
 import type {
   BlockElement,

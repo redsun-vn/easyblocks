@@ -1,4 +1,4 @@
-import { uniqueId } from "@easyblocks/utils";
+import { uniqueId } from "@redsun-vn/easyblocks-utils";
 import { SetOptional } from "type-fest";
 import type { TokenValue } from "../../../types";
 import type { RichTextComponentConfig } from "./$richText";
