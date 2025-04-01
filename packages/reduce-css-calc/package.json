@@ -1,16 +1,19 @@
 {
   "name": "@redsun-vn/easyblocks-reduce-css-calc",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Reduce CSS calc() function to the maximum",
   "keywords": [
     "css",
     "calculation",
     "calc"
   ],
-  "main": "src/index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "src/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "parser.jison"
   ],
   "scripts": {
     "prepublish": "npm run build && del-cli dist/__tests__",

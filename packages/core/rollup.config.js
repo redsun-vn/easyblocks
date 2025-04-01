@@ -25,15 +25,31 @@ const getPlugins = (stat, isFullBundle = false) => {
       preventAssignment: true,
     }),
 
+    {
+      name: "handle-parser",
+      resolveId(source, importer) {
+        if (source === "./parser" && importer?.includes("reduce-css-calc")) {
+          return path.resolve(path.dirname(importer), "parser.js");
+        }
+        return null;
+      },
+    },
+
     babel({
       configFile: "./.babelrc.json",
       extensions,
       exclude: [/(node_modules|(editor|compiler)\/dist)/],
       babelHelpers: "runtime",
+      presets: [
+        "@babel/preset-env",
+        "@babel/preset-typescript",
+        "@babel/preset-react",
+      ],
     }),
     nodeResolve({
       extensions,
-      browser: isFullBundle, // browser: true for bundled editor, it's important not to add "node" stuff to the editor that is run in the browser
+      browser: isFullBundle,
+      resolveOnly: [/^(?!@redsun-vn\/easyblocks-utils)/],
     }),
 
     commonjs(),
@@ -46,14 +62,9 @@ const getPlugins = (stat, isFullBundle = false) => {
 
     {
       ...preserveDirectivesPlugin,
-      // @ts-expect-error preserveDirectivesPlugin is incompatible by default with our version or rollup
       renderChunk: preserveDirectivesPlugin.renderChunk.handler,
     },
   ];
-
-  // if (process.env.NODE_ENV === "production") {
-  //     plugins.push(terser());
-  // }
 
   return plugins;
 };
@@ -66,6 +77,7 @@ const allDependenciesKeys = [
   ...peerDependencyKeys.map((key) => new RegExp(`^${key}`)),
   /@babel\/runtime/,
   /^lodash\//,
+  /@redsun-vn\/easyblocks-utils/,
 ];
 
 function createRollupConfigs({

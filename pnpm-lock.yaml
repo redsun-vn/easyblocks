@@ -102,8 +102,11 @@ importers:
         specifier: ^12.1.2
         version: 12.5.0(enquirer@2.3.6)
       nx:
-        specifier: 16.6.0
-        version: 16.6.0
+        specifier: 16.1.4
+        version: 16.1.4
+      nx-cloud:
+        specifier: latest
+        version: 19.1.0
       prettier:
         specifier: 2.8.8
         version: 2.8.8
@@ -148,6 +151,12 @@ importers:
       postcss-value-parser:
         specifier: ^3.3.0
         version: 3.3.1
+      react:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+        version: 18.2.0(react@18.2.0)
       react-textarea-autosize:
         specifier: '>=7.1'
         version: 8.5.8(@types/react@18.3.20)(react@18.2.0)
@@ -177,14 +186,14 @@ importers:
         specifier: ^1.0.0
         version: 1.0.1
       '@redsun-vn/easyblocks-reduce-css-calc':
-        specifier: ^1.0.0
-        version: 1.0.1
+        specifier: ^1.0.4
+        version: 1.0.4
       '@redsun-vn/easyblocks-test-utils':
         specifier: ^1.0.0
         version: 1.0.1
       '@redsun-vn/easyblocks-utils':
-        specifier: ^1.0.0
-        version: 1.0.1
+        specifier: ^1.0.2
+        version: 1.0.2
       '@types/jest':
         specifier: ^26.0.20
         version: 26.0.24
@@ -329,8 +338,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.1
       '@redsun-vn/easyblocks-utils':
-        specifier: ^1.0.0
-        version: 1.0.1
+        specifier: ^1.0.2
+        version: 1.0.2
       '@testing-library/jest-dom':
         specifier: ^5.16.5
         version: 5.17.0
@@ -389,9 +398,30 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0
     devDependencies:
+      '@babel/core':
+        specifier: ^7.12.10
+        version: 7.26.10
+      '@babel/preset-env':
+        specifier: ^7.19.1
+        version: 7.26.9(@babel/core@7.26.10)
+      '@babel/preset-react':
+        specifier: ^7.18.6
+        version: 7.26.3(@babel/core@7.26.10)
+      '@babel/preset-typescript':
+        specifier: ^7.18.6
+        version: 7.27.0(@babel/core@7.26.10)
       '@jest/types':
         specifier: ^26.6.2
         version: 26.6.2
+      '@rollup/plugin-babel':
+        specifier: ^5.3.1
+        version: 5.3.1(@babel/core@7.26.10)(@types/babel__core@7.20.5)(rollup@2.79.2)
+      '@rollup/plugin-commonjs':
+        specifier: ^22.0.2
+        version: 22.0.2(rollup@2.79.2)
+      '@rollup/plugin-node-resolve':
+        specifier: ^14.1.0
+        version: 14.1.0(rollup@2.79.2)
       '@types/jest':
         specifier: ^26.0.20
         version: 26.0.24
@@ -401,6 +431,12 @@ importers:
       jest:
         specifier: ^26.6.3
         version: 26.6.3(ts-node@10.9.2(@types/node@18.14.2)(typescript@5.8.2))
+      rollup:
+        specifier: ^2.79.1
+        version: 2.79.2
+      typescript:
+        specifier: ^4.9.5
+        version: 4.9.5
 
 packages:
 
@@ -1465,6 +1501,9 @@ packages:
     peerDependencies:
       nx: '>= 14.1 <= 16'
 
+  '@nrwl/nx-cloud@19.1.0':
+    resolution: {integrity: sha512-krngXVPfX0Zf6+zJDtcI59/Pt3JfcMPMZ9C/+/x6rvz4WGgyv1s0MI4crEUM0Lx5ZpS4QI0WNDCFVQSfGEBXUg==}
+
   '@nrwl/nx-darwin-arm64@15.9.7':
     resolution: {integrity: sha512-aBUgnhlkrgC0vu0fK6eb9Vob7eFnkuknrK+YzTjmLrrZwj7FGNAeyGXSlyo1dVokIzjVKjJg2saZZ0WQbfuCJw==}
     engines: {node: '>= 10'}
@@ -1523,66 +1562,60 @@ packages:
     resolution: {integrity: sha512-OBnHNvQf3vBH0qh9YnvBQQWyyFZ+PWguF6dJ8+1vyQYlrLVk/XZ8nJ4ukWFb+QfPv/O8VBmqaofaOI9aFC4yTw==}
     hasBin: true
 
-  '@nrwl/tao@16.6.0':
-    resolution: {integrity: sha512-NQkDhmzlR1wMuYzzpl4XrKTYgyIzELdJ+dVrNKf4+p4z5WwKGucgRBj60xMQ3kdV25IX95/fmMDB8qVp/pNQ0Q==}
+  '@nrwl/tao@16.1.4':
+    resolution: {integrity: sha512-aArX3E7j+foUUzutsrgOc1lh9Rj5LDCAncHlszu0XGgHRO2EHE4qxZHvmgogGEpRf1ojTNAfN72xhVCSjtca/Q==}
     hasBin: true
 
-  '@nx/nx-darwin-arm64@16.6.0':
-    resolution: {integrity: sha512-8nJuqcWG/Ob39rebgPLpv2h/V46b9Rqqm/AGH+bYV9fNJpxgMXclyincbMIWvfYN2tW+Vb9DusiTxV6RPrLapA==}
+  '@nx/nx-darwin-arm64@16.1.4':
+    resolution: {integrity: sha512-0eITl+18xLtdiAVlv+LRukCHBLSLk8L8OkMnfLoK286sIblK31p2pzr1jL68ILUWPGGbdgo+nDEaaDTwh4tYRA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@nx/nx-darwin-x64@16.6.0':
-    resolution: {integrity: sha512-T4DV0/2PkPZjzjmsmQEyjPDNBEKc4Rhf7mbIZlsHXj27BPoeNjEcbjtXKuOZHZDIpGFYECGT/sAF6C2NVYgmxw==}
+  '@nx/nx-darwin-x64@16.1.4':
+    resolution: {integrity: sha512-owgIq/KsCU/QBK6Y7FsblnPPI0oSccJXaISKbPcCWnkD38rtUkaR99Eh2LvoUpcnvvpL0yldkkdMBzVvDwOSZg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@nx/nx-freebsd-x64@16.6.0':
-    resolution: {integrity: sha512-Ck/yejYgp65dH9pbExKN/X0m22+xS3rWF1DBr2LkP6j1zJaweRc3dT83BWgt5mCjmcmZVk3J8N01AxULAzUAqA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [freebsd]
-
-  '@nx/nx-linux-arm-gnueabihf@16.6.0':
-    resolution: {integrity: sha512-eyk/R1mBQ3X0PCSS+Cck3onvr3wmZVmM/+x0x9Ai02Vm6q9Eq6oZ1YtZGQsklNIyw1vk2WV9rJCStfu9mLecEw==}
+  '@nx/nx-linux-arm-gnueabihf@16.1.4':
+    resolution: {integrity: sha512-TqphSqAvQcgu83hE/XvJfGALq6EFqfRROct92whj+K5sz/AH67jnFPW+cHnXDwqIlgRB3lj/DFVqlNED8pBHfg==}
     engines: {node: '>= 10'}
     cpu: [arm]
     os: [linux]
 
-  '@nx/nx-linux-arm64-gnu@16.6.0':
-    resolution: {integrity: sha512-S0qFFdQFDmBIEZqBAJl4K47V3YuMvDvthbYE0enXrXApWgDApmhtxINXSOjSus7DNq9kMrgtSDGkBmoBot61iw==}
+  '@nx/nx-linux-arm64-gnu@16.1.4':
+    resolution: {integrity: sha512-0AmO57zf5+ZrIa9XIkmRSbPF/gMqDNlMtMj8q1S+uYRU+WOAW+k1RbcFKdN0voH5eBDVQ03sqkgj9wTNS/m/vQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@nx/nx-linux-arm64-musl@16.6.0':
-    resolution: {integrity: sha512-TXWY5VYtg2wX/LWxyrUkDVpqCyJHF7fWoVMUSlFe+XQnk9wp/yIbq2s0k3h8I4biYb6AgtcVqbR4ID86lSNuMA==}
+  '@nx/nx-linux-arm64-musl@16.1.4':
+    resolution: {integrity: sha512-10zAgZP+xh7HwyfDJyiyjAQD2gjvb4ZfCDAOE2Boe5yYcD27SqwAIzgrCc4DjRbUWSdufA4rclyXXp2tSb3uyA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@nx/nx-linux-x64-gnu@16.6.0':
-    resolution: {integrity: sha512-qQIpSVN8Ij4oOJ5v+U+YztWJ3YQkeCIevr4RdCE9rDilfq9RmBD94L4VDm7NRzYBuQL8uQxqWzGqb7ZW4mfHpw==}
+  '@nx/nx-linux-x64-gnu@16.1.4':
+    resolution: {integrity: sha512-vVea3E6uHvrVieaOHIXKziN/vMbn9g2caiE4N7WiuAPrp2t4jbhtYqcQoNeNVjl92trQu/l2Ma3knmbn75J7jA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@nx/nx-linux-x64-musl@16.6.0':
-    resolution: {integrity: sha512-EYOHe11lfVfEfZqSAIa1c39mx2Obr4mqd36dBZx+0UKhjrcmWiOdsIVYMQSb3n0TqB33BprjI4p9ZcFSDuoNbA==}
+  '@nx/nx-linux-x64-musl@16.1.4':
+    resolution: {integrity: sha512-HhJPPU0rBzGeqTrylEjOu190rnMvA0HK7nghyEtTGhdCcTRs1ulfgl6swjAjXtXtGA/rXXkk0IKI7luGBcH6zg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@nx/nx-win32-arm64-msvc@16.6.0':
-    resolution: {integrity: sha512-f1BmuirOrsAGh5+h/utkAWNuqgohvBoekQgMxYcyJxSkFN+pxNG1U68P59Cidn0h9mkyonxGVCBvWwJa3svVFA==}
+  '@nx/nx-win32-arm64-msvc@16.1.4':
+    resolution: {integrity: sha512-+iaU0yXkgF0Y5fvWFPP2cziDvd+QjQDnhk7/+i9Nk1C8vOaNHkMjx6qL2dNO2qoT49qMhjnI/hzL7+FBVPh11w==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@nx/nx-win32-x64-msvc@16.6.0':
-    resolution: {integrity: sha512-UmTTjFLpv4poVZE3RdUHianU8/O9zZYBiAnTRq5spwSDwxJHnLTZBUxFFf3ztCxeHOUIfSyW9utpGfCMCptzvQ==}
+  '@nx/nx-win32-x64-msvc@16.1.4':
+    resolution: {integrity: sha512-s+H59UBB/dtdvZ+KWCe2PrVWZyoxsl6Vx+hzdUvCwI8f+cZmLRblTThLhUaBgdWLVqzFPemTkWIUasiRx/+3PQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -2155,14 +2188,14 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
 
-  '@redsun-vn/easyblocks-reduce-css-calc@1.0.1':
-    resolution: {integrity: sha512-/7VGyvHtSr3vxyFd6mVhgQTrVC4WKJ7xGR2l6e73odwruoEY0Phk2da99/xXNmyx4sUrVQjDRJJF0Lqx4eEJmw==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-reduce-css-calc/1.0.1/3a545dcddd7f7382d5d3d334c2d03bf5f5542405}
+  '@redsun-vn/easyblocks-reduce-css-calc@1.0.4':
+    resolution: {integrity: sha512-SM/xDRo0ZvboEAFpit593Txh1UFNWuuqoqdGHWqSoGodxQ0TIWWZIw/JgvvyxH5gTWNhJMtQFHk8t576XBQKuA==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-reduce-css-calc/1.0.4/bb65a4e0d7c717b1388841fe8d9eb9a32a256374}
 
   '@redsun-vn/easyblocks-test-utils@1.0.1':
     resolution: {integrity: sha512-tobkS7fn9aQB8QxnhjYlldJCf28VUpWuSUwamqfbgPGbpDhlmxxVJmW0F54zLUDizgKCHzpicJwdzeP4VnIJkg==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-test-utils/1.0.1/20cfcd709254c28e781e7a7f791e32004c829cce}
 
-  '@redsun-vn/easyblocks-utils@1.0.1':
-    resolution: {integrity: sha512-uLFrpXVx965UwxHoCypblh5vAPjr4ry7wlCUCVbCXHR2ajfCBgckKdN37IU/FJnRQP/loLLLrXRWGrGA2vXfoQ==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-utils/1.0.1/d2df49dca274558418f5e7f2a36d60440c70ea3f}
+  '@redsun-vn/easyblocks-utils@1.0.2':
+    resolution: {integrity: sha512-CI+cXJE1p1cr3lGkH2INWyHNDDwN6hJiMqVCPhU0hRB+PsW+ctm2f7qzYlkC2F4UXHUZpmxHXqjFq3py0kaXIA==, tarball: https://npm.pkg.github.com/download/@redsun-vn/easyblocks-utils/1.0.2/cbb6bc28331e72df451bb4859691afb222f7d2a6}
 
   '@rollup/plugin-babel@5.3.1':
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -2181,6 +2214,12 @@ packages:
     peerDependencies:
       rollup: ^2.38.3
 
+  '@rollup/plugin-commonjs@22.0.2':
+    resolution: {integrity: sha512-//NdP6iIwPbMTcazYsiBMbJW7gfmpHom33u1beiIoHDEM0Q9clvtQB1T0efvMqHeKsGohiHo97BCPCkBXdscwg==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      rollup: ^2.68.0
+
   '@rollup/plugin-json@4.1.0':
     resolution: {integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==}
     peerDependencies:
@@ -2191,6 +2230,12 @@ packages:
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
+
+  '@rollup/plugin-node-resolve@14.1.0':
+    resolution: {integrity: sha512-5G2niJroNCz/1zqwXtk0t9+twOSDlG00k1Wfd7bkbbXmwg8H8dvgHdIWAun53Ps/rckfvOC7scDBjuGFg5OaWw==}
+    engines: {node: '>= 10.0.0'}
+    peerDependencies:
+      rollup: ^2.78.0
 
   '@rollup/plugin-replace@3.1.0':
     resolution: {integrity: sha512-pA3XRUrSKybVYqmH5TqWNZpGxF+VV+1GrYchKgCNIj2vsSOX7CVm2RCtx8p2nrC7xvkziYyK+lSi74T93MU3YA==}
@@ -6044,6 +6089,10 @@ packages:
   nwsapi@2.2.20:
     resolution: {integrity: sha512-/ieB+mDe4MrrKMT8z+mQL8klXydZWGR5Dowt4RAGKbJ3kIGEx3X4ljUo+6V73IXtUPWgfOlU5B9MlGxFO5T+cA==}
 
+  nx-cloud@19.1.0:
+    resolution: {integrity: sha512-f24vd5/57/MFSXNMfkerdDiK0EvScGOKO71iOWgJNgI1xVweDRmOA/EfjnPMRd5m+pnoPs/4A7DzuwSW0jZVyw==}
+    hasBin: true
+
   nx@15.9.7:
     resolution: {integrity: sha512-1qlEeDjX9OKZEryC8i4bA+twNg+lB5RKrozlNwWx/lLJHqWPUfvUTvxh+uxlPYL9KzVReQjUuxMLFMsHNqWUrA==}
     hasBin: true
@@ -6056,8 +6105,8 @@ packages:
       '@swc/core':
         optional: true
 
-  nx@16.6.0:
-    resolution: {integrity: sha512-4UaS9nRakpZs45VOossA7hzSQY2dsr035EoPRGOc81yoMFW6Sqn1Rgq4hiLbHZOY8MnWNsLMkgolNMz1jC8YUQ==}
+  nx@16.1.4:
+    resolution: {integrity: sha512-fSkgC8wXLdW6QMaBHDXeEUJINgxBa0Vsut6Hq2SxEhtxmnx+lx++7NlhYVNZixTMRmI4a5vK0jdfPpe9hknsRA==}
     hasBin: true
     peerDependencies:
       '@swc-node/register': ^1.4.2
@@ -7046,13 +7095,13 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.3.8:
-    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
+  semver@7.3.4:
+    resolution: {integrity: sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==}
     engines: {node: '>=10'}
     hasBin: true
 
-  semver@7.5.3:
-    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
+  semver@7.3.8:
+    resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -7489,6 +7538,10 @@ packages:
   tar@6.1.11:
     resolution: {integrity: sha512-an/KZQzQUkZCkuoAA64hM92X0Urb6VpRhAFllDzz44U2mcD5scmT3zBc4VgVpkugF580+DQn8eAFSyoQt0tznA==}
     engines: {node: '>= 10'}
+
+  tar@6.2.1:
+    resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
+    engines: {node: '>=10'}
 
   temp-dir@1.0.0:
     resolution: {integrity: sha512-xZFXEGbG7SNC3itwBzI3RYjq/cEhBkx2hJuKGIUOcEULmkQExXiHat2z/qkISYsuR+IKumhEfKKbV5qXmhICFQ==}
@@ -9698,7 +9751,7 @@ snapshots:
       proc-log: 4.2.0
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.6.0
+      semver: 7.7.1
       which: 4.0.0
     transitivePeerDependencies:
       - bluebird
@@ -9762,7 +9815,7 @@ snapshots:
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.2
       proc-log: 3.0.0
-      semver: 7.6.0
+      semver: 7.7.1
     transitivePeerDependencies:
       - bluebird
 
@@ -9821,6 +9874,12 @@ snapshots:
       tmp: 0.2.3
       tslib: 2.8.1
 
+  '@nrwl/nx-cloud@19.1.0':
+    dependencies:
+      nx-cloud: 19.1.0
+    transitivePeerDependencies:
+      - debug
+
   '@nrwl/nx-darwin-arm64@15.9.7':
     optional: true
 
@@ -9856,43 +9915,39 @@ snapshots:
       - '@swc/core'
       - debug
 
-  '@nrwl/tao@16.6.0':
+  '@nrwl/tao@16.1.4':
     dependencies:
-      nx: 16.6.0
-      tslib: 2.8.1
+      nx: 16.1.4
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
       - debug
 
-  '@nx/nx-darwin-arm64@16.6.0':
+  '@nx/nx-darwin-arm64@16.1.4':
     optional: true
 
-  '@nx/nx-darwin-x64@16.6.0':
+  '@nx/nx-darwin-x64@16.1.4':
     optional: true
 
-  '@nx/nx-freebsd-x64@16.6.0':
+  '@nx/nx-linux-arm-gnueabihf@16.1.4':
     optional: true
 
-  '@nx/nx-linux-arm-gnueabihf@16.6.0':
+  '@nx/nx-linux-arm64-gnu@16.1.4':
     optional: true
 
-  '@nx/nx-linux-arm64-gnu@16.6.0':
+  '@nx/nx-linux-arm64-musl@16.1.4':
     optional: true
 
-  '@nx/nx-linux-arm64-musl@16.6.0':
+  '@nx/nx-linux-x64-gnu@16.1.4':
     optional: true
 
-  '@nx/nx-linux-x64-gnu@16.6.0':
+  '@nx/nx-linux-x64-musl@16.1.4':
     optional: true
 
-  '@nx/nx-linux-x64-musl@16.6.0':
+  '@nx/nx-win32-arm64-msvc@16.1.4':
     optional: true
 
-  '@nx/nx-win32-arm64-msvc@16.6.0':
-    optional: true
-
-  '@nx/nx-win32-x64-msvc@16.6.0':
+  '@nx/nx-win32-x64-msvc@16.1.4':
     optional: true
 
   '@octokit/auth-token@3.0.4': {}
@@ -10022,7 +10077,7 @@ snapshots:
   '@pnpm/npm-package-arg@1.0.0':
     dependencies:
       hosted-git-info: 4.1.0
-      semver: 7.6.0
+      semver: 7.7.1
       validate-npm-package-name: 4.0.0
 
   '@pnpm/npm-resolver@18.1.1(@pnpm/logger@5.0.0)':
@@ -10046,7 +10101,7 @@ snapshots:
       path-temp: 2.1.0
       ramda: '@pnpm/ramda@0.28.1'
       rename-overwrite: 5.0.4
-      semver: 7.6.0
+      semver: 7.7.1
       ssri: 10.0.5
       version-selector-type: 3.0.0
     transitivePeerDependencies:
@@ -10056,7 +10111,7 @@ snapshots:
 
   '@pnpm/resolve-workspace-range@5.0.1':
     dependencies:
-      semver: 7.6.0
+      semver: 7.7.1
 
   '@pnpm/resolver-base@11.1.0':
     dependencies:
@@ -10556,13 +10611,13 @@ snapshots:
       - react-dom
       - supports-color
 
-  '@redsun-vn/easyblocks-reduce-css-calc@1.0.1':
+  '@redsun-vn/easyblocks-reduce-css-calc@1.0.4':
     dependencies:
       postcss-value-parser: 3.3.1
 
   '@redsun-vn/easyblocks-test-utils@1.0.1': {}
 
-  '@redsun-vn/easyblocks-utils@1.0.1':
+  '@redsun-vn/easyblocks-utils@1.0.2':
     dependencies:
       react: 18.2.0
 
@@ -10588,12 +10643,33 @@ snapshots:
       resolve: 1.22.10
       rollup: 2.79.2
 
+  '@rollup/plugin-commonjs@22.0.2(rollup@2.79.2)':
+    dependencies:
+      '@rollup/pluginutils': 3.1.0(rollup@2.79.2)
+      commondir: 1.0.1
+      estree-walker: 2.0.2
+      glob: 7.2.3
+      is-reference: 1.2.1
+      magic-string: 0.25.9
+      resolve: 1.22.10
+      rollup: 2.79.2
+
   '@rollup/plugin-json@4.1.0(rollup@2.79.2)':
     dependencies:
       '@rollup/pluginutils': 3.1.0(rollup@2.79.2)
       rollup: 2.79.2
 
   '@rollup/plugin-node-resolve@13.3.0(rollup@2.79.2)':
+    dependencies:
+      '@rollup/pluginutils': 3.1.0(rollup@2.79.2)
+      '@types/resolve': 1.17.1
+      deepmerge: 4.3.1
+      is-builtin-module: 3.2.1
+      is-module: 1.0.0
+      resolve: 1.22.10
+      rollup: 2.79.2
+
+  '@rollup/plugin-node-resolve@14.1.0(rollup@2.79.2)':
     dependencies:
       '@rollup/pluginutils': 3.1.0(rollup@2.79.2)
       '@types/resolve': 1.17.1
@@ -12557,7 +12633,7 @@ snapshots:
   del@6.1.1:
     dependencies:
       globby: 11.1.0
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       is-glob: 4.0.3
       is-path-cwd: 2.2.0
       is-path-inside: 3.0.3
@@ -12997,7 +13073,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.5
+      micromatch: 4.0.8
 
   fast-glob@3.3.3:
     dependencies:
@@ -13172,7 +13248,7 @@ snapshots:
   fs-extra@9.1.0:
     dependencies:
       at-least-node: 1.0.0
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       jsonfile: 6.1.0
       universalify: 2.0.1
 
@@ -14074,7 +14150,7 @@ snapshots:
       jest-environment-jsdom: 26.6.2
       jest-environment-node: 26.6.2
       jest-get-type: 26.3.0
-      jest-jasmine2: 26.6.3
+      jest-jasmine2: 26.6.3(ts-node@10.9.2(@types/node@18.14.2)(typescript@5.8.2))
       jest-regex-util: 26.0.0
       jest-resolve: 26.6.2
       jest-util: 26.6.2
@@ -14163,7 +14239,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jest-jasmine2@26.6.3:
+  jest-jasmine2@26.6.3(ts-node@10.9.2(@types/node@18.14.2)(typescript@5.8.2)):
     dependencies:
       '@babel/traverse': 7.27.0
       '@jest/environment': 26.6.2
@@ -14184,7 +14260,11 @@ snapshots:
       pretty-format: 26.6.2
       throat: 5.0.0
     transitivePeerDependencies:
+      - bufferutil
+      - canvas
       - supports-color
+      - ts-node
+      - utf-8-validate
 
   jest-leak-detector@26.6.2:
     dependencies:
@@ -14507,7 +14587,7 @@ snapshots:
     dependencies:
       universalify: 2.0.1
     optionalDependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
 
   jsonparse@1.3.1: {}
 
@@ -14754,7 +14834,7 @@ snapshots:
 
   load-json-file@6.2.0:
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       parse-json: 5.2.0
       strip-bom: 4.0.0
       type-fest: 0.6.0
@@ -15245,7 +15325,7 @@ snapshots:
       env-paths: 2.2.1
       exponential-backoff: 3.1.2
       glob: 7.2.3
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       make-fetch-happen: 10.2.1
       nopt: 6.0.0
       npmlog: 6.0.2
@@ -15314,7 +15394,7 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.6.0
+      semver: 7.7.1
       validate-npm-package-license: 3.0.4
 
   normalize-path@2.1.1:
@@ -15389,7 +15469,7 @@ snapshots:
       npm-install-checks: 6.3.0
       npm-normalize-package-bin: 3.0.1
       npm-package-arg: 11.0.3
-      semver: 7.6.0
+      semver: 7.7.1
 
   npm-registry-fetch@13.3.1:
     dependencies:
@@ -15454,6 +15534,21 @@ snapshots:
 
   nwsapi@2.2.20: {}
 
+  nx-cloud@19.1.0:
+    dependencies:
+      '@nrwl/nx-cloud': 19.1.0
+      axios: 1.8.4
+      chalk: 4.1.2
+      dotenv: 10.0.0
+      fs-extra: 11.3.0
+      ini: 4.1.3
+      node-machine-id: 1.1.12
+      open: 8.4.2
+      tar: 6.2.1
+      yargs-parser: 21.1.1
+    transitivePeerDependencies:
+      - debug
+
   nx@15.9.7:
     dependencies:
       '@nrwl/cli': 15.9.7
@@ -15504,9 +15599,9 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  nx@16.6.0:
+  nx@16.1.4:
     dependencies:
-      '@nrwl/tao': 16.6.0
+      '@nrwl/tao': 16.1.4
       '@parcel/watcher': 2.0.4
       '@yarnpkg/lockfile': 1.1.0
       '@yarnpkg/parsers': 3.0.0-rc.46
@@ -15528,10 +15623,9 @@ snapshots:
       jsonc-parser: 3.2.0
       lines-and-columns: 2.0.4
       minimatch: 3.0.5
-      node-machine-id: 1.1.12
       npm-run-path: 4.0.1
       open: 8.4.2
-      semver: 7.5.3
+      semver: 7.3.4
       string-width: 4.2.3
       strong-log-transformer: 2.1.0
       tar-stream: 2.2.0
@@ -15542,16 +15636,15 @@ snapshots:
       yargs: 17.7.2
       yargs-parser: 21.1.1
     optionalDependencies:
-      '@nx/nx-darwin-arm64': 16.6.0
-      '@nx/nx-darwin-x64': 16.6.0
-      '@nx/nx-freebsd-x64': 16.6.0
-      '@nx/nx-linux-arm-gnueabihf': 16.6.0
-      '@nx/nx-linux-arm64-gnu': 16.6.0
-      '@nx/nx-linux-arm64-musl': 16.6.0
-      '@nx/nx-linux-x64-gnu': 16.6.0
-      '@nx/nx-linux-x64-musl': 16.6.0
-      '@nx/nx-win32-arm64-msvc': 16.6.0
-      '@nx/nx-win32-x64-msvc': 16.6.0
+      '@nx/nx-darwin-arm64': 16.1.4
+      '@nx/nx-darwin-x64': 16.1.4
+      '@nx/nx-linux-arm-gnueabihf': 16.1.4
+      '@nx/nx-linux-arm64-gnu': 16.1.4
+      '@nx/nx-linux-arm64-musl': 16.1.4
+      '@nx/nx-linux-x64-gnu': 16.1.4
+      '@nx/nx-linux-x64-musl': 16.1.4
+      '@nx/nx-win32-arm64-msvc': 16.1.4
+      '@nx/nx-win32-x64-msvc': 16.1.4
     transitivePeerDependencies:
       - debug
 
@@ -16529,11 +16622,11 @@ snapshots:
 
   semver@6.3.1: {}
 
-  semver@7.3.8:
+  semver@7.3.4:
     dependencies:
       lru-cache: 6.0.0
 
-  semver@7.5.3:
+  semver@7.3.8:
     dependencies:
       lru-cache: 6.0.0
 
@@ -16993,6 +17086,15 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
+  tar@6.2.1:
+    dependencies:
+      chownr: 2.0.0
+      fs-minipass: 2.1.0
+      minipass: 5.0.0
+      minizlib: 2.1.2
+      mkdirp: 1.0.4
+      yallist: 4.0.0
+
   temp-dir@1.0.0: {}
 
   temp-dir@2.0.0: {}
@@ -17371,7 +17473,7 @@ snapshots:
 
   version-selector-type@3.0.0:
     dependencies:
-      semver: 7.6.0
+      semver: 7.7.1
 
   vlq@0.2.3: {}
 
@@ -17563,7 +17665,7 @@ snapshots:
 
   write-file-atomic@2.4.3:
     dependencies:
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       imurmurhash: 0.1.4
       signal-exit: 3.0.7
 
@@ -17596,7 +17698,7 @@ snapshots:
   write-json-file@3.2.0:
     dependencies:
       detect-indent: 5.0.0
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       make-dir: 2.1.0
       pify: 4.0.1
       sort-keys: 2.0.0

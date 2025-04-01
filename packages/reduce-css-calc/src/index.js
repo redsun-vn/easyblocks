@@ -1,7 +1,7 @@
 import valueParser from "postcss-value-parser";
-import { parser } from "./parser"; // eslint-disable-line
-import { reducer } from "./lib/reducer";
-import { stringifier } from "./lib/stringifier";
+import { parser } from "./parser.js"; // eslint-disable-line
+import { reducer } from "./lib/reducer.js";
+import { stringifier } from "./lib/stringifier.js";
 
 const MATCH_CALC = /((?:\-[a-z]+\-)?calc)/;
 

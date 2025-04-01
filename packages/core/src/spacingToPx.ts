@@ -42,8 +42,7 @@ export function parseSpacing(spacing: string): ParsedSpacing {
 export function spacingToPx(spacing: Spacing, width: number): number {
   const reducedSpacing = reduceCSSCalc(
     `calc(${spacing})` /* wrapping calc is necessary, otherwise max(10px,20px) doesn't work */,
-    5,
-    { vw: width, percent: width }
+    { precision: 5, map: { vw: width, percent: width } }
   );
 
   const parsed = parseSpacing(reducedSpacing);

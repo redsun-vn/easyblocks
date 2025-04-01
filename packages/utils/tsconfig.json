@@ -1,8 +1,23 @@
 {
-  "extends": "../../base.tsconfig.json",
   "compilerOptions": {
-    "declarationDir": "dist",
-    "baseUrl": "."
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "strict": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "rootDir": "src"
   },
-  "include": ["src/"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

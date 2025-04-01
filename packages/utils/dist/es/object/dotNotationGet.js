@@ -1,0 +1,10 @@
+function dotNotationGet(obj, path) {
+  if (path === "") {
+    return obj;
+  }
+  return path.split(".").reduce(function (acc, curVal) {
+    return acc && acc[curVal];
+  }, obj);
+}
+
+export { dotNotationGet };
